@@ -8,18 +8,17 @@ export default function AboutSection() {
         </video>
       </div>
       <div className="w-full md:w-1/2">
-        <h2 className="text-3xl font-bold mb-4">
-          Empowering Businesses with Custom Solutions
+        <h2 className="text-2xl font-bold mb-5">
+          Personal Loans in Hyderabad – Nihal Finserv
         </h2>
-        <p className="text-lg mb-4">
-          At OZRIT, we specialize in crafting innovative applications and software that help businesses thrive in a digital-first world.
+        <p className="text-base mb-6">
+          Looking for a quick and affordable personal loan in Hyderabad? Nihal Finserv is here to help. We offer personalized loan solutions for salaried and self-employed individuals with competitive interest rates and a smooth, hassle-free process.
         </p>
-        <p className="text-lg mb-4">
-          Our solutions are tailored to meet your unique needs, driving growth, efficiency, and lasting success through cutting-edge technology and expert execution.
+        <p className="text-base mb-6">
+          Whether it’s for medical bills, education, travel, or urgent expenses — we’re committed to making borrowing simple, fast, and transparent.
         </p>
-        <h3 className="font-semibold text-xl mb-2">Our Mission</h3>
-        <p className="text-lg">
-          To enable businesses to outpace competition through innovative technology, intuitive design and data-driven marketing—delivered with transparency, agility and unwavering commitment to quality.
+        <p className="text-base">
+          Based in Hyderabad, Nihal Finserv is dedicated to supporting your financial needs with trusted service and minimal paperwork.
         </p>
       </div>
     </section>

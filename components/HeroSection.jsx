@@ -1,39 +1,69 @@
-"use client"; // <--- Add this at the very top of your Hero.jsx file
+"use client";
 
-import React from 'react';
-import GlobeAnimation from './GlobeAnimation'; // Import your new GlobeAnimation component
+import React, { Fragment } from 'react';
+import { FaHandHoldingUsd, FaFileAlt, FaGlobeAmericas } from 'react-icons/fa';
+import GlobeAnimation from './GlobeAnimation';
 
 export default function HeroSection() {
+  const features = [
+    {
+      icon: <FaHandHoldingUsd size={40} className="text-white" />,
+      title: (
+        <>
+        Very Low Rates<br/>on All Loans
+        </>
+      ),
+    },
+    {
+      icon: <FaFileAlt size={40} className="text-white" />,
+      title: '99.9% Success Rate Guarantee',
+    },
+    {
+      icon: <FaGlobeAmericas size={40} className="text-white" />,
+      title: 'Flexible with Your Repayments',
+    },
+  ];
+
   return (
-    <section className="bg-black text-white py-20 px-6 flex flex-col md:flex-row items-center justify-between min-h-[700px]"> {/* Added min-h for consistent height */}
-      <div className="max-w-xl text-center md:text-left"> {/* Added text alignment for responsiveness */}
-        <h1 className="text-5xl font-bold leading-tight mb-6">
-          Building Applications<br />that Drive Success<br />with Precision
+    <section className="bg-black text-white py-20 px-6 flex flex-col md:flex-row items-center justify-between min-h-[400px]">
+      {/* Text Block */}
+      <div className="max-w-xl text-center md:text-left md:ml-10">
+        <h1 className="text-4xl font-bold leading-tight mb-6 text-balance">
+          Plan For Tomorrow<br />and Choose the<br />Right Loan
         </h1>
-        <p className="text-lg mb-8 text-gray-300"> {/* Added text-gray-300 for slightly muted text */}
-          With 16 years of industry expertise and a dedicated team of over 500 professionals, OZRIT specializes in developing AI-driven Web and Mobile applications that drive business success.
+        <p className="text-sm mb-5 text-gray-400">
+          At Nihal Finserv, we make borrowing simple and stress-free. Whether you need a personal loan, home loan, car loan, or help choosing the right investment, we’re here to guide you.
         </p>
-        <div className="flex gap-8 text-xl justify-center md:justify-start"> {/* Adjusted for center alignment on small screens */}
-          <div>
-            <strong>2.5k+</strong><br />
-            <span className="text-sm text-gray-400">Projects</span>
-          </div>
-          <div>
-            <strong>3K+</strong><br />
-            <span className="text-sm text-gray-400">Clients</span>
-          </div>
-          <div>
-            <strong>4.9</strong><br />
-            <span className="text-sm text-gray-400">User Rating</span>
-          </div>
+        <p className="text-sm mb-6 text-gray-400">
+          We work closely with trusted banks and NBFCs to help you find the best financial solutions — quickly, transparently, and with personal attention.
+        </p>
+        <p className="text-xl mb-7 text-gray-300">
+          Your goals matter. Let’s finance them, together.
+        </p>
+
+        {/* Features Block */}
+        <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-10 bg-black py-10 px-4 rounded-lg">
+          {features.map((feature, index) => (
+            <Fragment key={index}>
+              <div className="flex items-center text-white max-w-sm gap-4">
+                <div>{feature.icon}</div>
+                <p className="text-sm">{feature.title}</p>
+              </div>
+
+              {/* Divider */}
+              {index < features.length - 1 && (
+                <>
+                  <div className="hidden md:block h-10 border-l border-gray-700 mx-4" />
+                  <div className="block md:hidden w-full border-t border-gray-700 my-4" />
+                </>
+              )}
+            </Fragment>
+          ))}
         </div>
       </div>
-      {/* Container for the globe animation */}
-      <div className="mt-10 md:mt-0 w-full md:w-1/2 lg:w-2/5 aspect-square max-w-[500px] flex items-center justify-center">
-        {/*
-          The aspect-square and max-w classes help control the globe container size.
-          The Canvas component inside GlobeAnimation will fill this div.
-        */}
+
+      {/* Globe Animation */}
+      <div className="mt-10 mr-10 md:mt-0 w-full md:w-1/2 lg:w-2/5 aspect-square max-w-[500px] flex items-center justify-center">
         <GlobeAnimation />
       </div>
     </section>
