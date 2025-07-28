@@ -63,12 +63,12 @@ export default function FaqSection() {
         ))}
       </div>
 
-      {/* Right Side: Branding */}
+      {/* Right Side: Branding
       <div className="w-full lg:w-1/2 flex flex-col items-center justify-center mt-10 lg:mt-0 text-center lg:text-left">
         <h1 className="text-6xl font-extrabold">OZRIT</h1>
         <p className="text-2xl font-medium mt-2">Innovating Today</p>
         <p className="text-2xl font-medium">for Tomorrow</p>
-      </div>
+      </div> */}
     </div>
   );
 }
