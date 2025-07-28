@@ -46,9 +46,15 @@ export default function MarqueeSection() {
         <div style={styles.marqueeContent}>
           {[...Array(6)].map((_, idx) => (
             <div key={idx} style={styles.textBlock}>
-              <span>Application Development</span>
+              <span>Business Loans</span>
               <FaArrowRight style={styles.arrow} />
-              <span>Mobile Development</span>
+              <span>Term Loans</span>
+              <FaArrowRight style={styles.arrow} />
+              <span>Structured Loans</span>
+              <FaArrowRight style={styles.arrow} />
+              <span>Working Capital Loans</span>
+              <FaArrowRight style={styles.arrow} />
+              <span>Mortgage</span>
               <FaArrowRight style={styles.arrow} />
             </div>
           ))}           

@@ -7,15 +7,14 @@ export default function SoftwareOutsourcing() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Main content */}
           <div className="space-y-6">
-            <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
-              Software Engineering,
-              <br />
-              <span className="text-gray-500 text-5xl">Consulting &<br/> Outsourcing</span>
+            <h1 className="text-3xl lg:text-4xl font-bold leading-tight">
+              Wide Range Of Loan Options With Your Trusted Financial Consultant
             </h1>
             
             <p className="text-base text-gray-300 leading-relaxed max-w-2xl">
-              We are an award-winning and Top Web Development Company specializing in 
-              outsourced software development and dedicated engineering teams for clients worldwide
+              Explore a wide range of loan solutions tailored to your needs — from personal and business loans to home and vehicle financing.
+As your trusted financial consultant, we simplify the process, offer expert guidance, and connect you with the best options in the market.
+Whether you're planning, expanding, or investing — we’re here to make it happen, seamlessly.
             </p>
           </div>
           

@@ -3,16 +3,16 @@ import React from "react";
 
 const testimonials = [
   {
-    title: "Top Web Development Company",
-    text: "Ozrit transformed our outdated website into a modern, responsive platform that truly reflects our brand. Their attention to detail, speed of execution, and understanding of our vision were exceptional. We've seen a significant boost in user engagement.",
-    name: "Rahul Mehta",
-    position: "Director, GVR Convention",
+    title: "Nikhil Bharadwaj",
+    text: "Nihal Finserv Team are a true professional and extremely focused towards positive customer experience. Their service is very fast and he was very flexible in accommodating our requirements. He has supported us like a family member and has been very helpful throughout the process. I would strongly recommend there service to my friends and family.",
+    name: "Nikhil Bharadwaj",
+    position: "CEO | Frutoo szeeque",
   },
   {
-    title: "Seamless App Development",
-    text: "Working with Ozrit on our mobile app was a seamless experience. The team was proactive, creative, and technically sound. They delivered exactly what we envisioned – a sleek, fast, and user-friendly app that our customers love.",
-    name: "Sneha Kapoor",
-    position: "Founder, EduTrack",
+    title: "Sandeep Parepally",
+    text: "I was struggling to get a personal loan for the past 6 months, but Nihal and team made it happen! The entire Nihal Finserv team was awesome—always kept me informed about what to expect, which calls I’d get, and how to respond. Team was always available for any doubts and picked up my calls every time. Extremely happy with the support and service. Highly recommended!",
+    /*name: "Sneha Kapoor",*/
+    position: "Sandeep Parepally",
   },
 ];
 

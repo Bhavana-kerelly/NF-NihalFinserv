@@ -1,6 +1,8 @@
 "use client"; // <--- ADD THIS LINE AT THE VERY TOP IF USING NEXT.JS APP ROUTER
 
 import React from 'react';
+import Image from 'next/image';
+
 
 const Footer = () => {
   // Define your styles as a JavaScript object
@@ -57,7 +59,15 @@ const Footer = () => {
   return (
     <footer style={styles.footerContainer}>
       <div style={styles.footerLeft}>
-        <div style={styles.logo}>OZRIT™</div>
+        <div className="font-bold">
+                <Image
+          src="/Logo.png"
+          alt="Nihal Finserv"
+          width={100}
+          height={32}
+          className="h-18 w-auto"
+        />
+              </div>
         <div style={styles.copyright}>Copyright © All Rights Reserved</div>
       </div>
       <div style={styles.footerRight}>

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(null);
@@ -10,18 +11,25 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full flex justify-between items-center p-4 shadow">
+    <header className="w-full flex justify-between items-center p-4 shadow font-serif">
       {/* Logo */}
-      <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text font-serif">
-        OZRIT<span className="text-black text-sm align-super">™</span>
+      <div className="font-bold">
+        <Image
+  src="/Logo.png"
+  alt="Nihal Finserv"
+  width={100}
+  height={32}
+  className="h-18 w-auto"
+/>
       </div>
 
       {/* Navigation */}
-      <nav className="flex items-center gap-6 text-lg relative font-serif">
+      <nav className="flex items-center gap-6 text-lg relative">
         <Link href="/">Home</Link>
         <Link href="/about">About Us</Link>
 
-<div
+        {/* Services Dropdown */}
+        <div
   className="relative font-serif"
   onMouseEnter={() => toggleMenu("services")}
   onMouseLeave={() => toggleMenu(null)}
@@ -46,61 +54,58 @@ export default function Header() {
         </div>
 
         {/* 2nd column: 5 rows */}
-        <div className="flex flex-col space-y-2 font-serif text-blue-50">
+        <div className="flex flex-col space-y-2">
           <div className="font-semibold text-1xl text-white"><a href="#" className="hover:text-blue-600">Design & Digital</a></div>
-          <a href="#" className="hover:text-blue-600">UI/UX</a>
-          <a href="#" className="hover:text-blue-600">CX/DX</a>
-          <a href="#" className="hover:text-blue-600">Websites</a>
-          <a href="#" className="hover:text-blue-600">Frontend Engineering</a>
+          <div className="text-white text-sm mb-48"><a href="#" className="hover:text-blue-600">UI/UX</a><br/>
+          <a href="#" className="hover:text-blue-600">CX/DX</a><br/>
+          <a href="#" className="hover:text-blue-600">Websites</a><br/>
+          <a href="#" className="hover:text-blue-600">Frontend Engineering</a></div>
         </div>
 
         {/* 3rd column: 7 rows */}
-        <div className="flex flex-col space-y-2 font-serif text-blue-50">
-          <a href="#" className="hover:text-blue-600">AI & ML</a>
-          <a href="#" className="hover:text-blue-600">AI Development</a>
-          <a href="#" className="hover:text-blue-600">ML Development</a>
-          <a href="#" className="hover:text-blue-600">ChatGPT Solutions</a>
-          <a href="#" className="hover:text-blue-600">AI Chatbot Development</a>
-          <a href="#" className="hover:text-blue-600">Large Language Model</a>
-          <a href="#" className="hover:text-blue-600">Generative AI</a>
+        <div className="flex flex-col space-y-2">
+          <div className="font-semibold text-1xl text-white"><a href="#" className="hover:text-blue-600">AI & ML</a></div>
+          <div className="text-white text-sm mb-48"><a href="#" className="hover:text-blue-600">AI Development</a>
+          <a href="#" className="hover:text-blue-600">ML Development</a><br/>
+          <a href="#" className="hover:text-blue-600">ChatGPT Solutions</a><br/>
+          <a href="#" className="hover:text-blue-600">AI Chatbot Development</a><br/>
+          <a href="#" className="hover:text-blue-600">Large Language Model</a><br/>
+          <a href="#" className="hover:text-blue-600">Generative AI</a></div>
         </div>
 
         {/* 4th column: 8 rows */}
-        <div className="flex flex-col space-y-2 font-serif text-blue-50">
-          <a href="#" className="hover:text-white">Digital & Branding</a>
-          <a href="#" className="hover:text-white">Digital marketing</a>
-          <a href="#" className="hover:text-blue-600">SEO</a>
-          <a href="#" className="hover:text-blue-600">Pay-Per-Click Advertising</a>
-          <a href="#" className="hover:text-blue-600">Content Marketing</a>
-          <a href="#" className="hover:text-blue-600">Email Marketing</a>
-          <a href="#" className="hover:text-blue-600">Influencer Partnerships</a>
-          <a href="#" className="hover:text-blue-600">Social Media Marketing</a>
+        <div className="flex flex-col space-y-2 ">
+          <div className="font-semibold text-1xl text-white"><a href="#" className="hover:text-white">Digital & Branding</a></div>
+          <div className="text-white text-sm mb-48 "><a href="#" className="hover:text-white">Digital marketing</a><br/>
+          <a href="#" className="hover:text-blue-600">SEO</a><br/>
+          <a href="#" className="hover:text-blue-600">Pay-Per-Click Advertising</a><br/>
+          <a href="#" className="hover:text-blue-600">Content Marketing</a><br/>
+          <a href="#" className="hover:text-blue-600">Email Marketing</a><br/>
+          <a href="#" className="hover:text-blue-600">Influencer Partnerships</a><br/>
+          <a href="#" className="hover:text-blue-600">Social Media Marketing</a></div>
         </div>
       </div>
     </div>
   )}
 </div>
-
-
-
         {/* Industries Dropdown */}
         <div
-          className="relative font-serif"
+          className="relative"
           onMouseEnter={() => toggleMenu("industries")}
           onMouseLeave={() => toggleMenu(null)}
         >
           <span className="cursor-pointer">Industries ▾</span>
           {openMenu === "industries" && (
-            <div className="absolute top-full bg-white shadow p-2 rounded text-sm z-10">
-              <Link href="#">Healthcare</Link><br />
-              <Link href="#">Finance</Link><br />
-              <Link href="#">Education</Link><br />
-              <Link href="#">Retail</Link><br />
-              <Link href="#">Manufacturing</Link><br />
-              <Link href="#">Logistics</Link><br />
-              <Link href="#">Hospitality</Link><br />
-              <Link href="#">Real Estate</Link><br />
-              <Link href="#">Entertainment</Link><br />
+            <div className="absolute top-full bg-white shadow p-4 rounded text-sm z-10 text-gray-800 space-y-1">
+              <Link href="#" className="block hover:text-blue-600">Healthcare</Link>
+              <Link href="#" className="block hover:text-blue-600">Finance</Link>
+              <Link href="#" className="block hover:text-blue-600">Education</Link>
+              <Link href="#" className="block hover:text-blue-600">Retail</Link>
+              <Link href="#" className="block hover:text-blue-600">Manufacturing</Link>
+              <Link href="#" className="block hover:text-blue-600">Logistics</Link>
+              <Link href="#" className="block hover:text-blue-600">Hospitality</Link>
+              <Link href="#" className="block hover:text-blue-600">Real Estate</Link>
+              <Link href="#" className="block hover:text-blue-600">Entertainment</Link>
             </div>
           )}
         </div>
@@ -109,7 +114,7 @@ export default function Header() {
         <Link href="/careers">Careers</Link>
         <Link href="/contact">Contact Us</Link>
 
-        <button className="bg-black text-white px-4 py-2 rounded">
+        <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
           Hire Us →
         </button>
       </nav>

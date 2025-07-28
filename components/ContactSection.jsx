@@ -4,34 +4,20 @@ import React from "react";
 const offices = [
   {
     city: "Hyderabad",
-    address: "A-Block – 303, The Platina, Jayabheri Enclave, Gachibowli, Hyderabad, Telangana",
-    phone: "+91 73823 73824",
+    address: "E-63, 1st Floor, Above Shiva Homeo Care, Madhuranagar, Hyderabad, Telangana",
+    phone: "+91 9951606993",
   },
   {
     city: "Chennai",
-    address: "Shakti Tower 1, 766, Anna Salai, Thousand Lights, Chennai, Tamil Nadu",
-    phone: "+91 73823 73824",
+    address: "Chennai, Tamil Nadu",
+   
   },
   {
     city: "Bangalore",
-    address: "Sabari Complex, 24, Field Marshal Cariappa Rd, Ashok Nagar, Bengaluru, Karnataka",
-    phone: "+91 73823 73824",
+    address: "Bengaluru, Karnataka",
+  
   },
-  {
-    city: "Newyork , USA",
-    address: "60 E 42nd St Suite 4600, New York, NY 10165, United States",
-    phone: "+1 929 2393566",
-  },
-  {
-    city: "London , UK",
-    address: "4th Floor, Rex House, 4-12 Regent St., London SW1Y 4PE, United Kingdom",
-    phone: "+1 929 2393566",
-  },
-  {
-    city: "Ottawa, Canada",
-    address: "343 Preston St 11th Floor, Ottawa, ON K1S 1N4, Canada",
-    phone: "+1 929 2393566",
-  },
+  
 ];
 
 export default function ContactSection() {
@@ -39,7 +25,7 @@ export default function ContactSection() {
     <div style={styles.container}>
       <div style={styles.left}>
         <h2 style={styles.title}>
-          Collaborate <span style={styles.gray}>with OZRIT</span>
+          Collaborate <span style={styles.gray}>with Nihal Finserv</span>
         </h2>
         <form style={styles.form}>
           <label style={styles.label}>Name *</label>

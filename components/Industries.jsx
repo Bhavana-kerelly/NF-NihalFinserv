@@ -24,8 +24,11 @@ export default function IndustriesWeServe() {
 
   return (
     <div className="bg-black text-white px-6 py-16 ">
-      <h2 className="text-3xl font-bold mb-4">Industries We Serve</h2>
-      <p className="text-xl mb-10 ">With a dynamic approach, we at OZRIT seamlessly navigate diverse industries, delivering cutting-edge solutions that transcend boundaries and elevate your digital presence
+      <h2 className="text-3xl font-bold mb-4">Loans at their best - Tailored for you.
+</h2>
+      <p className="text-base mb-10 ">From first consultation to final disbursement, we’re with you at every step — clear, simple, and supportive.
+Your dedicated loan expert ensures fast answers, smart options, and a hassle-free experience.
+We serve all sectors with flexible rates, low fees, and financing that truly fits your needs.
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">

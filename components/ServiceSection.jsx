@@ -23,7 +23,7 @@ const ServiceSection = () => {
     },
     column: {
       flex: '1', /* Allow columns to grow and shrink */
-      minWidth: '200px', /* Minimum width for each column before wrapping */
+       /* Minimum width for each column before wrapping */
       maxWidth: '280px', /* Optional: max width for columns */
     },
     columnHeading: {
@@ -74,46 +74,49 @@ const ServiceSection = () => {
 
   const serviceCategories = [
     {
-      title: 'Software Development',
+      title: 'SME',
       items: [
-        'Web Development',
-        'Application Development',
-        'Mobile App',
-        'AI & ML',
-        'Blockchain Development',
-        'Custom Software',
-        'E-commerce',
-        'Testing & QA',
+        'Manufacturer',
+        'Distributor',
+        'Vendor',
+        'Service Provider',
+        'Retailer',
       ],
     },
     {
-      title: 'AI & ML',
+      title: 'Structured Products',
       items: [
-        'BI Development',
-        'AI Development',
-        'ChatGPT Solutions',
-        'ML Development',
-        'Large Language Model',
+        'Loan Against Securities',
+'Structured Investments',
+'Debt Syndication',
+'Letter of Credit',
+'Lease Rental Discounting',
+'Loan Against Property',
       ],
     },
     {
-      title: 'Digital Marketing & Branding',
+      title: 'Equipment Financing & Leasing',
       items: [
-        'Content Marketing',
-        'Email Marketing',
-        'Influencer Partnerships',
-        'Pay-Per-Click Advertising',
-        'SEO Services',
-        'Social Media Marketing',
+        
+'Capital Goods',
+'IT Hardware',
+'Office Infrastructure',
+'Cars',
+'Construction Equipment',
+'Energy Saving Equipment',
+'Healthcare Equipment',
+'Logistics Machinery',
+'Solar Equipment',
       ],
     },
     {
-      title: 'Design & Digital',
+      title: 'Construction Finance',
       items: [
-        'CX/DX',
-        'Frontend Engineering',
-        'UI / UX',
-        'Web Design',
+        
+'Funding Solutions for Your Construction Projects',
+'Securing Land and Sourcing Raw Materials',
+'Paying Contractors and Workers',
+'Acquiring Permits and Licenses',
       ],
     },
   ];
