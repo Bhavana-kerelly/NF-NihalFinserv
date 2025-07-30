@@ -7,7 +7,7 @@ import Faq from '../components/Faq';
 import MarqueeSection from '../components/MarqueeSection.jsx';
  import FeaturedInsights from '../components/FeaturedInsights';
  import ClientLogosSection from '../components/ClientLogosSection';
- import Testumonials from '../components/Testimonials';
+ import Testimonials from '../components/Testimonials';
  import ContactSection from '../components/ContactSection';
  import RatingsSection from '../components/RatingsSection';
  import ServiceSection from '../components/ServiceSection';
@@ -28,7 +28,7 @@ export default function HomePage() {
       <FeaturedInsights />
       {/* <FeaturedInsightsSection /> */}
       <ClientLogosSection />
-      <Testumonials />
+      <Testimonials />
       <ContactSection />
       <RatingsSection />
       <ServiceSection />

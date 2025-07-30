@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
+import Link from 'next/link';
 import Image from "next/image";
 
 export default function Header() {
@@ -34,26 +34,24 @@ export default function Header() {
   onMouseEnter={() => toggleMenu("services")}
   onMouseLeave={() => toggleMenu(null)}
 >
-  <span className="cursor-pointer">Services ▾</span>
+  <Link href="/services" className="cursor-pointer hover:text-blue-600">
+  Services ▾
+</Link>
 
   {openMenu === "services" && (
   <div className="fixed top-[64px] left-0 right-0 bg-black shadow-lg z-50 border-t border-gray-200 font-serif">
     <div className="grid grid-cols-4 gap-6 max-w-[1280px] mx-auto px-8 py-8">
       {/* Top Row (4 Columns) */}
       <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><a href="/SecuredLoans" className="hover:text-blue-600">Secured Loans</a></div>
-        <div className="text-white text-sm space-y-1">
-          <a href="/SecuredLoans/MortgageLoans" className="hover:text-blue-600">Mortage Loans
-</a><br />
-          <a href="/SecuredLoans/SchoolCollegeFunding" className="hover:text-blue-600">School & College Funding
-</a><br />
-          <a href="/SecuredLoans/CarLoans" className="hover:text-blue-600">Car Loans Ner & Refinancing
-</a><br />
-<a href="/SecuredLoans/ODCC" className="hover:text-blue-600">OD/CC
-</a><br />
-<a href="/SecuredLoans/HomeLoans" className="hover:text-blue-600">Home Loans
-</a><br />
-        </div>
+        <div className="font-semibold text-white"><Link href="/securedloans" className="hover:text-blue-600">Secured Loans</Link>
+  </div>
+  <div className="text-white text-sm space-y-1">
+    <Link href="/securedloans/mortgageloans" className="hover:text-blue-600">Mortgage Loans</Link><br />
+    <Link href="/securedloans/schoolandcollegefunding" className="hover:text-blue-600">School & College Funding</Link><br />
+    <Link href="/securedloans/carloansnerandfinancing" className="hover:text-blue-600">Car Loans Ner & Refinancing</Link><br />
+    <Link href="/securedloans/odcc" className="hover:text-blue-600">OD/CC</Link><br />
+    <Link href="/securedloans/homeloans" className="hover:text-blue-600">Home Loans</Link><br />
+  </div>
       </div>
 
       <div className="flex flex-col space-y-2">
