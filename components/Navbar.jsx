@@ -46,117 +46,106 @@ export default function Header() {
         <div className="font-semibold text-white"><Link href="/securedloans" className="hover:text-blue-600">Secured Loans</Link>
   </div>
   <div className="text-white text-sm space-y-1">
-    <Link href="/securedloans/mortgageloans" className="hover:text-blue-600">Mortgage Loans</Link><br />
-    <Link href="/securedloans/schoolandcollegefunding" className="hover:text-blue-600">School & College Funding</Link><br />
-    <Link href="/securedloans/carloansnerandfinancing" className="hover:text-blue-600">Car Loans Ner & Refinancing</Link><br />
-    <Link href="/securedloans/odcc" className="hover:text-blue-600">OD/CC</Link><br />
-    <Link href="/securedloans/homeloans" className="hover:text-blue-600">Home Loans</Link><br />
+    <Link href="/services/securedloans/mortgageloans" className="hover:text-blue-600">Mortgage Loans</Link><br />
+    <Link href="/services/securedloans/schoolandcollegefunding" className="hover:text-blue-600">School & College Funding</Link><br />
+    <Link href="/services/securedloans/carloansnerandfinancing" className="hover:text-blue-600">Car Loans Ner & Refinancing</Link><br />
+    <Link href="/services/securedloans/odcc" className="hover:text-blue-600">OD/CC</Link><br />
+    <Link href="/services/securedloans/homeloans" className="hover:text-blue-600">Home Loans</Link><br />
   </div>
       </div>
 
       <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><a href="/UnsecuredLoans" className="hover:text-blue-600">Unsecured Loans</a></div>
+        <div className="font-semibold text-white"><Link href="/unsecuredLoans" className="hover:text-blue-600">Unsecured Loans</Link></div>
         <div className="text-white text-sm space-y-1">
-          <a href="/UnsecuredLoans/BusinessInstallmentLoans" className="hover:text-blue-600">Business Installment Loans</a><br />
-          <a href="/UnsecuredLoans/MedicalEquipmentLoans" className="hover:text-blue-600">Medical Equipment Loans
-</a><br />
-          <a href="/UnsecuredLoans/IndustrialMachineryLoans" className="hover:text-blue-600">Industrial Machinery Loans
-</a><br/>
-<a href="/UnsecuredLoans/ConstructionEquipmentLoans" className="hover:text-blue-600">Construction Equipment Loans</a><br />
-          <a href="/UnsecuredLoans/EquipmentRefinancingLoans" className="hover:text-blue-600">Equipment Refinancing Loans
-</a><br />
-          <a href="/UnsecuredLoans/ProfessionalLoans" className="hover:text-blue-600">Proffesional Loans
-</a><br/>
-<a href="/UnsecuredLoans/PersonalLoans" className="hover:text-blue-600">Personal Loans
-</a><br />
-          <a href="/UnsecuredLoans/EducationalLoans" className="hover:text-blue-600">Educational Loans
-</a>
+          <Link href="/services/unsecuredloans/businessinstallmentloans" className="hover:text-blue-600">Business Installment Loans</Link><br />
+          <Link href="/services/unsecuredloans/medicalequipmentloans" className="hover:text-blue-600">Medical Equipment Loans
+</Link><br />
+          <Link href="/services/unsecuredloans/industrialmachineryloans" className="hover:text-blue-600">Industrial Machinery Loans
+</Link><br/>
+<Link href="/services/unsecuredloans/constructionequipmentloans" className="hover:text-blue-600">Construction Equipment Loans</Link><br />
+          <Link href="/services/unsecuredloans/equipmentrefinancingloans" className="hover:text-blue-600">Equipment Refinancing Loans
+</Link><br />
+          <Link href="/services/unsecuredloans/professionalloans" className="hover:text-blue-600">Proffesional Loans
+</Link><br/>
+<Link href="/services/unsecuredloans/personalloans" className="hover:text-blue-600">Personal Loans
+</Link><br />
+          <Link href="/services/unsecuredloans/educationalloans" className="hover:text-blue-600">Educational Loans
+</Link>
         </div>
       </div>
 
       <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><a href="/TermLoans" className="hover:text-blue-600">Term Loans</a></div>
+        <div className="font-semibold text-white"><Link href="/termloans" className="hover:text-blue-600">Term Loans</Link></div>
         <div className="text-white text-sm space-y-1">
-          <a href="/TermLoans/ShortTermLoans" className="hover:text-blue-600">Short-Term Loans</a><br />
-          <a href="/TermLoans/LongTermLoans" className="hover:text-blue-600">Long-Term Loans
-</a><br />
-          <a href="/TermLoans/CreditCards" className="hover:text-blue-600">Credit Cards</a>
+          <Link href="/services/termloans/shorttermloans" className="hover:text-blue-600">Short-Term Loans</Link><br />
+          <Link href="/services/termloans/longtermloans" className="hover:text-blue-600">Long-Term Loans
+</Link><br />
+          <Link href="/services/termloans/creditcards" className="hover:text-blue-600">Credit Cards</Link>
         </div>
       </div>
 
       <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><a href="/CorporateLoans" className="hover:text-blue-600">Corporate Loans</a></div>
+        <div className="font-semibold text-white"><Link href="/corporateloans" className="hover:text-blue-600">Corporate Loans</Link></div>
         <div className="text-white text-sm space-y-1">
-          <a href="/CorporateLoans/WorkingCapital" className="hover:text-blue-600">Working Capital
-</a><br />
-          <a href="/CorporateLoans/AssetFinance" className="hover:text-blue-600">Asset Finance
-</a><br />
-          <a href="/CorporateLoans/Leasing" className="hover:text-blue-600">Leasing
-</a><br/>
-<a href="/CorporateLoans/TermLoans" className="hover:text-blue-600">Term Loans
-</a><br />
-          <a href="/CorporateLoans/StructuredFinance" className="hover:text-blue-600">Structed Finance
-</a>
+          <Link href="/services/corporateloans/workingcapital" className="hover:text-blue-600">Working Capital
+</Link><br />
+          <Link href="/services/corporateloans/assetfinance" className="hover:text-blue-600">Asset Finance
+</Link><br />
+          <Link href="/services/corporateloans/leasing" className="hover:text-blue-600">Leasing
+</Link><br/>
+<Link href="/services/corporateloans/termloans" className="hover:text-blue-600">Term Loans
+</Link><br />
+          <Link href="/services/corporateloans/structuredfinance" className="hover:text-blue-600">Structed Finance
+</Link>
         </div>
       </div>
 
       {/* Bottom Row (4 Columns) */}
       <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><a href="/SME" className="hover:text-blue-600">SME</a></div>
+        <div className="font-semibold text-white"><Link href="/sme" className="hover:text-blue-600">SME</Link></div>
         <div className="text-white text-sm space-y-1">
-          <a href="/SME/Manufacturer" className="hover:text-blue-600">Manufacturer</a><br />
-          <a href="/SME/Distributor" className="hover:text-blue-600">Distributor</a><br/>
-          <a href="/SME/Retailer" className="hover:text-blue-600">Retailer</a><br/>
-          <a href="/SME/ServiceProvider" className="hover:text-blue-600">Service Provider</a><br />
-          <a href="/SME/Vendor" className="hover:text-blue-600">Vendor</a>
+          <Link href="/services/sme/manufacturer" className="hover:text-blue-600">Manufacturer</Link><br />
+          <Link href="/services/sme/distributor" className="hover:text-blue-600">Distributor</Link><br/>
+          <Link href="/services/sme/retailer" className="hover:text-blue-600">Retailer</Link><br/>
+          <Link href="/services/sme/serviceprovider" className="hover:text-blue-600">Service Provider</Link><br />
+          <Link href="/services/sme/vendor" className="hover:text-blue-600">Vendor</Link>
         </div>
       </div>
 
-      <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><a href="/StructuredProducts" className="hover:text-blue-600">Structured Products</a></div>
-        <div className="text-white text-sm space-y-1">
-          <a href="/StructuredProducts/LoanAgainstSecurities" className="hover:text-blue-600">Loan Against Securities
-</a><br />
-          <a href="/StructuredProducts/StructuredInvestments" className="hover:text-blue-600">Structured Investments
-</a><br/>
-          <a href="/StructuredProducts/DebtSyndication" className="hover:text-blue-600">Debt Syndication
-</a><br />
-          <a href="/StructuredProducts/LetterOfCredit" className="hover:text-blue-600">Letter Of Credit
-</a><br/>
-          <a href="/StructuredProducts/LeaseRentalDiscounting" className="hover:text-blue-600">Lease Rental Discounting</a><br />
-          <a href="/StructuredProducts/LoanAgainstProperty" className="hover:text-blue-600">Loan Against Property</a>
-        </div>
-      </div>
+<div className="flex flex-col space-y-2">
+  <div className="font-semibold text-white"><Link href="/structuredproducts" className="hover:text-blue-600">Structured Products</Link></div>
+  <div className="text-white text-sm space-y-1">
+    <Link href="/services/structuredproducts/loanagainstsecurities" className="hover:text-blue-600">Loan Against Securities</Link><br />
+    <Link href="/services/structuredproducts/structuredinvestments" className="hover:text-blue-600">Structured Investments</Link><br/>
+    <Link href="/services/structuredproducts/debtsyndication" className="hover:text-blue-600">Debt Syndication</Link><br />
+    <Link href="/services/structuredproducts/letterofcredit" className="hover:text-blue-600">Letter Of Credit</Link><br/>
+    <Link href="/services/structuredproducts/leaserentaldiscounting" className="hover:text-blue-600">Lease Rental Discounting</Link><br />
+    <Link href="/services/structuredproducts/loanagainstproperty" className="hover:text-blue-600">Loan Against Property</Link>
+  </div>
+</div>
 
-      <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><a href="/EquipmentFinancing" className="hover:text-blue-600">Equipment Financing & Leasing</a></div>
-        <div className="text-white text-sm space-y-1">
-          <a href="/EquipmentFinancing/CapitalGoods" className="hover:text-blue-600">Capital Goods
-</a><br />
-          <a href="/EquipmentFinancing/ITHardware" className="hover:text-blue-600">IT Hardware
-</a><br/>
-          <a href="/EquipmentFinancing/OfficeInfrastructure" className="hover:text-blue-600">Office Infrastructure
-</a><br />
-          <a href="/EquipmentFinancing/Cars" className="hover:text-blue-600">Cars
-</a><br/>
-          <a href="/EquipmentFinancing/ConstructionEquipment" className="hover:text-blue-600">Construction Equipment
-</a><br />
-          <a href="/EquipmentFinancing/EnergySavingEquipment" className="hover:text-blue-600">Energy Saving Equipment
-</a><br/>
-          <a href="/EquipmentFinancing/HealthcareEquipment" className="hover:text-blue-600">Healthcare Equipment
-</a><br />
-          <a href="/EquipmentFinancing/LogisticsMachinery" className="hover:text-blue-600">Logistics Machinery</a><br/>
-          <a href="/EquipmentFinancing/SolarEquipment" className="hover:text-blue-600">Solar Equipment</a>
-        </div>
-      </div>
+<div className="flex flex-col space-y-2">
+  <div className="font-semibold text-white"><Link href="/equipmentfinancingandleasing" className="hover:text-blue-600">Equipment Financing & Leasing</Link></div>
+  <div className="text-white text-sm space-y-1">
+    <Link href="/services/equipmentfinancingandleasing/capitalgoods" className="hover:text-blue-600">Capital Goods</Link><br />
+    <Link href="/services/equipmentfinancingandleasing/ithardware" className="hover:text-blue-600">IT Hardware</Link><br/>
+    <Link href="/services/equipmentfinancingandleasing/officeinfrastructure" className="hover:text-blue-600">Office Infrastructure</Link><br />
+    <Link href="/services/equipmentfinancingandleasing/cars" className="hover:text-blue-600">Cars</Link><br/>
+    <Link href="/services/equipmentfinancingandleasing/constructionequipment" className="hover:text-blue-600">Construction Equipment</Link><br />
+    <Link href="/services/equipmentfinancingandleasing/energysavingequipment" className="hover:text-blue-600">Energy Saving Equipment</Link><br/>
+    <Link href="/services/equipmentfinancingandleasing/healthcareequipment" className="hover:text-blue-600">Healthcare Equipment</Link><br />
+    <Link href="/services/equipmentfinancingandleasing/logisticsmachinery" className="hover:text-blue-600">Logistics Machinery</Link><br/>
+    <Link href="/services/equipmentfinancingandleasing/solarequipment" className="hover:text-blue-600">Solar Equipment</Link>
+  </div>
+</div>
 
-      <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><a href="/AIChatbots" className="hover:text-blue-600">AI Chatbots</a></div>
-        <div className="text-white text-sm space-y-1">
-          <a href="/AIChatbots/ChatGPTSolutions" className="hover:text-blue-600">ChatGPT Solutions</a><br />
-          <a href="/AIChatbots/AIChatbotDev" className="hover:text-blue-600">AI Chatbot Dev</a>
-        </div>
-      </div>
+<div className="flex flex-col space-y-2">
+  <div className="font-semibold text-white"><Link href="/aichatbots" className="hover:text-blue-600">AI Chatbots</Link></div>
+  <div className="text-white text-sm space-y-1">
+    <Link href="/services/aichatbots/chatgptsolutions" className="hover:text-blue-600">ChatGPT Solutions</Link><br />
+    <Link href="/services/aichatbots/aichatbotdev" className="hover:text-blue-600">AI Chatbot Dev</Link>
+  </div>
+</div>
     </div>
   </div>
 )}
