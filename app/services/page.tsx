@@ -2,7 +2,6 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Content from "@/components/Content";
 import ContactSection from "@/components/ContactSection";
-import RatingsSection from "@/components/RatingsSection";
 import ServiceSection from "@/components/ServiceSection";
 import Footer from "@/components/Footer";
 
@@ -24,7 +23,7 @@ const Services = () => {
       </div>
       <Content />
       <ContactSection />
-      <RatingsSection />
+      
       <ServiceSection />
       <Footer />
     </>
