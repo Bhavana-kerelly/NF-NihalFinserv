@@ -3,12 +3,10 @@
 import Image from 'next/image';
 import CoreValues from '@/components/inner/CoreValues';
 import { CheckCircle } from "lucide-react";
-import ClientLogosSection from '@/components/ClientLogosSection';
 import IndustriesWeServe from '@/components/Industries';
 import Faq from '@/components/Faq';
 import Testimonials from '@/components/Testimonials';
 import ContactSection from '@/components/ContactSection';
-import RatingsSection from '@/components/RatingsSection';
 import ServiceSection from '@/components/ServiceSection';
 
 const steps = [
@@ -34,7 +32,7 @@ const insights = [
   },
 ];
 
-export default function HomeLoans() {
+export default function CarLoansNerAndFinancing() {
   return (
     <>
       <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
@@ -151,7 +149,7 @@ export default function HomeLoans() {
       </div>
     </section>
 
-    <ClientLogosSection />
+    
     <IndustriesWeServe />
     <Faq />
     
@@ -236,7 +234,6 @@ export default function HomeLoans() {
     </section>
     <Testimonials />
     <ContactSection />
-    <RatingsSection />
     <ServiceSection />
       
     </>

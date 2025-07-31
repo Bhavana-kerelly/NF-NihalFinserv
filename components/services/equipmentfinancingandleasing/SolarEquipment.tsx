@@ -3,12 +3,10 @@
 import Image from 'next/image';
 import CoreValues from '@/components/inner/CoreValues';
 import { CheckCircle } from "lucide-react";
-import ClientLogosSection from '@/components/ClientLogosSection';
 import IndustriesWeServe from '@/components/Industries';
 import Faq from '@/components/Faq';
 import Testimonials from '@/components/Testimonials';
 import ContactSection from '@/components/ContactSection';
-import RatingsSection from '@/components/RatingsSection';
 import ServiceSection from '@/components/ServiceSection';
 
 const steps = [
@@ -151,7 +149,7 @@ export default function CarLoansNerAndFinancing() {
       </div>
     </section>
 
-    <ClientLogosSection />
+    
     <IndustriesWeServe />
     <Faq />
     
@@ -236,7 +234,6 @@ export default function CarLoansNerAndFinancing() {
     </section>
     <Testimonials />
     <ContactSection />
-    <RatingsSection />
     <ServiceSection />
       
     </>

@@ -81,8 +81,7 @@ export default function Testimonials() {
   return (
     <div style={styles.wrapper}>
       <div style={styles.header}>
-        <span style={{ color: "#000" }}>Testi</span>
-        <span style={styles.headerGray}>monials</span>
+       <span style={{ color: "#000" }}>Testimonials</span>
       </div>
       <div style={styles.testimonials}>
         {testimonials.map((item, idx) => (

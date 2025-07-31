@@ -4,21 +4,25 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    question: "What services does Ozrit provide?",
+    question: "Why should I choose Nihal Finserv over other financial consultants?",
     answer:
-      "We offer end-to-end solutions in custom software development, mobile & web app development, AI & ML integration, UI/UX design, digital marketing, and cloud consulting.",
+      "Nihal Finserv offers a personalized, transparent, and strategic approach to financial consulting. As an authorized channel partner with leading banks and NBFCs, we bring direct access to multiple loan options, expert structuring, and faster approvals — all under one roof.",
   },
   {
-    question: "How long has Ozrit been in business?",
-    answer: "Ozrit has been delivering innovative technology solutions for over 16 years.",
+    question: "What makes Nihal Finserv trustworthy and reliable?",
+    answer: "We operate strictly under RBI guidelines, ensuring compliance and transparency in every transaction. Our credibility stems from years of experience, a strong partner network, and a customer-first approach that prioritizes ethical practices and financial clarity.",
   },
   {
-    question: "Which technologies and frameworks does ozrit specialize in?",
-    answer: "Ozrit specializes in a wide range of technologies including React, Node.js, Angular, Python, .NET, AWS, Azure, and more.",
+    question: "Does Nihal Finserv help with only one type of loan?",
+    answer: "No — we specialize in a wide range of loan solutions, including personal loans, business loans, home loans, working capital, and structured loans. Whether you’re an individual or a business, we offer customized financing strategies tailored to your unique needs",
   },
   {
-    question: "What makes Ozrit different from other tech firms?",
-    answer: "Our client-first approach, 99% retention rate, deep technical expertise, and agile development process distinguish us from competitors.",
+    question: "How does Nihal Finserv simplify the loan process?",
+    answer: "From understanding your financial goal to identifying the right lender, preparing documentation, ensuring RBI compliance, and supporting disbursement — we offer end-to-end assistance. Our team does the heavy lifting so you can stay focused on your financial growth.",
+  },
+  {
+    question: "Can I trust Nihal Finserv to get me better loan terms?",
+    answer: "Absolutely. With strong partnerships across multiple banks and NBFCs, we’re in a position to negotiate competitive interest rates, flexible tenures, and favorable terms — often better than going directly to a lender."
   },
 ];
 

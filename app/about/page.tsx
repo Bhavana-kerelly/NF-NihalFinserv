@@ -5,7 +5,7 @@ import MissionVision from "@/components/inner/MissionVision";
 import CoreValues from "@/components/inner/CoreValues";
 import Faq from "@/components/Faq";
 import ContactSection from "@/components/ContactSection";
-import RatingsSection from "@/components/RatingsSection";
+
 import ServiceSection from "@/components/ServiceSection";
 import Footer from "@/components/Footer";
 
@@ -55,7 +55,7 @@ const AboutUs = () => {
     <CoreValues />
     <Faq />
     <ContactSection />
-    <RatingsSection />
+  
     <ServiceSection />
     <Footer />
     </>

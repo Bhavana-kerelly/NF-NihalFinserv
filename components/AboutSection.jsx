@@ -1,11 +1,12 @@
 export default function AboutSection() {
   return (
-    <section className="py-20 px-6 bg-white flex flex-col md:flex-row items-center gap-10">
+    <section className="py-20 px-6 bg-white text-black flex flex-col md:flex-row items-center gap-10">
       <div className="w-full md:w-1/2">
-        <video controls className="rounded shadow w-full">
-          <source src="/office-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <img
+          src="/office-image.jpg" // Replace with your actual image path
+          alt="Office"
+          className="rounded shadow object-cover w-full h-[300px] md:h-[400px]"
+        />
       </div>
       <div className="w-full md:w-1/2">
         <h2 className="text-2xl font-bold mb-5">

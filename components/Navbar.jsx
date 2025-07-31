@@ -5,104 +5,96 @@ import Image from "next/image";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(null);
-
   const toggleMenu = (menu) => {
     setOpenMenu(openMenu === menu ? null : menu);
   };
 
   return (
-    <header className="w-full flex justify-between items-center p-4 shadow font-serif">
-      {/* Logo */}
-      <div className="font-bold">
-        <Image
-  src="/Logo.png"
-  alt="Nihal Finserv"
-  width={100}
-  height={32}
-  className="h-18 w-auto"
-/>
-      </div>
-
-      {/* Navigation */}
-      <nav className="flex items-center gap-6 text-lg relative">
-        <Link href="/">Home</Link>
-        <Link href="/about">About Us</Link>
-
-        {/* Services Dropdown */}
-        <div
-  className="relative font-serif"
-  onMouseEnter={() => toggleMenu("services")}
-  onMouseLeave={() => toggleMenu(null)}
->
-  <Link href="/services" className="cursor-pointer hover:text-blue-600">
-  Services ▾
-</Link>
-
-  {openMenu === "services" && (
-  <div className="fixed top-[64px] left-0 right-0 bg-black shadow-lg z-50 border-t border-gray-200 font-serif">
-    <div className="grid grid-cols-4 gap-6 max-w-[1280px] mx-auto px-8 py-8">
-      {/* Top Row (4 Columns) */}
-      <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><Link href="/securedloans" className="hover:text-blue-600">Secured Loans</Link>
-  </div>
-  <div className="text-white text-sm space-y-1">
-    <Link href="/services/securedloans/mortgageloans" className="hover:text-blue-600">Mortgage Loans</Link><br />
-    <Link href="/services/securedloans/schoolandcollegefunding" className="hover:text-blue-600">School & College Funding</Link><br />
-    <Link href="/services/securedloans/carloansnerandfinancing" className="hover:text-blue-600">Car Loans Ner & Refinancing</Link><br />
-    <Link href="/services/securedloans/odcc" className="hover:text-blue-600">OD/CC</Link><br />
-    <Link href="/services/securedloans/homeloans" className="hover:text-blue-600">Home Loans</Link><br />
-  </div>
-      </div>
-
-      <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><Link href="/unsecuredLoans" className="hover:text-blue-600">Unsecured Loans</Link></div>
-        <div className="text-white text-sm space-y-1">
-          <Link href="/services/unsecuredloans/businessinstallmentloans" className="hover:text-blue-600">Business Installment Loans</Link><br />
-          <Link href="/services/unsecuredloans/medicalequipmentloans" className="hover:text-blue-600">Medical Equipment Loans
-</Link><br />
-          <Link href="/services/unsecuredloans/industrialmachineryloans" className="hover:text-blue-600">Industrial Machinery Loans
-</Link><br/>
-<Link href="/services/unsecuredloans/constructionequipmentloans" className="hover:text-blue-600">Construction Equipment Loans</Link><br />
-          <Link href="/services/unsecuredloans/equipmentrefinancingloans" className="hover:text-blue-600">Equipment Refinancing Loans
-</Link><br />
-          <Link href="/services/unsecuredloans/professionalloans" className="hover:text-blue-600">Proffesional Loans
-</Link><br/>
-<Link href="/services/unsecuredloans/personalloans" className="hover:text-blue-600">Personal Loans
-</Link><br />
-          <Link href="/services/unsecuredloans/educationalloans" className="hover:text-blue-600">Educational Loans
-</Link>
+    <header className="w-full shadow font-serif bg-white">
+      <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
+        
+        {/* Logo */}
+        <div className="font-bold flex-shrink-0">
+          <Link href="/">
+            <Image
+              src="/Logo.png"
+              alt="Nihal Finserv"
+              width={120}
+              height={40}
+              className="h-auto w-auto"
+            />
+          </Link>
         </div>
-      </div>
 
-      <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><Link href="/termloans" className="hover:text-blue-600">Term Loans</Link></div>
-        <div className="text-white text-sm space-y-1">
-          <Link href="/services/termloans/shorttermloans" className="hover:text-blue-600">Short-Term Loans</Link><br />
-          <Link href="/services/termloans/longtermloans" className="hover:text-blue-600">Long-Term Loans
-</Link><br />
-          <Link href="/services/termloans/creditcards" className="hover:text-blue-600">Credit Cards</Link>
-        </div>
-      </div>
+        {/* Navigation */}
+        <nav className="flex-1 flex justify-center gap-10 text-lg items-center relative">
+          <Link href="/" className="hover:text-blue-600">Home</Link>
+          <Link href="/about" className="hover:text-blue-600">About Us</Link>
 
-      <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><Link href="/corporateloans" className="hover:text-blue-600">Corporate Loans</Link></div>
-        <div className="text-white text-sm space-y-1">
-          <Link href="/services/corporateloans/workingcapital" className="hover:text-blue-600">Working Capital
-</Link><br />
-          <Link href="/services/corporateloans/assetfinance" className="hover:text-blue-600">Asset Finance
-</Link><br />
-          <Link href="/services/corporateloans/leasing" className="hover:text-blue-600">Leasing
-</Link><br/>
-<Link href="/services/corporateloans/termloans" className="hover:text-blue-600">Term Loans
-</Link><br />
-          <Link href="/services/corporateloans/structuredfinance" className="hover:text-blue-600">Structed Finance
-</Link>
-        </div>
-      </div>
+          {/* Services Dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => toggleMenu("services")}
+            onMouseLeave={() => toggleMenu(null)}
+          >
+            <span className="cursor-pointer hover:text-blue-600">
+              Services ▾
+            </span>
+            {openMenu === "services" && (
+              <div className="fixed top-[64px] left-0 right-0 bg-black shadow-lg z-50 border-t border-gray-200">
+                <div className="grid grid-cols-4 gap-6 max-w-[1280px] mx-auto px-8 py-8 text-white text-sm">
+                  
+                  {/* Secured Loans Column */}
+                  <div className="flex flex-col space-y-2">
+                    <div className="font-semibold">
+                      <Link href="#securedloans" className="hover:text-blue-600">Secured Loans</Link>
+                    </div>
+                    <Link href="/services/securedloans/mortgageloans" className="hover:text-blue-600">Mortgage Loans</Link>
+                    <Link href="/services/securedloans/schoolandcollegefunding" className="hover:text-blue-600">School & College Funding</Link>
+                    <Link href="/services/securedloans/carloansnerandfinancing" className="hover:text-blue-600">Car Loans Ner & Refinancing</Link>
+                    <Link href="/services/securedloans/odcc" className="hover:text-blue-600">OD/CC</Link>
+                    <Link href="/services/securedloans/homeloans" className="hover:text-blue-600">Home Loans</Link>
+                  </div>
 
-      {/* Bottom Row (4 Columns) */}
+                  {/* Unsecured Loans Column */}
+                  <div className="flex flex-col space-y-2">
+                    <div className="font-semibold">
+                      <Link href="#unsecuredLoans" className="hover:text-blue-600">Unsecured Loans</Link>
+                    </div>
+                    <Link href="/services/unsecuredloans/businessinstallmentloans" className="hover:text-blue-600">Business Installment Loans</Link>
+                    <Link href="/services/unsecuredloans/medicalequipmentloans" className="hover:text-blue-600">Medical Equipment Loans</Link>
+                    <Link href="/services/unsecuredloans/industrialmachineryloans" className="hover:text-blue-600">Industrial Machinery Loans</Link>
+                    <Link href="/services/unsecuredloans/constructionequipmentloans" className="hover:text-blue-600">Construction Equipment Loans</Link>
+                    <Link href="/services/unsecuredloans/equipmentrefinancingloans" className="hover:text-blue-600">Equipment Refinancing Loans</Link>
+                    <Link href="/services/unsecuredloans/professionalloans" className="hover:text-blue-600">Professional Loans</Link>
+                    <Link href="/services/unsecuredloans/personalloans" className="hover:text-blue-600">Personal Loans</Link>
+                    <Link href="/services/unsecuredloans/educationalloans" className="hover:text-blue-600">Educational Loans</Link>
+                  </div>
+
+                  {/* Term Loans Column */}
+                  <div className="flex flex-col space-y-2">
+                    <div className="font-semibold">
+                      <Link href="#termloans" className="hover:text-blue-600">Term Loans</Link>
+                    </div>
+                    <Link href="/services/termloans/shorttermloans" className="hover:text-blue-600">Short-Term Loans</Link>
+                    <Link href="/services/termloans/longtermloans" className="hover:text-blue-600">Long-Term Loans</Link>
+                    <Link href="/services/termloans/creditcards" className="hover:text-blue-600">Credit Cards</Link>
+                  </div>
+
+                  {/* Corporate Loans Column */}
+                  <div className="flex flex-col space-y-2">
+                    <div className="font-semibold">
+                      <Link href="#corporateloans" className="hover:text-blue-600">Corporate Loans</Link>
+                    </div>
+                    <Link href="/services/corporateloans/workingcapital" className="hover:text-blue-600">Working Capital</Link>
+                    <Link href="/services/corporateloans/assetfinance" className="hover:text-blue-600">Asset Finance</Link>
+                    <Link href="/services/corporateloans/leasing" className="hover:text-blue-600">Leasing</Link>
+                    <Link href="/services/corporateloans/termloans" className="hover:text-blue-600">Term Loans</Link>
+                    <Link href="/services/corporateloans/structuredfinance" className="hover:text-blue-600">Structured Finance</Link>
+                  </div>
+                   {/* Bottom Row (4 Columns) */}
       <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><Link href="/sme" className="hover:text-blue-600">SME</Link></div>
+        <div className="font-semibold text-white"><Link href="#sme" className="hover:text-blue-600">SME</Link></div>
         <div className="text-white text-sm space-y-1">
           <Link href="/services/sme/manufacturer" className="hover:text-blue-600">Manufacturer</Link><br />
           <Link href="/services/sme/distributor" className="hover:text-blue-600">Distributor</Link><br/>
@@ -113,11 +105,11 @@ export default function Header() {
       </div>
 
 <div className="flex flex-col space-y-2">
-  <div className="font-semibold text-white"><Link href="/structuredproducts" className="hover:text-blue-600">Structured Products</Link></div>
+  <div className="font-semibold text-white"><Link href="#structuredproducts" className="hover:text-blue-600">Structured Products</Link></div>
   <div className="text-white text-sm space-y-1">
     <Link href="/services/structuredproducts/loanagainstsecurities" className="hover:text-blue-600">Loan Against Securities</Link><br />
     <Link href="/services/structuredproducts/structuredinvestments" className="hover:text-blue-600">Structured Investments</Link><br/>
-    <Link href="/services/structuredproducts/debtsyndication" className="hover:text-blue-600">Debt Syndication</Link><br />
+    
     <Link href="/services/structuredproducts/letterofcredit" className="hover:text-blue-600">Letter Of Credit</Link><br/>
     <Link href="/services/structuredproducts/leaserentaldiscounting" className="hover:text-blue-600">Lease Rental Discounting</Link><br />
     <Link href="/services/structuredproducts/loanagainstproperty" className="hover:text-blue-600">Loan Against Property</Link>
@@ -125,7 +117,7 @@ export default function Header() {
 </div>
 
 <div className="flex flex-col space-y-2">
-  <div className="font-semibold text-white"><Link href="/equipmentfinancingandleasing" className="hover:text-blue-600">Equipment Financing & Leasing</Link></div>
+  <div className="font-semibold text-white"><Link href="#equipmentfinancingandleasing" className="hover:text-blue-600">Equipment Financing & Leasing</Link></div>
   <div className="text-white text-sm space-y-1">
     <Link href="/services/equipmentfinancingandleasing/capitalgoods" className="hover:text-blue-600">Capital Goods</Link><br />
     <Link href="/services/equipmentfinancingandleasing/ithardware" className="hover:text-blue-600">IT Hardware</Link><br/>
@@ -140,7 +132,7 @@ export default function Header() {
 </div>
 
 <div className="flex flex-col space-y-2">
-  <div className="font-semibold text-white"><Link href="/aichatbots" className="hover:text-blue-600">AI Chatbots</Link></div>
+  <div className="font-semibold text-white"><Link href="#aichatbots" className="hover:text-blue-600">AI Chatbots</Link></div>
   <div className="text-white text-sm space-y-1">
     <Link href="/services/aichatbots/chatgptsolutions" className="hover:text-blue-600">ChatGPT Solutions</Link><br />
     <Link href="/services/aichatbots/aichatbotdev" className="hover:text-blue-600">AI Chatbot Dev</Link>
@@ -150,7 +142,7 @@ export default function Header() {
   </div>
 )}
 </div>
-        {/* Industries Dropdown */}
+        {/* Industries Dropdown
         <div
           className="relative"
           onMouseEnter={() => toggleMenu("industries")}
@@ -170,16 +162,24 @@ export default function Header() {
               <Link href="#" className="block hover:text-blue-600">Entertainment</Link>
             </div>
           )}
+        </div> */}
+
+                  {/* Add More Columns Below as Needed */}
+                  {/* SME, Structured Products, Equipment Financing, AI Chatbots... */}
+                  
+
+          <Link href="/insights" className="hover:text-blue-600">Blogs</Link>
+          <Link href="/careers" className="hover:text-blue-600">Careers</Link>
+          <Link href="/contact" className="hover:text-blue-600">Contact Us</Link>
+        </nav>
+
+        {/* Hire Us Button */}
+        <div className="flex-shrink-0">
+          <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+            Hire Us →
+          </button>
         </div>
-
-        <Link href="/insights">Insights</Link>
-        <Link href="/careers">Careers</Link>
-        <Link href="/contact">Contact Us</Link>
-
-        <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
-          Hire Us →
-        </button>
-      </nav>
+      </div>
     </header>
   );
 }

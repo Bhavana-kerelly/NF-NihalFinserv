@@ -64,9 +64,9 @@ const styles = {
 export default function FeaturedInsights() {
   return (
     <div style={styles.container}>
-      <div style={styles.heading}>Featured Insights</div>
+      <div style={styles.heading}>Blogs</div>
       <div style={styles.subheading}>
-        Discover our top web development and technology insights on the news boards most loved by our readers.
+        Explore our comprehensive blog posts today and let Nihal Finserv guide you towards smarter financial decisions.
       </div>
       <div style={styles.grid}>
         {articles.map((item, index) => (

@@ -38,7 +38,6 @@ import Vendor from "@/components/services/sme/Vendor";
 
 import LoanAgainstSecurities from "@/components/services/structuredproducts/LoanAgainstSecurities";
 import StructuredInvestments from "@/components/services/structuredproducts/StructuredInvestments";
-import DeptSyndication from "@/components/services/structuredproducts/DeptSyndication";
 import LetterOfCredit from "@/components/services/structuredproducts/LetterOfCredit";
 import LeaseRentalDiscounting from "@/components/services/structuredproducts/LeaseRentalDiscounting";
 import LoanAgainstProperty from "@/components/services/structuredproducts/LoanAgainstProperty";
@@ -91,7 +90,6 @@ const servicesMap: Record<string, React.ComponentType> = {
   loanagainstsecurities: LoanAgainstSecurities,
   loanagainstproperty: LoanAgainstProperty,
   structuredinvestments: StructuredInvestments,
-  deptsyndication: DeptSyndication,
   letterofcredit: LetterOfCredit,
   leaserentaldiscounting: LeaseRentalDiscounting,
 
