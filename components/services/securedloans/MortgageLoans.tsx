@@ -4,8 +4,8 @@ import Image from 'next/image';
 import CoreValues from '@/components/inner/CoreValues';
 import { CheckCircle } from "lucide-react";
 import IndustriesWeServe from '@/components/Industries';
-import Faq from '@/components/Faq';
-import Testimonials from '@/components/Testimonials';
+
+
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
@@ -17,20 +17,6 @@ const steps = [
   "Deployment & Post-Launch Support",
 ];
 
-const insights = [
-  {
-    title: "Your 10-Step Starter Plan to Dominate in Digi Marketing",
-    image: "/insight-1.png", // Place in /public
-  },
-  {
-    title: "Why Your Business Website Might Be Losing Customers?",
-    image: "/insight-2.png",
-  },
-  {
-    title: "Why Website Security Should Be Your Top Priority in 2025",
-    image: "/insight-3.png",
-  },
-];
 
 export default function CarLoansNerAndFinancing() {
   return (
@@ -151,7 +137,7 @@ export default function CarLoansNerAndFinancing() {
 
     
     <IndustriesWeServe />
-    <Faq />
+   
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
@@ -207,32 +193,8 @@ export default function CarLoansNerAndFinancing() {
       </div>
     </section>
 
-    <section className="px-6 py-16 bg-white w-full">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-gray-900">
-          Our insights on <span className="text-black">Web Development</span>
-        </h2>
-
-        <div className="grid gap-8 md:grid-cols-3">
-          {insights.map((item, idx) => (
-            <div key={idx} className="flex flex-col">
-              <div className="w-full h-52 relative rounded-lg overflow-hidden shadow">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="mt-4 text-lg font-medium text-gray-800 leading-snug">
-                {item.title}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-    <Testimonials />
+    
+    
     <ContactSection />
     <ServiceSection />
       

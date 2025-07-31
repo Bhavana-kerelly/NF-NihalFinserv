@@ -62,7 +62,7 @@ const styles = {
   },
   text: {
     fontSize: "16px",
-    color: "#444",
+    color: "black",
     marginBottom: "30px",
     lineHeight: "1.6",
   },

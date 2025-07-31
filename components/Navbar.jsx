@@ -10,7 +10,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full shadow font-serif bg-white">
+    <header className="w-full shadow font-serif bg-white text-black">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
         
         {/* Logo */}
