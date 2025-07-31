@@ -1,38 +1,27 @@
 "use client";
 
 import Image from 'next/image';
-import CoreValues from '@/components/inner/CoreValues';
 import { CheckCircle } from "lucide-react";
 import IndustriesWeServe from '@/components/Industries';
-import Faq from '@/components/Faq';
-import Testimonials from '@/components/Testimonials';
+
+
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
 const steps = [
-  "Requirement Analysis & Planning",
-  "Website Design & Prototyping",
-  "Development & Coding",
-  "Testing & Quality Assurance",
-  "Deployment & Post-Launch Support",
+  "PAN, Aadhaar, Address Proof",
+  "Salary Slips (Last 3 Months)",
+  "Bank Statements (Last 6 Months)",
+  "Form 16 / IT Returns",
+  "Property Documents",
+  "ITR (Last 2-3 Years) with Computation",
+  "Profit & Loss Statements, Balance Sheet",
+  "GST Certificate / Business Proof",
+  "Property Documents"
 ];
 
-const insights = [
-  {
-    title: "Your 10-Step Starter Plan to Dominate in Digi Marketing",
-    image: "/insight-1.png", // Place in /public
-  },
-  {
-    title: "Why Your Business Website Might Be Losing Customers?",
-    image: "/insight-2.png",
-  },
-  {
-    title: "Why Website Security Should Be Your Top Priority in 2025",
-    image: "/insight-3.png",
-  },
-];
 
-export default function CarLoansNerAndFinancing() {
+export default function OdCc() {
   return (
     <>
       <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
@@ -47,16 +36,14 @@ export default function CarLoansNerAndFinancing() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-5">
-            Personal Loans in Hyderabad – Nihal Finserv
+           Your Dream Home is Now Within Reach
           </h2>
           <p className="text-base mb-6">
-            Looking for a quick and affordable personal loan in Hyderabad? Nihal Finserv is here to help. We offer personalized loan solutions for salaried and self-employed individuals with competitive interest rates and a smooth, hassle-free process.
+            At Nihal Finserv, we believe that a home is not just a place—it's a feeling, a legacy, and a foundation for your future. That’s why we offer customized and affordable home loan solutions that help you turn your dream into a permanent address.
           </p>
-          <p className="text-base mb-6">
-            Whether it’s for medical bills, education, travel, or urgent expenses — we’re committed to making borrowing simple, fast, and transparent.
-          </p>
+          
           <p className="text-base">
-            Based in Hyderabad, Nihal Finserv is dedicated to supporting your financial needs with trusted service and minimal paperwork.
+           Whether you’re buying your first flat, constructing your independent house, or investing in a second property, our expert team ensures a hassle-free and transparent process from loan application to possession.
           </p>
         </div>
       </section>
@@ -65,10 +52,7 @@ export default function CarLoansNerAndFinancing() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left Side */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
-              Transform Your Online Presence with Expert <br />
-              Custom Web Development Services
-            </h2>
+            
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
                 src="/team-photo.png" // make sure to place the image in /public folder
@@ -78,54 +62,90 @@ export default function CarLoansNerAndFinancing() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <p className="text-gray-600 text-lg mt-6">
-              From web application development to modern, responsive interfaces,
-              Ozrit delivers full-spectrum website design and development
-              solutions that drive engagement, conversions, and long-term growth.
-            </p>
+            
           </div>
 
           {/* Right Side */}
-          <div className="text-gray-700 text-lg space-y-6">
-            <p>
-              At Ozrit, we begin by deeply understanding your brand, audience, and
-              business goals. This insight drives the creation of custom website
-              solutions that truly reflect your identity and deliver measurable
-              results. Our skilled team of developers and designers collaborates
-              to perfect every element — from UI and UX to performance and
-              scalability.
-            </p>
-            <p>
-              We don’t just build websites — we build future-ready digital
-              experiences. Every website is developed with a robust architecture,
-              mobile responsiveness, and SEO optimization at its core. The result?
-              A fast, secure, and scalable platform that grows with your business
-              and delivers consistently across all devices.
-            </p>
-            <p>
-              With Ozrit’s Web Development Services, your website becomes a
-              high-performance digital asset — not just a presence. Our expert
-              developers prioritize speed, security, search engine visibility, and
-              user-centric design to ensure your site ranks higher and performs
-              better.
-            </p>
+         <div className="text-gray-700 text-lg space-y-6">
+            <h3 className='className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6'>Our Home Loan Solutions Include:</h3>
+            
+<ol>
+  <li>Purchase of Ready-to-Move Homes</li>
+  <li>Home Construction on Your Own Plot</li>
+  <li>Flat/Apartment Purchase in Under-Construction Projects</li>
+  <li>Home Renovation & Extension Loans</li>
+  <li>Balance Transfer from Other Banks/NBFCs</li>
+  <li>Top-up Loans on Existing Home Loans</li>
+</ol>
+           
           </div>
         </div>
       </section>
       
-      <CoreValues />
+     
+          <section className="bg-[#1C1C1C] text-white px-8 py-16">
+            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+              {/* Left Section */}
+              <div>
+                <h4 className="uppercase text-sm font-semibold underline underline-offset-4 mb-4">
+                  Key Features
+                </h4>
+                <h2 className="text-5xl font-bold leading-tight mb-4">
+                  Nihal Finserv -<br />
+                  <span className="text-gray-400">Where Your</span> <br />
+                  <span className="text-red-500">Goals</span>{" "}
+                  <span className="text-gray-500">Come First</span>
+                </h2>
+                <p className="text-gray-300 mb-8 max-w-md">
+                  Your dreams are not just numbers - they are plans, futures, and possibilities.
+                </p>
+                <button className="border border-red-500 text-white px-6 py-3 hover:bg-red-500 transition flex items-center gap-2">
+                  <span className="text-red-500">&#8213;</span> Get In Touch
+                </button>
+              </div>
+      
+              {/* Right Section */}
+              <div className="space-y-6">
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Loan Amounts from ₹5 Lakhs to ₹5 Crores</h3>
+                  
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Tenure up to 30 Years</h3>
+                  
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Attractive & Flexible Interest Rates (Fixed/Reducing Balance)</h3>
+                 
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Minimum Documentation & Quick Processing</h3>
+                  
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2"> Loans up to 90% of Property Value</h3>
+                  
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2"> Balance Transfer with Top-up Option</h3>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+        
 
       <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Left: Text and Checklist */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-            Our Web Development Process
+            Required Documents
           </h2>
           <p className="text-gray-600 text-lg mb-6 max-w-xl">
-            Our dedicated team of experts collaborates with you to determine optimal development strategies, craft seamless functionalities, and ensure a robust digital presence for your brand
+           Your ideal home awaits—and Nihal Finserv is here to make it happen.
           </p>
-
+          
           <ul className="space-y-4">
             {steps.map((step, idx) => (
               <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
@@ -134,6 +154,7 @@ export default function CarLoansNerAndFinancing() {
               </li>
             ))}
           </ul>
+           
         </div>
 
         {/* Right: Image */}
@@ -151,7 +172,7 @@ export default function CarLoansNerAndFinancing() {
 
     
     <IndustriesWeServe />
-    <Faq />
+   
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
@@ -207,32 +228,8 @@ export default function CarLoansNerAndFinancing() {
       </div>
     </section>
 
-    <section className="px-6 py-16 bg-white w-full">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-gray-900">
-          Our insights on <span className="text-black">Web Development</span>
-        </h2>
-
-        <div className="grid gap-8 md:grid-cols-3">
-          {insights.map((item, idx) => (
-            <div key={idx} className="flex flex-col">
-              <div className="w-full h-52 relative rounded-lg overflow-hidden shadow">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="mt-4 text-lg font-medium text-gray-800 leading-snug">
-                {item.title}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-    <Testimonials />
+    
+    
     <ContactSection />
     <ServiceSection />
       
