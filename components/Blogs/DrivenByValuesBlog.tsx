@@ -74,7 +74,7 @@ export default function DrivenByValuesBlog() {
           through their success.
         </p>
 
-        <p className="text-black font-serif leading-relaxed font-serif">
+        <p className="text-black leading-relaxed font-serif">
           Their testimonials often mention not just the financial outcome, but the emotional reassurance,
           clarity, and confidence they gained through our partnership. That is the true measure of our success.
         </p>
