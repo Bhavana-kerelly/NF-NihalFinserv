@@ -1,4 +1,5 @@
 12
+import { color } from "framer-motion";
 import React from "react";
 
 const offices = [
@@ -25,7 +26,7 @@ export default function ContactSection() {
     <div style={styles.container}>
       <div style={styles.left}>
         <h2 style={styles.title}>
-          Collaborate <span style={styles.gray}>with Nihal Finserv</span>
+          Collaborate with Nihal Finserv
         </h2>
         <form style={styles.form}>
           <label style={styles.label}>Name *</label>
@@ -45,9 +46,10 @@ export default function ContactSection() {
           <label style={styles.label}>Subject *</label>
           <select style={styles.input}>
             <option>--- Select Choice ---</option>
-            <option>Website Development</option>
-            <option>Mobile App Development</option>
-            <option>SEO Services</option>
+            <option>Secured Loans</option>
+            <option>Unsecured Loans</option>
+            <option>Term Loans</option>
+            <option>Coorporate Loans</option>
           </select>
 
           <label style={styles.label}>Comment or Message</label>
@@ -123,6 +125,8 @@ const styles = {
     marginBottom: "10px",
     borderRadius: "4px",
     border: "1px solid #ccc",
+    backgroundColor: "black",
+    color: "white",
   },
   textarea: {
     width: "100%",

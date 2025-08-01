@@ -1,5 +1,7 @@
-11
+
+import { color } from "framer-motion";
 import React from "react";
+
 
 const testimonials = [
   {
@@ -59,6 +61,8 @@ const styles = {
     fontWeight: "600",
     fontSize: "18px",
     marginBottom: "15px",
+    color: "black",
+    text: "black",
   },
   text: {
     fontSize: "16px",
