@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { CheckCircle } from "lucide-react";
-import IndustriesWeServe from '@/components/Industries';
+
 
 
 import ContactSection from '@/components/ContactSection';
@@ -26,7 +26,7 @@ export default function CarLoansNerAndFinancing() {
       <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/office-full.jpg"
+            src="/images/C1.jpg"
             alt="Office"
             width={800}
             height={500}
@@ -111,25 +111,25 @@ export default function CarLoansNerAndFinancing() {
                 <div className="border border-gray-700 p-6">
                   <h3 className="text-2xl font-semibold mb-2">Quick Approvals</h3>
                   <p className="text-gray-400">
-                    Minimal documentation, instant eligibility check, and same-day approvals in most cases.
+                    Minimal documentation, instant eligibility check, and same-day approvals in most cases.
                   </p>
                 </div>
                 <div className="border border-gray-700 p-6">
                   <h3 className="text-2xl font-semibold mb-2">Flexible Tenure</h3>
                   <p className="text-gray-400">
-                    From 1 year up to 7 years—choose what works for you.
+                    From 1 year up to 7 years—choose what works for you.
                   </p>
                 </div>
                 <div className="border border-gray-700 p-6">
                   <h3 className="text-2xl font-semibold mb-2">Zero Hidden Charges</h3>
                   <p className="text-gray-400">
-                    Transparent processing with full disclosure of all fees and charges.
+                    Transparent processing with full disclosure of all fees and charges.
                   </p>
                 </div>
                 <div className="border border-gray-700 p-6">
                   <h3 className="text-2xl font-semibold mb-2">Top-Up Loan Option</h3>
                   <p className="text-gray-400">
-                    Need extra funds while refinancing? Ask us about additional top-up loans on your car.
+                    Need extra funds while refinancing? Ask us about additional top-up loans on your car.
                   </p>
                 </div>
                
@@ -163,7 +163,7 @@ export default function CarLoansNerAndFinancing() {
         {/* Right: Image */}
         <div className="w-full rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/woman-laptop.png" // Place this in /public
+            src="/images/C3.jpg" // Place this in /public
             alt="Developer at work"
             width={800}
             height={500}
@@ -174,7 +174,7 @@ export default function CarLoansNerAndFinancing() {
     </section>
 
     
-    <IndustriesWeServe />
+    
    
     
     <section className="bg-white text-black py-16 px-6 md:px-20">

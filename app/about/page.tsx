@@ -15,10 +15,10 @@ const AboutUs = () => {
     <Navbar />
     <div className="about-us-container font-sans text-gray-800">
       
-      {/* SECTION 1: Office Image */}
+      {/* SECTION 1: Banner Image */}
       <section className="w-full">
         <Image
-          src="/images/office-full.jpg"
+          src="/images/BannerImage.jpg"
           alt="Office Team"
           width={1920}
           height={600}
@@ -41,7 +41,7 @@ const AboutUs = () => {
         </div>
         <div className="md:w-1/2">
           <Image
-            src="/images/team-side.jpg"
+            src="/images/Family.jpg"
             alt="Team Working"
             width={800}
             height={500}
