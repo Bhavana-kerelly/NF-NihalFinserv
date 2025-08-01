@@ -10,7 +10,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full shadow font-serif bg-white text-black">
+    <header className="w-full shadow font-serif bg-[#0F2D54] text-white">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
         
         {/* Logo */}
@@ -19,8 +19,8 @@ export default function Header() {
             <Image
               src="/Logo.png"
               alt="Nihal Finserv"
-              width={120}
-              height={40}
+              width={140}
+              height={60}
               className="h-auto w-auto"
             />
           </Link>
@@ -168,7 +168,7 @@ export default function Header() {
                   {/* SME, Structured Products, Equipment Financing, AI Chatbots... */}
                   
 
-          <Link href="/insights" className="hover:text-blue-600">Blogs</Link>
+          <Link href="/blog" className="hover:text-blue-600">Blogs</Link>
           <Link href="/careers" className="hover:text-blue-600">Careers</Link>
           <Link href="/contact" className="hover:text-blue-600">Contact Us</Link>
         </nav>

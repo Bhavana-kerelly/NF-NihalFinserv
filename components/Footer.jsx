@@ -8,7 +8,7 @@ const Footer = () => {
   // Define your styles as a JavaScript object
   const styles = {
     footerContainer: {
-      backgroundColor: '#1a1a1a', /* A slightly darker shade for the footer background */
+      backgroundColor: '#0F2D54', /* A slightly darker shade for the footer background */
       padding: '30px 20px', /* Vertical and horizontal padding */
       color: '#ffffff', /* Light text color */
       fontFamily: 'Arial, sans-serif', /* Consistent font */
@@ -63,7 +63,7 @@ const Footer = () => {
                 <Image
           src="/Logo.png"
           alt="Nihal Finserv"
-          width={100}
+          width={150}
           height={32}
           className="h-18 w-auto"
         />
