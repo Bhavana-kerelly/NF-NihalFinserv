@@ -127,7 +127,7 @@ export default function CarLoansNerAndFinancing() {
                 <div className="border border-gray-700 p-6">
                   <h3 className="text-2xl font-semibold mb-2"> Collateral</h3>
                   <p className="text-gray-400">
-                    Primarily the financed asset
+                    Primarily the financed asset</p>
                 </div>
                 <div className="border border-gray-700 p-6">
                   <h3 className="text-2xl font-semibold mb-2">Processing Time</h3>
@@ -239,3 +239,4 @@ export default function CarLoansNerAndFinancing() {
     </>
   );
 }
+  
