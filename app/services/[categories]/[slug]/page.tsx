@@ -113,7 +113,7 @@ const servicesMap: Record<string, React.ComponentType> = {
   ithardware: ItHardware,
   officeinfrastructure: OfficeInfrastructure,
   cars: Cars,
-  construction: Construction,
+  constructionequipment: Construction,
   energysavingequipment: EnergySavingEquipment,
   healthcareequipment: HealthCareEquipment,
   solarequipment: SolarEquipment,

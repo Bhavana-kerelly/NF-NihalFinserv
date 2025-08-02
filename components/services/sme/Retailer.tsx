@@ -23,7 +23,7 @@ export default function Retailer() {
       <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/M1.jpg"
+            src="/sme/R1.jpg"
             alt="Office"
             width={800}
             height={500}
@@ -51,7 +51,7 @@ export default function Retailer() {
             
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/Images/Mortgage.png" // make sure to place the image in /public folder
+                src="/sme/R2.jpg"
                 alt="Team"
                 width={700}
                 height={400}
@@ -163,7 +163,7 @@ export default function Retailer() {
         {/* Right: Image */}
         <div className="w-full rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/images/Document1.jpg" // Place this in /public
+            src="/sme/R3.jpg"
             alt="Developer at work"
             width={800}
             height={500}
@@ -173,8 +173,6 @@ export default function Retailer() {
       </div>
     </section>
 
-    
-    
    
     
     <section className="bg-white text-black py-16 px-6 md:px-20">

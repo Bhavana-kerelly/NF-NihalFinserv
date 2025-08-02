@@ -24,7 +24,7 @@ export default function OdCc() {
       <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/office-full.jpg"
+            src="/unstructured/M1.jpg"
             alt="Office"
             width={800}
             height={500}
@@ -52,7 +52,7 @@ export default function OdCc() {
             
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/team-photo.png" // make sure to place the image in /public folder
+                src="/unstructured/M2.jpg" // make sure to place the image in /public folder
                 alt="Team"
                 width={700}
                 height={400}
@@ -158,7 +158,7 @@ export default function OdCc() {
         {/* Right: Image */}
         <div className="w-full rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/woman-laptop.png" // Place this in /public
+            src="/unstructured/M3.jpg" // Place this in /public
             alt="Developer at work"
             width={800}
             height={500}

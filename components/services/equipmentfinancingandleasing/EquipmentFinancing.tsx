@@ -3,8 +3,6 @@
 import Image from 'next/image';
 import { CheckCircle } from "lucide-react";
 
-
-
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
@@ -19,24 +17,25 @@ const industries = [
     { name: "Logistic Machinery", link: "/services/structuredproducts/logisticsmachinery" },
     { name: "Solar Equipment", link: "/services/structuredproducts/solarequipment" },
   ];
+
+
 const steps = [
-  "Partnerships with leading banks & NBFCs",
-"Expert financial & legal due diligence",
-"Fast-track approvals for eligible firms",
-"Customized structuring for tax & cost efficiency",
-"End-to-end documentation and compliance support",
-"Dedicated relationship manager for your account",
+  "Construction & Infrastructure Equipment",
+  "Medical & Diagnostic Equipment",
+  "Manufacturing & Industrial Machinery",
+  "IT & Office Equipment",
+  "Commercial Vehicles & Fleet Equipment"
 ];
 
-
-export default function MortgageLoans() {
+export default function EquipmentFinancing() {
   return (
     <>
-      <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
+      {/* Hero Section */}
+      <section className="py-20 px-6 bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/M1.jpg"
-            alt="Office"
+            src="/equipmentfinancing/EF1.jpg"
+            alt="Equipment Financing"
             width={800}
             height={500}
             className="rounded shadow w-full object-cover"
@@ -44,150 +43,121 @@ export default function MortgageLoans() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-5">
-            Big Visions. Bold Moves. Backed by Smart Capital.
+            Power Your Business. <br />Finance the Tools That Drive Growth.
           </h2>
           <p className="text-base mb-6">
-           At Nihal Finserv, we empower your business to scale, diversify, and innovate with customized corporate loan solutions. Whether you're expanding your operations, investing in new technology, or boosting your working capital — we ensure you get the right funding at the right time.
+            Acquire or lease critical machinery, IT systems, vehicles, or tools without the financial stress. Nihal Finserv provides tailored equipment financing for every stage of business.
           </p>
-          
-          
+          <p className="text-base">
+            Scale efficiently while preserving your working capital.
+          </p>
         </div>
       </section>
-      
+
+      {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Left Side */}
           <div>
-            
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/Images/Mortgage.png" // make sure to place the image in /public folder
-                alt="Team"
+                src="/equipmentfinancing/EF2.jpg"
+                alt="Equipment Scope"
                 width={700}
                 height={400}
                 className="w-full h-auto object-cover"
               />
             </div>
-            
           </div>
-
-          {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
-              What Are Coorporate Loans?
+              Equipment We Finance
             </h2>
-            <p>
-              A Corporate Loan is a high-value business loan designed specifically for medium to large enterprises looking to finance growth, infrastructure, acquisitions, or operational needs. These loans offer longer tenures, flexible repayment terms, and higher limits — aligned with your company’s financial strategy.
+            <ol className="list-decimal list-inside space-y-2">
+              <li>Construction Equipment (Excavators, Cranes, Loaders)</li>
+              <li>Medical & Diagnostic Devices (MRI, Surgical Units)</li>
+              <li>Manufacturing Machinery (CNC, Packaging, etc.)</li>
+              <li>IT & Office Hardware (Servers, Laptops, Surveillance)</li>
+              <li>Commercial Vehicles (Logistics Vans, Trucks, Buses)</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Features */}
+      <section className="bg-[#1C1C1C] text-white px-8 py-16">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h4 className="uppercase text-sm font-semibold underline underline-offset-4 mb-4">
+              Key Benefits
+            </h4>
+            <h2 className="text-5xl font-bold leading-tight mb-4">
+              Nihal Finserv -<br />
+              <span className="text-gray-400">Your Equipment</span> <br />
+              <span className="text-red-500">Finance Ally</span>
+            </h2>
+            <p className="text-gray-300 mb-8 max-w-md">
+              Upgrade your infrastructure, fleet, or IT setup while managing costs efficiently. We tailor plans for real-world business needs.
             </p>
-            
-            
+            <button className="border border-red-500 text-white px-6 py-3 hover:bg-red-500 transition flex items-center gap-2">
+              <span className="text-red-500">&#8213;</span> Get In Touch
+            </button>
+          </div>
+
+          <div className="space-y-6">
+            <div className="border border-gray-700 p-6">
+              <h3 className="text-2xl font-semibold mb-2">Preserve Working Capital</h3>
+              <p className="text-gray-400">Avoid large upfront expenses and maintain liquidity.</p>
+            </div>
+            <div className="border border-gray-700 p-6">
+              <h3 className="text-2xl font-semibold mb-2">Access the Latest Technology</h3>
+              <p className="text-gray-400">Lease or finance cutting-edge tools as your business evolves.</p>
+            </div>
+            <div className="border border-gray-700 p-6">
+              <h3 className="text-2xl font-semibold mb-2">Tax Benefits</h3>
+              <p className="text-gray-400">Leverage tax deductions from depreciation or lease payments.</p>
+            </div>
+            <div className="border border-gray-700 p-6">
+              <h3 className="text-2xl font-semibold mb-2">Flexible Ownership Models</h3>
+              <p className="text-gray-400">Choose between leasing or full ownership at the end of the term.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Document Checklist */}
+      <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+              Our Equipment Financing Solutions
+            </h2>
+            <p className="text-gray-600 text-lg mb-6 max-w-xl">
+              We support a wide range of sectors and equipment types, including:
+            </p>
+            <ul className="space-y-4">
+              {steps.map((step, idx) => (
+                <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
+                  <CheckCircle className="text-red-500 mt-1" size={20} />
+                  {step}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="w-full rounded-xl overflow-hidden shadow-md">
+            <Image
+              src="/equipmentfinancing/EF3.jpg"
+              alt="Documents"
+              width={800}
+              height={500}
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </section>
       
-     
-          <section className="bg-[#1C1C1C] text-white px-8 py-16">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-              {/* Left Section */}
-              <div>
-                <h4 className="uppercase text-sm font-semibold underline underline-offset-4 mb-4">
-                  Purpose-Fit Funding For
-                </h4>
-                <h2 className="text-5xl font-bold leading-tight mb-4">
-                  Nihal Finserv -<br />
-                  <span className="text-gray-400">Where Your</span> <br />
-                  <span className="text-red-500">Goals</span>{" "}
-                  <span className="text-gray-500">Come First</span>
-                </h2>
-                <p className="text-gray-300 mb-8 max-w-md">
-                  Your dreams are not just numbers - they are plans, futures, and possibilities.
-                </p>
-                <p className='text-gray-300 text-sm'>As an RBI-compliant financial consultancy and an authorized channel partner with top banks and NBFCs, Nihal Finserv brings credibility, transparency, and trust to your loan journey.</p>
-                <button className="border border-red-500 text-white px-6 py-3 hover:bg-red-500 transition flex items-center gap-2">
-                  <span className="text-red-500">&#8213;</span> Get In Touch
-                </button>
-              </div>
-      
-              {/* Right Section */}
-              <div className="space-y-6">
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> Infrastructure Development</h3>
-                  <p className="text-gray-400">
-                    With deep market knowledge and financial acumen, we ensure you get the best-fit product aligned with your short and long-term financial goals.
-                  </p>
-                  
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> Factory Setup or Plant Expansion</h3>
-                  
-                  
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Large Inventory Procurement</h3>
-                 
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Working Capital Support</h3>
-                  
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> Mergers & Acquisitions</h3>
-                  
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> New Office or Branch Launches</h3>
-                 
-                </div>
-                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> Technology Upgrades / ERP Setup</h3>
-                 
-                </div>
-                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> Global Market Expansion</h3>
-                 
-                </div>
-              </div>
-            </div>
-          </section>
-        
 
-      <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-        {/* Left: Text and Checklist */}
-        <div>
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-            Why Choose Nihal Finserv
-          </h2>
-          <p className="text-gray-600 text-lg mb-6 max-w-xl">
-            Nihal Finserv ensures personalized guidance through every step, from documentation to loan disbursal.
-          </p>
-          
-          <ul className="space-y-4">
-            {steps.map((step, idx) => (
-              <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
-                <CheckCircle className="text-red-500 mt-1" size={20} />
-                {step}
-              </li>
-            ))}
-          </ul>
-           
-        </div>
-
-        {/* Right: Image */}
-        <div className="w-full rounded-xl overflow-hidden shadow-md">
-          <Image
-            src="/images/Document1.jpg" // Place this in /public
-            alt="Developer at work"
-            width={800}
-            height={500}
-            className="w-full h-auto object-cover"
-          />
-        </div>
-      </div>
-    </section>
-
-    
-     <section>
+      <section>
         <div className="bg-black text-white px-6 py-16">
       <h2 className="text-3xl font-bold mb-4">
         EQUIPMENT FINANCING AND LEASING
@@ -207,82 +177,75 @@ export default function MortgageLoans() {
       </div>
     </div>
       </section>
-    
- 
-    
-    <section className="bg-white text-black py-16 px-6 md:px-20">
-      <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
-        <h2 className="text-4xl font-bold text-center mb-6">
-          Secured Loans
-        </h2>
-        <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-          At Nihal Finserv, we’re more than loan facilitators—we’re your financial growth partners. Let us help you unlock the potential of your assets and achieve your ambitions with confidence.
-        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {[
-            {
-              city: "Key Features ",
-              points: [
-    "Loan Amount	₹50 Lakhs to ₹100 Crores+",
-"Tenure	1 to 10 Years",
-"Interest Rates	Competitive, based on profile",
-"Repayment Options	EMI, bullet, structured",
-"Security	Secured / Unsecured options",
-"Top-Up Facility	Available after timely repayment",
-  ],
-            },
-            {
-              city: "Eligibility Criteria",
-              points: [
-    "Business Age	3+ years of operations",
-"Turnover	₹5 Crores+ annually",
-"Profitability	Last 2 years preferred",
-"Docs Required	Company financials, ITRs, bank statements, KYC, project reports, etc.",
-"Don’t meet all the criteria? We can still help with alternate structures or working capital solutions.",
-  ],
-            },
-             {
-              city: "Loan Structuring Options",
-              points: [
-    "Term Loan with Moratorium",
-"Working Capital OD/CC Limits",
-"Project-Based Finance",
-"Lease Rental Discounting",
-"Debt Consolidation / Refinancing",
-  ],
-            },
-            {
-              city: "Client Testimonial",
-              text:  "We partnered with Nihal Finserv for a ₹15 Crore loan to expand our manufacturing unit. Their team handled everything from structuring to disbursement with full professionalism.",
-              
-            },
-            
-           
-             
-          ].map(({ city, text, points }) => (
-  <div key={city} className="border border-gray-700 p-6 rounded-lg">
-    <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
-    {points ? (
-      <ul className="text-gray-300 list-disc list-inside space-y-2">
-        {points.map((point, idx) => (
-          <li key={idx}>{point}</li>
-        ))}
-      </ul>
-    ) : (
-      <p className="text-gray-300 leading-relaxed">{text}</p>
-    )}
-  </div>
-))}
+
+      {/* Who Can Apply & Use Cases */}
+      <section className="bg-white text-black py-16 px-6 md:px-20">
+        <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
+          <h2 className="text-4xl font-bold text-center mb-6">
+            Equipment Financing & Leasing
+          </h2>
+          <p className="text-center text-lg max-w-4xl mx-auto mb-14">
+            Equip smart. Operate strong. Finance the tools that move your business.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {[
+              {
+                city: "Who Can Apply",
+                points: [
+                  "SMEs & MSMEs",
+                  "Hospitals & Clinics",
+                  "Construction Contractors",
+                  "Retail Chains & Warehouses",
+                  "Manufacturers & Fabricators",
+                  "Tech Startups & IT Companies",
+                ],
+              },
+              {
+                city: "Why Nihal Finserv",
+                points: [
+                  "Quick Processing & Approvals",
+                  "Tailored Repayment & Leasing Plans",
+                  "Trusted Lending Partners",
+                  "Transparent Terms & Charges",
+                  "End-to-End Support",
+                ],
+              },
+              {
+                city: "Use Cases",
+                points: [
+                  "Manufacturing Equipment Upgrade",
+                  "Setting Up a Diagnostic Lab",
+                  "IT Infrastructure Expansion",
+                  "Fleet Procurement",
+                  "Retail & Warehouse Automation",
+                ],
+              },
+              {
+                city: "Client Testimonial",
+                text: "We scaled our fabrication unit with new CNC machines — all made possible through Nihal Finserv’s easy EMI plans. Super smooth and efficient!",
+              },
+            ].map(({ city, text, points }) => (
+              <div key={city} className="border border-gray-700 p-6 rounded-lg">
+                <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
+                {points ? (
+                  <ul className="text-gray-300 list-disc list-inside space-y-2">
+                    {points.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-gray-300 leading-relaxed">{text}</p>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    
-    
-    <ContactSection />
-    <ServiceSection />
-      
+      <ContactSection />
+      <ServiceSection />
     </>
   );
 }

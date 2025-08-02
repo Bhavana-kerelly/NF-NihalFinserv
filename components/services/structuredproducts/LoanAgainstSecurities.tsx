@@ -22,7 +22,7 @@ export default function MortgageLoans() {
       <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/M1.jpg"
+            src="/structuredproducts/LAS1.jpg"
             alt="Office"
             width={800}
             height={500}
@@ -50,7 +50,7 @@ export default function MortgageLoans() {
             
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/Images/Mortgage.png" // make sure to place the image in /public folder
+                src="/structuredproducts/LAS2.jpg"
                 alt="Team"
                 width={700}
                 height={400}
@@ -168,7 +168,7 @@ export default function MortgageLoans() {
         {/* Right: Image */}
         <div className="w-full rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/images/Document1.jpg" // Place this in /public
+            src="/structuredproducts/LAS3.jpg"
             alt="Developer at work"
             width={800}
             height={500}

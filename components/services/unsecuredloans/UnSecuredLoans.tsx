@@ -35,7 +35,7 @@ export default function MortgageLoans() {
       <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/M1.jpg"
+            src="/unstructured/U1.jpg"
             alt="Office"
             width={800}
             height={500}
@@ -64,7 +64,7 @@ No Collateral? No Problem. Just Possibility..
             
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/Images/Mortgage.png" // make sure to place the image in /public folder
+                src="/unstructured/U2.jpg" // make sure to place the image in /public folder
                 alt="Team"
                 width={700}
                 height={400}
@@ -174,7 +174,7 @@ No Collateral? No Problem. Just Possibility..
         {/* Right: Image */}
         <div className="w-full rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/images/Document1.jpg" // Place this in /public
+            src="/unstructured/U3.jpg" // Place this in /public
             alt="Developer at work"
             width={800}
             height={500}
