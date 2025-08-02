@@ -174,62 +174,98 @@ export default function SchoolAndCollegeFunding() {
     </section>
 
     
-    <IndustriesWeServe />
    
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Top Cities in India Leading the Demand for Web Development Services
+          Short Term Loans
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-          With businesses shifting online across every industry, the need for professional web development services is
-          at an all-time high. From corporate websites and e-commerce platforms to SaaS products and enterprise
-          portals, Indian cities are powering this digital transformation with world-class web design and development
-          expertise. Below, we spotlight the top cities driving demand and innovation.
+          Get quick funds without long-term commitment. Choose Nihal Finserv for your Short-Term Loan needs today.
+
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Bengaluru",
-              text:
-                "Web Development Services in Bengaluru thrive on the city's robust IT ecosystem and startup culture. Bengaluru developers specialize in SaaS product development, enterprise-grade portals, and modern frameworks like React, Angular, and Node.js. Their focus on innovation, scalability, and cloud-native architecture makes them ideal for fast-growing startups and global enterprises.",
+              city: "When Should You Choose a Short-Term Loan?",
+              points: [
+    "Managing a temporary cash flow gap",
+"Paying supplier dues or employee salaries",
+"Seizing limited-time business opportunities",
+"Covering medical or emergency expenses",
+"Handling unexpected repair or travel costs",
+"Funding seasonal stock/inventory purchase",
+  ],
             },
             {
-              city: "Mumbai",
-              text:
-                "Web Development Services in Mumbai serve industries ranging from finance and media to retail and healthcare. Developers here excel at building responsive corporate websites, e-commerce solutions with payment integration, and custom CMS platforms. With a strong corporate presence, Mumbai ensures compliance, user-centric design, and robust performance.",
+              city: "Benifits",
+              points: [
+    "Fast processing & instant disbursal",
+"Minimal documentation & hassle-free process",
+"Low risk of long-term debt buildup",
+"Credit-eligible even with moderate credit scores",
+"Customized repayment plans to match cash flow",
+"Guidance to choose the best lender & lowest rate",
+  ],
             },
             {
-              city: "Delhi",
-              text:
-                "Web Development Services in Delhi cater to government projects, startups, and enterprises alike. Delhi-based developers are skilled in multilingual sites, e-governance platforms, and digital-first solutions with strong SEO and marketing integration. The city's expertise also extends to building educational portals and large-scale web applications.",
+              city: " Types of Short-Term Loans We Offer",
+              points: [
+    "Business Short-Term Loans – for inventory, vendor payments, working capital",
+    "Personal Short-Term Loans – for rent, education fees, emergencies",
+"Medical Short-Term Loans – for surgeries or treatments",
+"Bridge Loans – to manage cash flow until long-term funding is secured",
+  ],
+             
             },
             {
-              city: "Chennai",
-              text:
-                "Web Development Services in Chennai focus on backend reliability, ERP integrations, and enterprise systems. Developers in Chennai are trusted for their expertise in Java, .NET, and PHP frameworks, delivering high-performance web applications for corporates, manufacturing, and logistics industries.",
-            },
+              city: "How to Apply",
+              points: [
+    "1.Share your requirement – Online form or phone call",
+"2.Get personalized offers – Matched with top lenders",
+"3.Submit documents – Digitally or with our support",
+"4.Loan disbursed – In your account within 24–48 hrs",
+  ],
+},
             {
-              city: "Hyderabad",
-              text:
-                "Web Development Services in Hyderabad combine UI/UX excellence with cutting-edge backend development. Hyderabad teams build SaaS dashboards, scalable e-commerce platforms, and secure fintech portals. With expertise in AI, APIs, and cybersecurity, they cater to global clients requiring robust, enterprise-ready web solutions.",
-            },
+              city: "Why Choose Nihal Finserv?",
+              points: [
+    "Access to top banks & NBFCs",
+"Expert loan matching & credit profiling",
+"Transparent terms with no hidden charges",
+"Personalized service, fast turnaround",
+"Full support throughout the loan lifecycle",
+  ],
+},
             {
-              city: "Pune",
-              text:
-                "Web Development Services in Pune provide cost-effective yet high-quality solutions for startups, SMEs, and enterprises. Pune developers excel at MVPs, business websites, and cross-platform applications. Their strength lies in balancing affordability with innovation, making them a go-to hub for emerging businesses.",
+              city: " Real Story",
+              
+              text: "We needed ₹5 lakhs urgently for a new consignment order. Nihal Finserv made it happen in just 2 days with a short-term business loan and flexible EMI. We delivered on time and doubled our profit!",
+              
             },
-          ].map(({ city, text }) => (
-            <div key={city} className="border border-gray-700 p-6 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
-              <p className="text-gray-300 leading-relaxed">{text}</p>
-            </div>
-          ))}
+           
+             
+          ].map(({ city, text, points }) => (
+  <div key={city} className="border border-gray-700 p-6 rounded-lg">
+    <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
+    {points ? (
+      <ul className="text-gray-300 list-disc list-inside space-y-2">
+        {points.map((point, idx) => (
+          <li key={idx}>{point}</li>
+        ))}
+      </ul>
+    ) : (
+      <p className="text-gray-300 leading-relaxed">{text}</p>
+    )}
+  </div>
+))}
         </div>
       </div>
     </section>
+    
+    
 
     
     

@@ -16,7 +16,7 @@ import MedicalEquipmentLoans from "@/components/services/unsecuredloans/MedicalE
 import IndustrialMachineryLoans from "@/components/services/unsecuredloans/IndustrialMachineryLoans";
 import ConstructionEquipmentLoans from "@/components/services/unsecuredloans/ConstructionEquipmentLoans";
 import EquipmentRefinancingLoans from "@/components/services/unsecuredloans/EquipmentRefinancingLoans";
-import ProffesionalLoans from "@/components/services/unsecuredloans/ProffesionalLoans";
+import ProfessionalLoans from "@/components/services/unsecuredloans/ProfessionalLoans";
 import PersonalLoans from "@/components/services/unsecuredloans/PersonalLoans";
 import EducationalLoans from "@/components/services/unsecuredloans/EducationalLoans";
 
@@ -67,7 +67,7 @@ const servicesMap: Record<string, React.ComponentType> = {
   industrialmachineryloans: IndustrialMachineryLoans,
   constructionequipmentloans: ConstructionEquipmentLoans,
   equipmentrefinancingloans: EquipmentRefinancingLoans,
-  proffesionalloans: ProffesionalLoans,
+  proffesionalloans: ProfessionalLoans,
   personalloans: PersonalLoans,
   educationalloans: EducationalLoans,
 

@@ -160,59 +160,86 @@ export default function OdCc() {
     </section>
 
     
-    <IndustriesWeServe />
+    
    
     
-    <section className="bg-white text-black py-16 px-6 md:px-20">
+   <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Top Cities in India Leading the Demand for Web Development Services
+          Personal Loans
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-          With businesses shifting online across every industry, the need for professional web development services is
-          at an all-time high. From corporate websites and e-commerce platforms to SaaS products and enterprise
-          portals, Indian cities are powering this digital transformation with world-class web design and development
-          expertise. Below, we spotlight the top cities driving demand and innovation.
+         Nihal Finserv — Because your personal dreams deserve professional support.
+
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Bengaluru",
-              text:
-                "Web Development Services in Bengaluru thrive on the city's robust IT ecosystem and startup culture. Bengaluru developers specialize in SaaS product development, enterprise-grade portals, and modern frameworks like React, Angular, and Node.js. Their focus on innovation, scalability, and cloud-native architecture makes them ideal for fast-growing startups and global enterprises.",
+              city: "Loan Uses",
+              points: [
+    "Wedding Expenses",
+"Home Renovation or Interiors",
+"Travel and Vacation",
+"Clearing Credit Card or High-Interest Debt",
+"Medical Emergencies",
+"Education or Skill Development",
+"Big Purchases (Gadgets, Furniture, etc.)",
+  ],
             },
             {
-              city: "Mumbai",
-              text:
-                "Web Development Services in Mumbai serve industries ranging from finance and media to retail and healthcare. Developers here excel at building responsive corporate websites, e-commerce solutions with payment integration, and custom CMS platforms. With a strong corporate presence, Mumbai ensures compliance, user-centric design, and robust performance.",
+              city: "Eligibility Criteria",
+              points: [
+    "Indian Resident (Salaried or Self-employed)",
+",Age: 21 to 60 years",
+"Minimum Monthly Income: ₹20,000",
+"Stable Employment or Business Vintage (1–2+ years preferred)",
+"Good Credit Score (650+ recommended)",
+  ],
             },
             {
-              city: "Delhi",
-              text:
-                "Web Development Services in Delhi cater to government projects, startups, and enterprises alike. Delhi-based developers are skilled in multilingual sites, e-governance platforms, and digital-first solutions with strong SEO and marketing integration. The city's expertise also extends to building educational portals and large-scale web applications.",
+              city: "Why Apply Through Nihal Finserv?",
+              points: [
+    "Multiple Banks/NBFCs with Lowest Rates",
+"Pre-Approved Loan Options (for select customers)",
+"Same-Day Processing Available",
+"Zero Collateral, Flexible Repayment",
+"Dedicated Relationship Manager",
+"Transparent Process, No Hidden Fees",
+  ],
+             
             },
             {
-              city: "Chennai",
-              text:
-                "Web Development Services in Chennai focus on backend reliability, ERP integrations, and enterprise systems. Developers in Chennai are trusted for their expertise in Java, .NET, and PHP frameworks, delivering high-performance web applications for corporates, manufacturing, and logistics industries.",
-            },
+              city: "How to Apply?",
+              points: [
+    "1.Submit Basic Details – Fill the online form",
+"2.Upload Documents – Quick verification",
+"3.Get Loan Offers – Choose best EMI & tenure",
+"4.Receive Funds – Directly in your bank account",
+  ],
+},
             {
-              city: "Hyderabad",
-              text:
-                "Web Development Services in Hyderabad combine UI/UX excellence with cutting-edge backend development. Hyderabad teams build SaaS dashboards, scalable e-commerce platforms, and secure fintech portals. With expertise in AI, APIs, and cybersecurity, they cater to global clients requiring robust, enterprise-ready web solutions.",
+              city: "Customer Success Story",
+              
+              text: "Nihal Finserv helped me secure a ₹6 lakh personal loan within 48 hours for my brother’s wedding — zero stress, full support!",
+              
             },
-            {
-              city: "Pune",
-              text:
-                "Web Development Services in Pune provide cost-effective yet high-quality solutions for startups, SMEs, and enterprises. Pune developers excel at MVPs, business websites, and cross-platform applications. Their strength lies in balancing affordability with innovation, making them a go-to hub for emerging businesses.",
-            },
-          ].map(({ city, text }) => (
-            <div key={city} className="border border-gray-700 p-6 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
-              <p className="text-gray-300 leading-relaxed">{text}</p>
-            </div>
-          ))}
+           
+             
+          ].map(({ city, text, points }) => (
+  <div key={city} className="border border-gray-700 p-6 rounded-lg">
+    <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
+    {points ? (
+      <ul className="text-gray-300 list-disc list-inside space-y-2">
+        {points.map((point, idx) => (
+          <li key={idx}>{point}</li>
+        ))}
+      </ul>
+    ) : (
+      <p className="text-gray-300 leading-relaxed">{text}</p>
+    )}
+  </div>
+))}
         </div>
       </div>
     </section>

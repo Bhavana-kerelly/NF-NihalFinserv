@@ -176,63 +176,88 @@ export default function SchoolAndCollegeFunding() {
     </section>
 
     
-    <IndustriesWeServe />
-   
+    
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Top Cities in India Leading the Demand for Web Development Services
+          Long Term Loans
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-          With businesses shifting online across every industry, the need for professional web development services is
-          at an all-time high. From corporate websites and e-commerce platforms to SaaS products and enterprise
-          portals, Indian cities are powering this digital transformation with world-class web design and development
-          expertise. Below, we spotlight the top cities driving demand and innovation.
+          Build your future with a strong financial foundation. Choose Nihal Finserv’s Long-Term Loans to support your vision.
+
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Bengaluru",
-              text:
-                "Web Development Services in Bengaluru thrive on the city's robust IT ecosystem and startup culture. Bengaluru developers specialize in SaaS product development, enterprise-grade portals, and modern frameworks like React, Angular, and Node.js. Their focus on innovation, scalability, and cloud-native architecture makes them ideal for fast-growing startups and global enterprises.",
+              city: "ideal Use Cases",
+              points: [
+    "Business Expansion",
+"Home Purchase or Construction",
+"Plant & Machinery Acquisition",
+"Higher Education Loans",
+"Debt Consolidation",
+"Real Estate or Commercial Investments",
+  ],
             },
             {
-              city: "Mumbai",
-              text:
-                "Web Development Services in Mumbai serve industries ranging from finance and media to retail and healthcare. Developers here excel at building responsive corporate websites, e-commerce solutions with payment integration, and custom CMS platforms. With a strong corporate presence, Mumbai ensures compliance, user-centric design, and robust performance.",
+              city: "Benifits",
+              points: [
+    "Higher loan eligibility",
+"Affordable EMIs due to longer tenure",
+"Tailored repayment plans to match cash flow",
+"Improves financial predictability and budgeting",
+"Fixed interest option for EMI stability",
+"End-to-end guidance & documentation support",
+  ],
             },
+           
             {
-              city: "Delhi",
-              text:
-                "Web Development Services in Delhi cater to government projects, startups, and enterprises alike. Delhi-based developers are skilled in multilingual sites, e-governance platforms, and digital-first solutions with strong SEO and marketing integration. The city's expertise also extends to building educational portals and large-scale web applications.",
-            },
+              city: "How to Apply",
+              points: [
+    "1.Share your requirement – Speak to our experts",
+"2.Loan structuring – Tailored to your business/personal plan",
+"3.Document submission – With our full support",
+"4.Loan approval & disbursal – Fast-track processing",
+  ],
+},
             {
-              city: "Chennai",
-              text:
-                "Web Development Services in Chennai focus on backend reliability, ERP integrations, and enterprise systems. Developers in Chennai are trusted for their expertise in Java, .NET, and PHP frameworks, delivering high-performance web applications for corporates, manufacturing, and logistics industries.",
-            },
+              city: "Why Choose Nihal Finserv?",
+              points: [
+    "Access to top banks and NBFCs",
+"Loans structured to your specific goals",
+"Transparent terms and no hidden charges",
+"Dedicated support from application to closure",
+"Personalized financial planning assistance",
+  ],
+},
             {
-              city: "Hyderabad",
-              text:
-                "Web Development Services in Hyderabad combine UI/UX excellence with cutting-edge backend development. Hyderabad teams build SaaS dashboards, scalable e-commerce platforms, and secure fintech portals. With expertise in AI, APIs, and cybersecurity, they cater to global clients requiring robust, enterprise-ready web solutions.",
+              city: " Real Client Experience",
+              
+              text: "Nihal Finserv helped us secure a ₹1.5 crore term loan for factory expansion with a 10-year tenure. The entire process was smooth, and their team handled everything professionally.",
+              
             },
-            {
-              city: "Pune",
-              text:
-                "Web Development Services in Pune provide cost-effective yet high-quality solutions for startups, SMEs, and enterprises. Pune developers excel at MVPs, business websites, and cross-platform applications. Their strength lies in balancing affordability with innovation, making them a go-to hub for emerging businesses.",
-            },
-          ].map(({ city, text }) => (
-            <div key={city} className="border border-gray-700 p-6 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
-              <p className="text-gray-300 leading-relaxed">{text}</p>
-            </div>
-          ))}
+           
+             
+          ].map(({ city, text, points }) => (
+  <div key={city} className="border border-gray-700 p-6 rounded-lg">
+    <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
+    {points ? (
+      <ul className="text-gray-300 list-disc list-inside space-y-2">
+        {points.map((point, idx) => (
+          <li key={idx}>{point}</li>
+        ))}
+      </ul>
+    ) : (
+      <p className="text-gray-300 leading-relaxed">{text}</p>
+    )}
+  </div>
+))}
         </div>
       </div>
     </section>
-
+    
     
     
     <ContactSection />

@@ -176,63 +176,96 @@ export default function SchoolAndCollegeFunding() {
     </section>
 
     
-    <IndustriesWeServe />
+    
    
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Top Cities in India Leading the Demand for Web Development Services
+          Credit Card Loans
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-          With businesses shifting online across every industry, the need for professional web development services is
-          at an all-time high. From corporate websites and e-commerce platforms to SaaS products and enterprise
-          portals, Indian cities are powering this digital transformation with world-class web design and development
-          expertise. Below, we spotlight the top cities driving demand and innovation.
+         Your card, your lifestyle — made better with Nihal Finserv. <br/>
+Let us help you swipe smarter and save more!
+
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Bengaluru",
-              text:
-                "Web Development Services in Bengaluru thrive on the city's robust IT ecosystem and startup culture. Bengaluru developers specialize in SaaS product development, enterprise-grade portals, and modern frameworks like React, Angular, and Node.js. Their focus on innovation, scalability, and cloud-native architecture makes them ideal for fast-growing startups and global enterprises.",
+              city: "Benifits of Getting Your Card via Nihal Finserv",
+              points: [
+    "Compare cards from multiple top banks & NBFCs",
+"Fast online/offline application assistance",
+"Pre-screening based on your eligibility",
+"Guidance on approval, limits, and usage",
+"End-to-end documentation support",
+"Improve your credit score with timely usage",
+  ],
             },
             {
-              city: "Mumbai",
-              text:
-                "Web Development Services in Mumbai serve industries ranging from finance and media to retail and healthcare. Developers here excel at building responsive corporate websites, e-commerce solutions with payment integration, and custom CMS platforms. With a strong corporate presence, Mumbai ensures compliance, user-centric design, and robust performance.",
+              city: "Eligibility Criteria",
+              points: [
+    "Age	21 to 60 years",
+"Employment	Salaried or self-employed",
+"CIBIL Score	700+ preferred",
+"Income	₹15,000/month or more",
+"Documents	PAN, Aadhaar, income proof, bank statements",
+  ],
             },
             {
-              city: "Delhi",
-              text:
-                "Web Development Services in Delhi cater to government projects, startups, and enterprises alike. Delhi-based developers are skilled in multilingual sites, e-governance platforms, and digital-first solutions with strong SEO and marketing integration. The city's expertise also extends to building educational portals and large-scale web applications.",
+              city: " Special Offers Available",
+              points: [
+    "Welcome gifts worth ₹2,000–₹10,000",
+"Annual fee waiver on first-year usage",
+"Zero lost card liability & fraud protection",
+"Fuel surcharge waiver",
+"Discounts on groceries, fashion, travel, and more",
+  ],
+             
             },
             {
-              city: "Chennai",
-              text:
-                "Web Development Services in Chennai focus on backend reliability, ERP integrations, and enterprise systems. Developers in Chennai are trusted for their expertise in Java, .NET, and PHP frameworks, delivering high-performance web applications for corporates, manufacturing, and logistics industries.",
-            },
+              city: "How to Apply",
+              points: [
+    "1.Connect with our card advisor",
+"2.Choose the right card based on your needs",
+"3.Get approved and start spending smarter",
+  ],
+},
             {
-              city: "Hyderabad",
-              text:
-                "Web Development Services in Hyderabad combine UI/UX excellence with cutting-edge backend development. Hyderabad teams build SaaS dashboards, scalable e-commerce platforms, and secure fintech portals. With expertise in AI, APIs, and cybersecurity, they cater to global clients requiring robust, enterprise-ready web solutions.",
-            },
+              city: "Responsible Credit Usage Tips",
+              points: [
+    "Pay full amount before due date",
+"Use <30% of credit limit to maintain credit score",
+"Set auto-pay or reminders to avoid late fees",
+"Redeem points regularly before they expire",
+  ],
+},
             {
-              city: "Pune",
-              text:
-                "Web Development Services in Pune provide cost-effective yet high-quality solutions for startups, SMEs, and enterprises. Pune developers excel at MVPs, business websites, and cross-platform applications. Their strength lies in balancing affordability with innovation, making them a go-to hub for emerging businesses.",
+              city: " Client Testimonial",
+              
+              text: "“Nihal Finserv helped me choose a credit card with 5X points on travel and ₹5000 worth of joining benefits. Their team made the entire process seamless!",
+              
             },
-          ].map(({ city, text }) => (
-            <div key={city} className="border border-gray-700 p-6 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
-              <p className="text-gray-300 leading-relaxed">{text}</p>
-            </div>
-          ))}
+           
+             
+          ].map(({ city, text, points }) => (
+  <div key={city} className="border border-gray-700 p-6 rounded-lg">
+    <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
+    {points ? (
+      <ul className="text-gray-300 list-disc list-inside space-y-2">
+        {points.map((point, idx) => (
+          <li key={idx}>{point}</li>
+        ))}
+      </ul>
+    ) : (
+      <p className="text-gray-300 leading-relaxed">{text}</p>
+    )}
+  </div>
+))}
         </div>
       </div>
     </section>
-
     
     
     <ContactSection />
