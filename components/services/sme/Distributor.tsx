@@ -1,44 +1,30 @@
 "use client";
 
 import Image from 'next/image';
-import CoreValues from '@/components/inner/CoreValues';
 import { CheckCircle } from "lucide-react";
-import IndustriesWeServe from '@/components/Industries';
-import Faq from '@/components/Faq';
-import Testimonials from '@/components/Testimonials';
+
+
+
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
 const steps = [
-  "Requirement Analysis & Planning",
-  "Website Design & Prototyping",
-  "Development & Coding",
-  "Testing & Quality Assurance",
-  "Deployment & Post-Launch Support",
+ "PAN & Aadhar (Proprietor/Partner/Director)",
+"GST certificate",
+"Business registration certificate",
+"Last 6 months’ bank statements",
+"ITR & Balance Sheet (last 2 years)",
+"Stock purchase invoices (if applicable)",
 ];
 
-const insights = [
-  {
-    title: "Your 10-Step Starter Plan to Dominate in Digi Marketing",
-    image: "/insight-1.png", // Place in /public
-  },
-  {
-    title: "Why Your Business Website Might Be Losing Customers?",
-    image: "/insight-2.png",
-  },
-  {
-    title: "Why Website Security Should Be Your Top Priority in 2025",
-    image: "/insight-3.png",
-  },
-];
 
-export default function CarLoansNerAndFinancing() {
+export default function MortgageLoans() {
   return (
     <>
       <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/office-full.jpg"
+            src="/images/M1.jpg"
             alt="Office"
             width={800}
             height={500}
@@ -47,17 +33,13 @@ export default function CarLoansNerAndFinancing() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-5">
-            Personal Loans in Hyderabad – Nihal Finserv
+            Fuel Your Distribution Network with Reliable Financial Backing
           </h2>
           <p className="text-base mb-6">
-            Looking for a quick and affordable personal loan in Hyderabad? Nihal Finserv is here to help. We offer personalized loan solutions for salaried and self-employed individuals with competitive interest rates and a smooth, hassle-free process.
+           As a distributor, cash flow is everything. Whether you're handling FMCG, pharma, electronics, automotive, or industrial goods, having access to timely credit helps you stock up, meet demand, and keep the supply chain moving. At Nihal Finserv, we offer customized distributor loans to ensure your business stays ahead — always.
           </p>
-          <p className="text-base mb-6">
-            Whether it’s for medical bills, education, travel, or urgent expenses — we’re committed to making borrowing simple, fast, and transparent.
-          </p>
-          <p className="text-base">
-            Based in Hyderabad, Nihal Finserv is dedicated to supporting your financial needs with trusted service and minimal paperwork.
-          </p>
+          
+         
         </div>
       </section>
       
@@ -65,67 +47,108 @@ export default function CarLoansNerAndFinancing() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left Side */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
-              Transform Your Online Presence with Expert <br />
-              Custom Web Development Services
-            </h2>
+            
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/team-photo.png" // make sure to place the image in /public folder
+                src="/Images/Mortgage.png" // make sure to place the image in /public folder
                 alt="Team"
                 width={700}
                 height={400}
                 className="w-full h-auto object-cover"
               />
             </div>
-            <p className="text-gray-600 text-lg mt-6">
-              From web application development to modern, responsive interfaces,
-              Ozrit delivers full-spectrum website design and development
-              solutions that drive engagement, conversions, and long-term growth.
-            </p>
+            
           </div>
 
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
-            <p>
-              At Ozrit, we begin by deeply understanding your brand, audience, and
-              business goals. This insight drives the creation of custom website
-              solutions that truly reflect your identity and deliver measurable
-              results. Our skilled team of developers and designers collaborates
-              to perfect every element — from UI and UX to performance and
-              scalability.
-            </p>
-            <p>
-              We don’t just build websites — we build future-ready digital
-              experiences. Every website is developed with a robust architecture,
-              mobile responsiveness, and SEO optimization at its core. The result?
-              A fast, secure, and scalable platform that grows with your business
-              and delivers consistently across all devices.
-            </p>
-            <p>
-              With Ozrit’s Web Development Services, your website becomes a
-              high-performance digital asset — not just a presence. Our expert
-              developers prioritize speed, security, search engine visibility, and
-              user-centric design to ensure your site ranks higher and performs
-              better.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
+              What Our Distributor Loans Cover:
+            </h2>
+            <ol>
+              <li>Bulk inventory purchases</li>
+              <li>Vendor and supplier payments</li>
+              <li>Expansion to new markets or regions</li>
+              <li>Rolling working capital for recurring cycles</li>
+              <li>Credit-based supply operations</li>
+              <li>Seasonal demand stocking (Diwali, summer, etc.)</li>
+            </ol>
+            
           </div>
         </div>
       </section>
       
-      <CoreValues />
+     
+          <section className="bg-[#1C1C1C] text-white px-8 py-16">
+            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+              {/* Left Section */}
+              <div>
+                <h4 className="uppercase text-sm font-semibold underline underline-offset-4 mb-4">
+                  Benifits
+                </h4>
+                <h2 className="text-5xl font-bold leading-tight mb-4">
+                  Nihal Finserv -<br />
+                  <span className="text-gray-400">Where Your</span> <br />
+                  <span className="text-red-500">Goals</span>{" "}
+                  <span className="text-gray-500">Come First</span>
+                </h2>
+                <p className="text-gray-300 mb-8 max-w-md">
+                  Your dreams are not just numbers - they are plans, futures, and possibilities.
+                </p>
+                <button className="border border-red-500 text-white px-6 py-3 hover:bg-red-500 transition flex items-center gap-2">
+                  <span className="text-red-500">&#8213;</span> Get In Touch
+                </button>
+              </div>
+      
+              {/* Right Section */}
+              <div className="space-y-6">
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Quick Approvals</h3>
+                  <p className="text-gray-400">
+                    Loans disbursed in days, not weeks
+                  </p>
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Flexible Repayment Options</h3>
+                  <p className="text-gray-400">
+                   EMI & Bullet options tailored to your business
+                  </p>
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Collateral-Free Loans Available</h3>
+                  <p className="text-gray-400">
+                    Based on creditworthiness
+                  </p>
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Sector-Specific Loan Plans</h3>
+                  <p className="text-gray-400">
+                    Designed for your industry type
+                  </p>
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Dedicated Relationship Manager</h3>
+                  <p className="text-gray-400">
+                    To guide you through your loan journey
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </section>
+        
 
       <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Left: Text and Checklist */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-            Our Web Development Process
+            Required Documents
           </h2>
           <p className="text-gray-600 text-lg mb-6 max-w-xl">
-            Our dedicated team of experts collaborates with you to determine optimal development strategies, craft seamless functionalities, and ensure a robust digital presence for your brand
+            Nihal Finserv ensures personalized guidance through every step, from documentation to loan disbursal.
           </p>
-
+          
           <ul className="space-y-4">
             {steps.map((step, idx) => (
               <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
@@ -134,12 +157,13 @@ export default function CarLoansNerAndFinancing() {
               </li>
             ))}
           </ul>
+           
         </div>
 
         {/* Right: Image */}
         <div className="w-full rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/woman-laptop.png" // Place this in /public
+            src="/images/Document1.jpg" // Place this in /public
             alt="Developer at work"
             width={800}
             height={500}
@@ -150,8 +174,8 @@ export default function CarLoansNerAndFinancing() {
     </section>
 
     
-    <IndustriesWeServe />
-    <Faq />
+    
+   
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
@@ -207,32 +231,8 @@ export default function CarLoansNerAndFinancing() {
       </div>
     </section>
 
-    <section className="px-6 py-16 bg-white w-full">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-gray-900">
-          Our insights on <span className="text-black">Web Development</span>
-        </h2>
-
-        <div className="grid gap-8 md:grid-cols-3">
-          {insights.map((item, idx) => (
-            <div key={idx} className="flex flex-col">
-              <div className="w-full h-52 relative rounded-lg overflow-hidden shadow">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="mt-4 text-lg font-medium text-gray-800 leading-snug">
-                {item.title}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-    <Testimonials />
+    
+    
     <ContactSection />
     <ServiceSection />
       
