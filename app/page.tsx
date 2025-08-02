@@ -1,3 +1,10 @@
+import dynamic from "next/dynamic";
+
+const ContactSection = dynamic(() => import('@/components/ContactSection'), {
+  ssr: false,
+});
+
+
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
