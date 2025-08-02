@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import Image from 'next/image';
 import { CheckCircle } from "lucide-react";
@@ -8,11 +8,14 @@ import { CheckCircle } from "lucide-react";
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
+
 const steps = [
- "PAN & Aadhaar",
-"Demat Account Details",
-"Holding Statement of Securities",
-"Income Proof (for large exposures)",
+  "Partnerships with leading banks & NBFCs",
+"Expert financial & legal due diligence",
+"Fast-track approvals for eligible firms",
+"Customized structuring for tax & cost efficiency",
+"End-to-end documentation and compliance support",
+"Dedicated relationship manager for your account",
 ];
 
 
@@ -31,15 +34,13 @@ export default function MortgageLoans() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-5">
-            Unlock the Power of Your Investments Without Selling Them
+            Big Visions. Bold Moves. Backed by Smart Capital.
           </h2>
           <p className="text-base mb-6">
-          Need funds but don’t want to liquidate your long-term investments? Nihal Finserv offers seamless Loan Against Securities (LAS), allowing you to leverage your existing portfolio while keeping your market exposure intact.
+           At Nihal Finserv, we empower your business to scale, diversify, and innovate with customized corporate loan solutions. Whether you're expanding your operations, investing in new technology, or boosting your working capital — we ensure you get the right funding at the right time.
           </p>
-          <p className="text-base mb-6">
-          Whether it's for business expansion, personal needs, or managing cash flow — your shares, mutual funds, bonds, or insurance policies can be turned into instant liquidity.
-          </p>
-         
+          
+          
         </div>
       </section>
       
@@ -63,14 +64,12 @@ export default function MortgageLoans() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
-              Use Cases
+              What Are Coorporate Loans?
             </h2>
-            <ol>
-              <li>Business Working Capital</li>
-              <li>Margin Trading or Investment</li>
-              <li>Personal Expenses (Education, Medical, Travel)</li>
-              <li>Tax Planning & Emergency Funds</li>
-            </ol>
+            <p>
+              A Corporate Loan is a high-value business loan designed specifically for medium to large enterprises looking to finance growth, infrastructure, acquisitions, or operational needs. These loans offer longer tenures, flexible repayment terms, and higher limits — aligned with your company’s financial strategy.
+            </p>
+            
             
           </div>
         </div>
@@ -82,7 +81,7 @@ export default function MortgageLoans() {
               {/* Left Section */}
               <div>
                 <h4 className="uppercase text-sm font-semibold underline underline-offset-4 mb-4">
-                  Key Features
+                  Purpose-Fit Funding For
                 </h4>
                 <h2 className="text-5xl font-bold leading-tight mb-4">
                   Nihal Finserv -<br />
@@ -93,6 +92,7 @@ export default function MortgageLoans() {
                 <p className="text-gray-300 mb-8 max-w-md">
                   Your dreams are not just numbers - they are plans, futures, and possibilities.
                 </p>
+                <p className='text-gray-300 text-sm'>As an RBI-compliant financial consultancy and an authorized channel partner with top banks and NBFCs, Nihal Finserv brings credibility, transparency, and trust to your loan journey.</p>
                 <button className="border border-red-500 text-white px-6 py-3 hover:bg-red-500 transition flex items-center gap-2">
                   <span className="text-red-500">&#8213;</span> Get In Touch
                 </button>
@@ -101,43 +101,41 @@ export default function MortgageLoans() {
               {/* Right Section */}
               <div className="space-y-6">
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">No Need to Sell</h3>
+                  <h3 className="text-2xl font-semibold mb-2"> Infrastructure Development</h3>
                   <p className="text-gray-400">
-                    Retain ownership and potential capital gains on your securities
+                    With deep market knowledge and financial acumen, we ensure you get the best-fit product aligned with your short and long-term financial goals.
                   </p>
+                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Instant Liquidity</h3>
-                  <p className="text-gray-400">
-                    Get quick access to funds without delays
-                  </p>
+                  <h3 className="text-2xl font-semibold mb-2"> Factory Setup or Plant Expansion</h3>
+                  
+                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Flexible Repayment</h3>
-                  <p className="text-gray-400">
-                    Pay only interest monthly, repay principal anytime
-                  </p>
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Mitigates legal and regulatory trade risks</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Large Inventory Procurement</h3>
                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">High Loan Amounts</h3>
-                  <p className="text-gray-400">
-                   Loans up to ₹10 crore based on your portfolio value
-                  </p>
+                  <h3 className="text-2xl font-semibold mb-2">Working Capital Support</h3>
+                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Attractive Interest Rates</h3>
-                  <p className="text-gray-400">
-                   
-                   Competitive rates starting from as low as 9% p.a.
+                  <h3 className="text-2xl font-semibold mb-2"> Mergers & Acquisitions</h3>
                   
-                  </p>
                 </div>
-                
-
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2"> New Office or Branch Launches</h3>
+                 
+                </div>
+                 <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2"> Technology Upgrades / ERP Setup</h3>
+                 
+                </div>
+                 <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2"> Global Market Expansion</h3>
+                 
+                </div>
               </div>
             </div>
           </section>
@@ -148,7 +146,7 @@ export default function MortgageLoans() {
         {/* Left: Text and Checklist */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-            Docments Required
+            Why Choose Nihal Finserv
           </h2>
           <p className="text-gray-600 text-lg mb-6 max-w-xl">
             Nihal Finserv ensures personalized guidance through every step, from documentation to loan disbursal.
@@ -180,48 +178,56 @@ export default function MortgageLoans() {
 
     
     
-   
+ 
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Loan Against Securities
+          Secured Loans
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-        The loan amount depends on the type and value of securities and prevailing market conditions.
+          At Nihal Finserv, we’re more than loan facilitators—we’re your financial growth partners. Let us help you unlock the potential of your assets and achieve your ambitions with confidence.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Eligible Securities",
+              city: "Key Features ",
               points: [
-    "Equity Shares (Listed)",
-"Mutual Fund Units (Debt/Equity/Hybrid)",
-"Bonds & Debentures",
-"Government Securities",
-"Insurance Policies (with Surrender Value)",
+    "Loan Amount	₹50 Lakhs to ₹100 Crores+",
+"Tenure	1 to 10 Years",
+"Interest Rates	Competitive, based on profile",
+"Repayment Options	EMI, bullet, structured",
+"Security	Secured / Unsecured options",
+"Top-Up Facility	Available after timely repayment",
   ],
             },
             {
-              city: "Why Choose Nihal Finserv?",
+              city: "Eligibility Criteria",
               points: [
-    "Quick sanction & disbursal",
-"End-to-end digital processing",
-"Zero foreclosure charges",
-"Dedicated financial advisor support",
-"Safe custody and dematerialized pledging",
+    "Business Age	3+ years of operations",
+"Turnover	₹5 Crores+ annually",
+"Profitability	Last 2 years preferred",
+"Docs Required	Company financials, ITRs, bank statements, KYC, project reports, etc.",
+"Don’t meet all the criteria? We can still help with alternate structures or working capital solutions.",
   ],
             },
-            
-            
-           
+             {
+              city: "Loan Structuring Options",
+              points: [
+    "Term Loan with Moratorium",
+"Working Capital OD/CC Limits",
+"Project-Based Finance",
+"Lease Rental Discounting",
+"Debt Consolidation / Refinancing",
+  ],
+            },
             {
-              city: "Example",
-              
-              text: "You hold ₹25 lakh worth of equity shares. You can avail up to ₹18–20 lakh as a loan instantly, without selling a single stock.",
+              city: "Client Testimonial",
+              text:  "We partnered with Nihal Finserv for a ₹15 Crore loan to expand our manufacturing unit. Their team handled everything from structuring to disbursement with full professionalism.",
               
             },
+            
            
              
           ].map(({ city, text, points }) => (
@@ -241,6 +247,7 @@ export default function MortgageLoans() {
         </div>
       </div>
     </section>
+
     
     
     <ContactSection />

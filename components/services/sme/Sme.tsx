@@ -8,13 +8,14 @@ import { CheckCircle } from "lucide-react";
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
-const steps = [
- "PAN & Aadhaar",
-"Demat Account Details",
-"Holding Statement of Securities",
-"Income Proof (for large exposures)",
-];
 
+const steps = [
+  "Business KYC (PAN, Aadhar, GST, Address Proof)",
+"Past 1–2 years’ ITRs and Financials",
+"Bank Statements (last 6 months)",
+"Business registration or trade license",
+"Existing loan statements (if any)",
+]
 
 export default function MortgageLoans() {
   return (
@@ -31,15 +32,13 @@ export default function MortgageLoans() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-5">
-            Unlock the Power of Your Investments Without Selling Them
+            Empowering Small and Medium Businesses to Scale Smarter
           </h2>
           <p className="text-base mb-6">
-          Need funds but don’t want to liquidate your long-term investments? Nihal Finserv offers seamless Loan Against Securities (LAS), allowing you to leverage your existing portfolio while keeping your market exposure intact.
+           At Nihal Finserv, we recognize the heart of the Indian economy — Small and Medium Enterprises (SMEs). Whether you're a trader, manufacturer, service provider, or startup, our SME Loan solutions are designed to support your ambition with speed, flexibility, and reliability.
           </p>
-          <p className="text-base mb-6">
-          Whether it's for business expansion, personal needs, or managing cash flow — your shares, mutual funds, bonds, or insurance policies can be turned into instant liquidity.
-          </p>
-         
+          
+          
         </div>
       </section>
       
@@ -63,14 +62,19 @@ export default function MortgageLoans() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
-              Use Cases
+              Fuel Your Business Growth
             </h2>
+            <p>
+              Whether You Need Funds For
+            </p>
             <ol>
-              <li>Business Working Capital</li>
-              <li>Margin Trading or Investment</li>
-              <li>Personal Expenses (Education, Medical, Travel)</li>
-              <li>Tax Planning & Emergency Funds</li>
+                <li> Buying Machinery or Equipment</li>
+<li>Purchasing Inventory or Raw Materials</li>
+<li>Expanding Infrastructure</li>
+<li>Managing Working Capital Gaps</li>
+<li>Digitizing or Automating Operations</li>
             </ol>
+            <p>Our SME loan offerings are structured to fit your unique business cycle and cash flow needs.</p>
             
           </div>
         </div>
@@ -82,7 +86,7 @@ export default function MortgageLoans() {
               {/* Left Section */}
               <div>
                 <h4 className="uppercase text-sm font-semibold underline underline-offset-4 mb-4">
-                  Key Features
+                  Why Choose Nihal Finserv?
                 </h4>
                 <h2 className="text-5xl font-bold leading-tight mb-4">
                   Nihal Finserv -<br />
@@ -93,6 +97,7 @@ export default function MortgageLoans() {
                 <p className="text-gray-300 mb-8 max-w-md">
                   Your dreams are not just numbers - they are plans, futures, and possibilities.
                 </p>
+                <p className='text-gray-300 text-sm'>As an RBI-compliant financial consultancy and an authorized channel partner with top banks and NBFCs, Nihal Finserv brings credibility, transparency, and trust to your loan journey.</p>
                 <button className="border border-red-500 text-white px-6 py-3 hover:bg-red-500 transition flex items-center gap-2">
                   <span className="text-red-500">&#8213;</span> Get In Touch
                 </button>
@@ -101,43 +106,38 @@ export default function MortgageLoans() {
               {/* Right Section */}
               <div className="space-y-6">
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">No Need to Sell</h3>
+                  <h3 className="text-2xl font-semibold mb-2"> Quick Approaches</h3>
                   <p className="text-gray-400">
-                    Retain ownership and potential capital gains on your securities
+                    Fast-tracked processing for time-sensitive needs
                   </p>
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Instant Liquidity</h3>
-                  <p className="text-gray-400">
-                    Get quick access to funds without delays
-                  </p>
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Flexible Repayment</h3>
-                  <p className="text-gray-400">
-                    Pay only interest monthly, repay principal anytime
-                  </p>
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Mitigates legal and regulatory trade risks</h3>
-                 
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">High Loan Amounts</h3>
-                  <p className="text-gray-400">
-                   Loans up to ₹10 crore based on your portfolio value
-                  </p>
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Attractive Interest Rates</h3>
-                  <p className="text-gray-400">
-                   
-                   Competitive rates starting from as low as 9% p.a.
                   
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Minimal Paperwork</h3>
+                  <p className="text-gray-400">
+                    Hassle-free documentation process
+                  </p>
+                  
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2"> Flexible Tenure</h3>
+                  <p className="text-gray-400">
+                    Short to medium-term repayment options
+                  </p>
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Collateral-Free Options</h3>
+                  <p className="text-gray-400">
+                    Loans available without security for eligible profiles
+                  </p>
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Competitive Interest Rates</h3>
+                  <p className="text-gray-400">
+                    Tailored to suit business performance & credit health
                   </p>
                 </div>
                 
-
               </div>
             </div>
           </section>
@@ -148,7 +148,7 @@ export default function MortgageLoans() {
         {/* Left: Text and Checklist */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-            Docments Required
+            Documents Required
           </h2>
           <p className="text-gray-600 text-lg mb-6 max-w-xl">
             Nihal Finserv ensures personalized guidance through every step, from documentation to loan disbursal.
@@ -180,48 +180,45 @@ export default function MortgageLoans() {
 
     
     
-   
+ 
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Loan Against Securities
+          Secured Loans
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-        The loan amount depends on the type and value of securities and prevailing market conditions.
+          At Nihal Finserv, we’re more than loan facilitators—we’re your financial growth partners. Let us help you unlock the potential of your assets and achieve your ambitions with confidence.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Eligible Securities",
+              city: "Basic Eligibility",
               points: [
-    "Equity Shares (Listed)",
-"Mutual Fund Units (Debt/Equity/Hybrid)",
-"Bonds & Debentures",
-"Government Securities",
-"Insurance Policies (with Surrender Value)",
+    "Business operational for at least 1–3 years",
+"Valid GST and PAN registration",
+"Audited financial statements",
+"Satisfactory banking and credit record",
   ],
             },
             {
-              city: "Why Choose Nihal Finserv?",
+              city: "Who is it for?",
               points: [
-    "Quick sanction & disbursal",
-"End-to-end digital processing",
-"Zero foreclosure charges",
-"Dedicated financial advisor support",
-"Safe custody and dematerialized pledging",
+    "Retail & Wholesale Traders",
+"Small Manufacturing Units",
+"Distributors & Wholesalers",
+"Service Providers",
+"Repair & Maintenance Businesses",
+"Food Processing Units",
   ],
             },
-            
-            
-           
             {
-              city: "Example",
-              
-              text: "You hold ₹25 lakh worth of equity shares. You can avail up to ₹18–20 lakh as a loan instantly, without selling a single stock.",
+              city: "Clients experience",
+              text:  "“Our textile unit was stuck due to a machinery upgrade delay. Nihal Finserv cleared our SME loan within 5 days — zero collateral, simple paperwork, and complete handholding. It’s rare to find such clarity and support.",
               
             },
+            
            
              
           ].map(({ city, text, points }) => (
@@ -241,6 +238,7 @@ export default function MortgageLoans() {
         </div>
       </div>
     </section>
+
     
     
     <ContactSection />

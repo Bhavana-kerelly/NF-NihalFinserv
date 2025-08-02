@@ -8,11 +8,13 @@ import { CheckCircle } from "lucide-react";
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
+
 const steps = [
- "PAN & Aadhaar",
-"Demat Account Details",
-"Holding Statement of Securities",
-"Income Proof (for large exposures)",
+  "PAN Card & Aadhaar Card",
+"Latest 3–6 Months Bank Statement",
+"Salary Slips / ITR & Financials",
+"Employment or Business Proof",
+"Address Proof",
 ];
 
 
@@ -31,15 +33,16 @@ export default function MortgageLoans() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-5">
-            Unlock the Power of Your Investments Without Selling Them
+            Unsecured Loans – Freedom Without Collateral<br/>
+No Collateral? No Problem. Just Possibility..
           </h2>
           <p className="text-base mb-6">
-          Need funds but don’t want to liquidate your long-term investments? Nihal Finserv offers seamless Loan Against Securities (LAS), allowing you to leverage your existing portfolio while keeping your market exposure intact.
+           At Nihal Finserv, we understand that not everyone has property or assets to pledge—and that shouldn’t stop you from achieving your goals. Our Unsecured Loan solutions are tailored to provide fast, flexible, and collateral-free financing, empowering individuals and businesses to move forward without compromising ownership.
           </p>
-          <p className="text-base mb-6">
-          Whether it's for business expansion, personal needs, or managing cash flow — your shares, mutual funds, bonds, or insurance policies can be turned into instant liquidity.
+          
+          <p className="text-base">
+           Whether it's funding a medical emergency, expanding your business, planning a wedding, or managing debt, our unsecured loans offer financial flexibility when you need it most.
           </p>
-         
         </div>
       </section>
       
@@ -63,14 +66,12 @@ export default function MortgageLoans() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
-              Use Cases
+              What Are Unsecured Loans?
             </h2>
-            <ol>
-              <li>Business Working Capital</li>
-              <li>Margin Trading or Investment</li>
-              <li>Personal Expenses (Education, Medical, Travel)</li>
-              <li>Tax Planning & Emergency Funds</li>
-            </ol>
+            <p>
+              Unsecured loans are personal or business loans disbursed based solely on your creditworthiness, income profile, and repayment history—no collateral or security required.
+            </p>
+            
             
           </div>
         </div>
@@ -93,6 +94,7 @@ export default function MortgageLoans() {
                 <p className="text-gray-300 mb-8 max-w-md">
                   Your dreams are not just numbers - they are plans, futures, and possibilities.
                 </p>
+                <p className='text-gray-300 text-sm'>As an RBI-compliant financial consultancy and an authorized channel partner with top banks and NBFCs, Nihal Finserv brings credibility, transparency, and trust to your loan journey.</p>
                 <button className="border border-red-500 text-white px-6 py-3 hover:bg-red-500 transition flex items-center gap-2">
                   <span className="text-red-500">&#8213;</span> Get In Touch
                 </button>
@@ -101,43 +103,36 @@ export default function MortgageLoans() {
               {/* Right Section */}
               <div className="space-y-6">
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">No Need to Sell</h3>
-                  <p className="text-gray-400">
-                    Retain ownership and potential capital gains on your securities
-                  </p>
+                  <h3 className="text-2xl font-semibold mb-2"> Loan Amounts up to ₹40 Lakhs</h3>
+                  
+                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Instant Liquidity</h3>
-                  <p className="text-gray-400">
-                    Get quick access to funds without delays
-                  </p>
+                  <h3 className="text-2xl font-semibold mb-2">Quick Disbursal within 48-72 Hours</h3>
+                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Flexible Repayment</h3>
-                  <p className="text-gray-400">
-                    Pay only interest monthly, repay principal anytime
-                  </p>
+                  <h3 className="text-2xl font-semibold mb-2"> Minimal Documentation & 100% Digital Processing</h3>
+                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Mitigates legal and regulatory trade risks</h3>
+                  <h3 className="text-2xl font-semibold mb-2"> Flexible Tenures up to 5 Years</h3>
                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">High Loan Amounts</h3>
-                  <p className="text-gray-400">
-                   Loans up to ₹10 crore based on your portfolio value
-                  </p>
+                  <h3 className="text-2xl font-semibold mb-2"> No Collateral or Guarantor Required</h3>
+                 
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Attractive Interest Rates</h3>
-                  <p className="text-gray-400">
-                   
-                   Competitive rates starting from as low as 9% p.a.
+                  <h3 className="text-2xl font-semibold mb-2">Special Offers for Salaried, Self-Employed & Professionals</h3>
                   
-                  </p>
+                 
                 </div>
-                
-
+                 <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Zero Asset Risk – You retain full ownership of your properties</h3>
+                  
+                 
+                </div>
               </div>
             </div>
           </section>
@@ -148,7 +143,7 @@ export default function MortgageLoans() {
         {/* Left: Text and Checklist */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-            Docments Required
+            Documents Required
           </h2>
           <p className="text-gray-600 text-lg mb-6 max-w-xl">
             Nihal Finserv ensures personalized guidance through every step, from documentation to loan disbursal.
@@ -180,48 +175,77 @@ export default function MortgageLoans() {
 
     
     
-   
+ 
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Loan Against Securities
+          Unsecured Loans
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-        The loan amount depends on the type and value of securities and prevailing market conditions.
+          Your needs can't wait, and neither should your funding.<br/>
+Let Nihal Finserv help you access the power of collateral-free financing—quickly, securely, and responsibly.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Eligible Securities",
+              city: "Ideal For",
               points: [
-    "Equity Shares (Listed)",
-"Mutual Fund Units (Debt/Equity/Hybrid)",
-"Bonds & Debentures",
-"Government Securities",
-"Insurance Policies (with Surrender Value)",
+    "Personal needs like medical expenses, travel, or home improvements",
+"Business expansion or working capital needs",
+"Education and overseas training",
+"Debt consolidation or refinancing",
+"Wedding and event expenses",
   ],
             },
             {
-              city: "Why Choose Nihal Finserv?",
+              city: "Eligibility Criteria: For Salaried Individuals",
               points: [
-    "Quick sanction & disbursal",
-"End-to-end digital processing",
-"Zero foreclosure charges",
-"Dedicated financial advisor support",
-"Safe custody and dematerialized pledging",
+    "Age: 21–60 years",
+"Minimum monthly income of ₹25,000",
+"Minimum 6–12 months job stability",
+"Clean credit history (CIBIL score above 700 preferred)",
   ],
             },
-            
-            
-           
             {
-              city: "Example",
-              
-              text: "You hold ₹25 lakh worth of equity shares. You can avail up to ₹18–20 lakh as a loan instantly, without selling a single stock.",
+              city: "For Self-Employed/Professionals:",
+              points: [
+    "Minimum 2 years of business continuity",
+"Income proof & bank statements",
+"Valid business registration/documents",
+"Good repayment history",
+  ],
               
             },
+             {
+              city: "Why Choose Nihal Finserv for Unsecured Loans?",
+              points: [
+    "Wide Network of Lenders & NBFCs",
+"Credit Score-Based Customized Offers",
+"One-on-One Consultation with Loan Experts",
+"End-to-End Paperwork & Processing Support",
+"Transparent Fee Structure & No Hidden Charges",
+"Quick Turnaround Time – Funds in Your Account Fast",
+  ],
+              
+            },
+             {
+              city: " Use Your Unsecured Loan Wisely:",
+              points: [
+    "Invest in your business",
+"Cover emergency expenses",
+"Fund higher education or travel",
+"Upgrade your home or lifestyle",
+"Consolidate multiple debts",
+  ],
+              
+            },
+            {
+                city: "Customer Experience",
+                text: "I needed a quick loan for my father's surgery but didn’t want to risk my property. Nihal Finserv made it easy—loan sanctioned in 2 days without asking for any collateral.",
+            }
+            
            
              
           ].map(({ city, text, points }) => (
@@ -241,6 +265,7 @@ export default function MortgageLoans() {
         </div>
       </div>
     </section>
+
     
     
     <ContactSection />

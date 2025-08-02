@@ -8,11 +8,13 @@ import { CheckCircle } from "lucide-react";
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
+
 const steps = [
- "PAN & Aadhaar",
-"Demat Account Details",
-"Holding Statement of Securities",
-"Income Proof (for large exposures)",
+  "ID & Address Proof (Aadhar, PAN)",
+"Income Proof (ITR, Salary Slips, Bank Statements)",
+"Property or Collateral Documents",
+"Business Financials (for business loans)",
+"Existing Loan Statements (if any)",
 ];
 
 
@@ -31,15 +33,15 @@ export default function MortgageLoans() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-5">
-            Unlock the Power of Your Investments Without Selling Them
+            Leverage Your Assets. Empower Your Goals.
           </h2>
           <p className="text-base mb-6">
-          Need funds but don’t want to liquidate your long-term investments? Nihal Finserv offers seamless Loan Against Securities (LAS), allowing you to leverage your existing portfolio while keeping your market exposure intact.
+           At Nihal Finserv, we believe that your assets should work for you. Whether you’re a business owner looking for expansion capital, a professional planning a major investment, or an individual aiming to consolidate debt or fund a dream, our Secured Loan solutions give you the financial strength you need — with minimal risk and maximum value.
           </p>
-          <p className="text-base mb-6">
-          Whether it's for business expansion, personal needs, or managing cash flow — your shares, mutual funds, bonds, or insurance policies can be turned into instant liquidity.
+          
+          <p className="text-base">
+           Backed by your tangible assets, secured loans allow you to access higher loan amounts, better interest rates, and longer repayment tenures, ensuring a smooth and stress-free borrowing experience.
           </p>
-         
         </div>
       </section>
       
@@ -63,14 +65,12 @@ export default function MortgageLoans() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
-              Use Cases
+              What Are Secured Loans?
             </h2>
-            <ol>
-              <li>Business Working Capital</li>
-              <li>Margin Trading or Investment</li>
-              <li>Personal Expenses (Education, Medical, Travel)</li>
-              <li>Tax Planning & Emergency Funds</li>
-            </ol>
+            <p>
+              A Secured Loan is a type of loan where you pledge an asset—such as real estate, gold, or fixed deposits—as collateral. The collateral acts as security for the lender, lowering their risk and enabling you to get more favorable loan terms compared to unsecured loans.
+            </p>
+            <p>With secured loans, you don’t need to compromise on liquidity. You retain ownership of your asset while utilizing its financial worth for your needs.</p>
             
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function MortgageLoans() {
               {/* Left Section */}
               <div>
                 <h4 className="uppercase text-sm font-semibold underline underline-offset-4 mb-4">
-                  Key Features
+                  Why Choose Nihal Finserv?
                 </h4>
                 <h2 className="text-5xl font-bold leading-tight mb-4">
                   Nihal Finserv -<br />
@@ -93,6 +93,7 @@ export default function MortgageLoans() {
                 <p className="text-gray-300 mb-8 max-w-md">
                   Your dreams are not just numbers - they are plans, futures, and possibilities.
                 </p>
+                <p className='text-gray-300 text-sm'>As an RBI-compliant financial consultancy and an authorized channel partner with top banks and NBFCs, Nihal Finserv brings credibility, transparency, and trust to your loan journey.</p>
                 <button className="border border-red-500 text-white px-6 py-3 hover:bg-red-500 transition flex items-center gap-2">
                   <span className="text-red-500">&#8213;</span> Get In Touch
                 </button>
@@ -101,43 +102,44 @@ export default function MortgageLoans() {
               {/* Right Section */}
               <div className="space-y-6">
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">No Need to Sell</h3>
+                  <h3 className="text-2xl font-semibold mb-2"> Trusted Industry Expertise</h3>
                   <p className="text-gray-400">
-                    Retain ownership and potential capital gains on your securities
+                    With deep market knowledge and financial acumen, we ensure you get the best-fit product aligned with your short and long-term financial goals.
+                  </p>
+                  
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2">Tailored Loan Solutions</h3>
+                  <p className="text-gray-400">
+                    No one-size-fits-all approach. Every loan is carefully structured to meet your needs — personal or professional.
+                  </p>
+                  
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-2xl font-semibold mb-2"> Loan Against Fixed Deposits</h3>
+                  <p className="text-gray-400">
+                    Need cash flow but don’t want to break your FD? This is the solution for you. Continue to earn interest while enjoying credit benefits.
                   </p>
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Instant Liquidity</h3>
+                  <h3 className="text-2xl font-semibold mb-2"> Transparent Processes</h3>
                   <p className="text-gray-400">
-                    Get quick access to funds without delays
+                    No hidden fees. No misleading terms. We maintain full transparency from start to finish.
                   </p>
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Flexible Repayment</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Fast & Hassle-Free Service</h3>
                   <p className="text-gray-400">
-                    Pay only interest monthly, repay principal anytime
+                    From documentation to disbursal, our experts handle it all — so you can focus on what matters.
                   </p>
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Mitigates legal and regulatory trade risks</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Network with Leading Lenders</h3>
+                  <p className="text-gray-400">
+                    We connect you to multiple lending institutions, ensuring the most competitive terms and rates.
+                  </p>
                  
                 </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">High Loan Amounts</h3>
-                  <p className="text-gray-400">
-                   Loans up to ₹10 crore based on your portfolio value
-                  </p>
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Attractive Interest Rates</h3>
-                  <p className="text-gray-400">
-                   
-                   Competitive rates starting from as low as 9% p.a.
-                  
-                  </p>
-                </div>
-                
-
               </div>
             </div>
           </section>
@@ -148,7 +150,7 @@ export default function MortgageLoans() {
         {/* Left: Text and Checklist */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-            Docments Required
+            Documents Required
           </h2>
           <p className="text-gray-600 text-lg mb-6 max-w-xl">
             Nihal Finserv ensures personalized guidance through every step, from documentation to loan disbursal.
@@ -180,48 +182,46 @@ export default function MortgageLoans() {
 
     
     
-   
+ 
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Loan Against Securities
+          Secured Loans
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-        The loan amount depends on the type and value of securities and prevailing market conditions.
+          At Nihal Finserv, we’re more than loan facilitators—we’re your financial growth partners. Let us help you unlock the potential of your assets and achieve your ambitions with confidence.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Eligible Securities",
+              city: "Key Features and Benifits",
               points: [
-    "Equity Shares (Listed)",
-"Mutual Fund Units (Debt/Equity/Hybrid)",
-"Bonds & Debentures",
-"Government Securities",
-"Insurance Policies (with Surrender Value)",
+    "Loan Amount: Ranges from ₹5 Lakhs to ₹10 Crores+",
+"Flexible Tenure: Repayment periods up to 15 years",
+"Low Interest Rates: Thanks to asset-backed security",
+"Quick Approvals: Faster processing due to reduced risk",
+"Custom Loan Structuring: Based on your goals and asset value",
+"Minimal Documentation: We guide you through every step",
   ],
             },
             {
-              city: "Why Choose Nihal Finserv?",
+              city: "Who Can Apply?",
               points: [
-    "Quick sanction & disbursal",
-"End-to-end digital processing",
-"Zero foreclosure charges",
-"Dedicated financial advisor support",
-"Safe custody and dematerialized pledging",
+    "Salaried Individuals",
+"Self-Employed Professionals",
+"Entrepreneurs and SMEs",
+"Commercial Property Owners",
+"High Net Worth Individuals",
   ],
             },
-            
-            
-           
             {
-              city: "Example",
-              
-              text: "You hold ₹25 lakh worth of equity shares. You can avail up to ₹18–20 lakh as a loan instantly, without selling a single stock.",
+              city: "Ready to apply?",
+              text:  "Get in touch today for a free consultation and explore the secured loan options that best suit your needs.",
               
             },
+            
            
              
           ].map(({ city, text, points }) => (
@@ -241,6 +241,7 @@ export default function MortgageLoans() {
         </div>
       </div>
     </section>
+
     
     
     <ContactSection />

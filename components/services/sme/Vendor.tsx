@@ -65,14 +65,14 @@ export default function MortgageLoans() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
-              Perfect For
+              Loan Highlights
             </h2>
             <ol>
-              <li>Fulfilling bulk or urgent purchase orders</li>
-              <li>Managing delayed receivables or invoices</li>
-              <li>Procuring raw materials or inventory</li>
-              <li>Upgrading systems or infrastructure</li>
-              <li>Meeting day-to-day business expenses</li>
+              <li>Loan Range: ₹1 Lakh to ₹2 Crore</li>
+              <li>Tenure: 3 to 36 months</li>
+              <li>Interest Rates: Competitive, based on business profile</li>
+              <li>Collateral: Optional or Nil, depending on credit history</li>
+              <li>Documentation: Simple and minimal</li>
             </ol>
             
           </div>
@@ -181,53 +181,64 @@ export default function MortgageLoans() {
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Top Cities in India Leading the Demand for Web Development Services
+          Vendor Loans
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-          With businesses shifting online across every industry, the need for professional web development services is
-          at an all-time high. From corporate websites and e-commerce platforms to SaaS products and enterprise
-          portals, Indian cities are powering this digital transformation with world-class web design and development
-          expertise. Below, we spotlight the top cities driving demand and innovation.
+         From Purchase Order Funding to Invoice Discounting, our solutions are made for vendors like you.
+
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Bengaluru",
-              text:
-                "Web Development Services in Bengaluru thrive on the city's robust IT ecosystem and startup culture. Bengaluru developers specialize in SaaS product development, enterprise-grade portals, and modern frameworks like React, Angular, and Node.js. Their focus on innovation, scalability, and cloud-native architecture makes them ideal for fast-growing startups and global enterprises.",
+              city: "Perfect For:",
+              points: [
+    "Fulfilling bulk or urgent purchase orders",
+"Managing delayed receivables or invoices",
+"Procuring raw materials or inventory",
+"Upgrading systems or infrastructure",
+"Meeting day-to-day business expenses",
+  ],
             },
             {
-              city: "Mumbai",
-              text:
-                "Web Development Services in Mumbai serve industries ranging from finance and media to retail and healthcare. Developers here excel at building responsive corporate websites, e-commerce solutions with payment integration, and custom CMS platforms. With a strong corporate presence, Mumbai ensures compliance, user-centric design, and robust performance.",
+              city: "Eligibilty Criteria",
+              points: [
+    "Minimum 1 year of operational history",
+"Valid GST & business licenses",
+"Consistent billing or invoice flow",
+"Acceptable credit report & bank conduct",
+  ],
             },
             {
-              city: "Delhi",
-              text:
-                "Web Development Services in Delhi cater to government projects, startups, and enterprises alike. Delhi-based developers are skilled in multilingual sites, e-governance platforms, and digital-first solutions with strong SEO and marketing integration. The city's expertise also extends to building educational portals and large-scale web applications.",
+              city: "Real Story. Real Results.",
+              text: 
+    "As a vendor for a construction firm, I faced delays in receivables. Nihal Finserv's vendor loan helped me stay afloat and continue delivering quality materials without any pause.",
+  
             },
+            
+           
             {
-              city: "Chennai",
-              text:
-                "Web Development Services in Chennai focus on backend reliability, ERP integrations, and enterprise systems. Developers in Chennai are trusted for their expertise in Java, .NET, and PHP frameworks, delivering high-performance web applications for corporates, manufacturing, and logistics industries.",
+              city: "Did You Know?",
+              
+              text: "You can get loans against Purchase Orders or Invoices instead of waiting for client payments.",
+              
             },
-            {
-              city: "Hyderabad",
-              text:
-                "Web Development Services in Hyderabad combine UI/UX excellence with cutting-edge backend development. Hyderabad teams build SaaS dashboards, scalable e-commerce platforms, and secure fintech portals. With expertise in AI, APIs, and cybersecurity, they cater to global clients requiring robust, enterprise-ready web solutions.",
-            },
-            {
-              city: "Pune",
-              text:
-                "Web Development Services in Pune provide cost-effective yet high-quality solutions for startups, SMEs, and enterprises. Pune developers excel at MVPs, business websites, and cross-platform applications. Their strength lies in balancing affordability with innovation, making them a go-to hub for emerging businesses.",
-            },
-          ].map(({ city, text }) => (
-            <div key={city} className="border border-gray-700 p-6 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
-              <p className="text-gray-300 leading-relaxed">{text}</p>
-            </div>
-          ))}
+           
+             
+          ].map(({ city, text, points }) => (
+  <div key={city} className="border border-gray-700 p-6 rounded-lg">
+    <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
+    {points ? (
+      <ul className="text-gray-300 list-disc list-inside space-y-2">
+        {points.map((point, idx) => (
+          <li key={idx}>{point}</li>
+        ))}
+      </ul>
+    ) : (
+      <p className="text-gray-300 leading-relaxed">{text}</p>
+    )}
+  </div>
+))}
         </div>
       </div>
     </section>
