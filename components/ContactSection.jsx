@@ -1,5 +1,6 @@
-12
-import { color } from "framer-motion";
+"use client";
+
+import { motion } from "framer-motion/dist/framer-motion.cjs";
 import React from "react";
 
 const offices = [
