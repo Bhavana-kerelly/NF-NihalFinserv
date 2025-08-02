@@ -1,6 +1,5 @@
 "use client";
-
-import { motion } from "framer-motion/dist/framer-motion.cjs";
+import { motion } from "framer-motion";
 import React from "react";
 
 const offices = [
@@ -12,23 +11,23 @@ const offices = [
   {
     city: "Chennai",
     address: "Chennai, Tamil Nadu",
-   
   },
   {
     city: "Bangalore",
     address: "Bengaluru, Karnataka",
-  
   },
-  
 ];
 
 export default function ContactSection() {
   return (
     <div style={styles.container}>
-      <div style={styles.left}>
-        <h2 style={styles.title}>
-          Collaborate with Nihal Finserv
-        </h2>
+      <motion.div
+        style={styles.left}
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h2 style={styles.title}>Collaborate with Nihal Finserv</h2>
         <form style={styles.form}>
           <label style={styles.label}>Name *</label>
           <input type="text" style={styles.input} />
@@ -58,9 +57,14 @@ export default function ContactSection() {
 
           <button style={styles.button}>Submit</button>
         </form>
-      </div>
+      </motion.div>
 
-      <div style={styles.right}>
+      <motion.div
+        style={styles.right}
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
         <h2 style={styles.titleRight}>
           <span style={{ color: "#fff" }}>Our </span>
           <span style={styles.gray}>Offices</span>
@@ -74,7 +78,7 @@ export default function ContactSection() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
@@ -136,6 +140,8 @@ const styles = {
     borderRadius: "4px",
     border: "1px solid #ccc",
     marginBottom: "15px",
+    backgroundColor: "black",
+    color: "white",
   },
   button: {
     padding: "10px 20px",

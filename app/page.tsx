@@ -1,9 +1,4 @@
-import dynamic from "next/dynamic";
-
-const ContactSection = dynamic(() => import('@/components/ContactSection'), {
-  ssr: false,
-});
-
+import dynamic from 'next/dynamic';
 
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
@@ -13,11 +8,14 @@ import Faq from '../components/Faq';
 import MarqueeSection from '../components/MarqueeSection.jsx';
 import FeaturedInsights from '../components/FeaturedInsights';
 import Testimonials from '../components/Testimonials';
- import ContactSection from '../components/ContactSection';
+import ServiceSection from '../components/ServiceSection';
+import Footer from '../components/Footer';
+import Content from '../components/Content.jsx';
 
- import ServiceSection from '../components/ServiceSection';
- import Footer from '../components/Footer';
- import Content from '../components/Content.jsx';
+// ✅ Dynamically import ContactSection
+const ContactSection = dynamic(() => import('../components/ContactSection'), {
+  ssr: false,
+});
 
 export default function HomePage() {
   return (
@@ -35,12 +33,8 @@ export default function HomePage() {
       {/* <ClientLogosSection /> */}
       <Testimonials />
       <ContactSection />
-    
       <ServiceSection />
       <Footer />
-      
-      
     </>
   );
 }
-
