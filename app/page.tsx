@@ -1,3 +1,4 @@
+"use client";
 import dynamic from 'next/dynamic';
 
 import Navbar from '../components/Navbar';
@@ -11,8 +12,9 @@ import Testimonials from '../components/Testimonials';
 import ServiceSection from '../components/ServiceSection';
 import Footer from '../components/Footer';
 import Content from '../components/Content.jsx';
-
+import { use } from 'react';
 // ✅ Dynamically import ContactSection
+
 const ContactSection = dynamic(() => import('../components/ContactSection'), {
   ssr: false,
 });
