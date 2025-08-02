@@ -10,11 +10,10 @@ import ServiceSection from '@/components/ServiceSection';
 
 
 const steps = [
-  "ID & Address Proof (Aadhar, PAN)",
-"Income Proof (ITR, Salary Slips, Bank Statements)",
-"Property or Collateral Documents",
-"Business Financials (for business loans)",
-"Existing Loan Statements (if any)",
+  "KYC Documents (PAN, Aadhaar)",
+"Net Worth Declaration (for HNIs)",
+"Risk Profile Assessment",
+"Investment Consent Forms",
 ];
 
 
@@ -33,14 +32,14 @@ export default function MortgageLoans() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-5">
-            Leverage Your Assets. Empower Your Goals.
+             Tailored Investment Strategies for Enhanced Returns
           </h2>
           <p className="text-base mb-6">
-           At Nihal Finserv, we believe that your assets should work for you. Whether you’re a business owner looking for expansion capital, a professional planning a major investment, or an individual aiming to consolidate debt or fund a dream, our Secured Loan solutions give you the financial strength you need — with minimal risk and maximum value.
+           At Nihal Finserv, we offer Structured Products — a smart blend of fixed-income safety and market-linked growth. Designed specifically for high-net-worth individuals (HNIs) and strategic investors, these products align with your risk appetite and financial goals.
           </p>
           
           <p className="text-base">
-           Backed by your tangible assets, secured loans allow you to access higher loan amounts, better interest rates, and longer repayment tenures, ensuring a smooth and stress-free borrowing experience.
+           At Nihal Finserv, we offer Structured Products — a smart blend of fixed-income safety and market-linked growth. Designed specifically for high-net-worth individuals (HNIs) and strategic investors, these products align with your risk appetite and financial goals.
           </p>
         </div>
       </section>
@@ -65,12 +64,15 @@ export default function MortgageLoans() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
-              What Are Secured Loans?
+              Product Highlights
             </h2>
-            <p>
-              A Secured Loan is a type of loan where you pledge an asset—such as real estate, gold, or fixed deposits—as collateral. The collateral acts as security for the lender, lowering their risk and enabling you to get more favorable loan terms compared to unsecured loans.
-            </p>
-            <p>With secured loans, you don’t need to compromise on liquidity. You retain ownership of your asset while utilizing its financial worth for your needs.</p>
+           <ol>
+            <li>Capital Protected & Non-Capital Protected Structures</li>
+<li>Tenures: 1 to 5 years</li>
+<li>Payoffs: Fixed, Conditional, or Market-Linked</li>
+<li>Linked Assets: Equity indices, Mutual Funds, Commodities, Interest Rates</li>
+<li>Currency Options: INR or USD-based investments</li>
+           </ol>
             
           </div>
         </div>
@@ -82,7 +84,7 @@ export default function MortgageLoans() {
               {/* Left Section */}
               <div>
                 <h4 className="uppercase text-sm font-semibold underline underline-offset-4 mb-4">
-                  Why Choose Nihal Finserv?
+                  Key Features
                 </h4>
                 <h2 className="text-5xl font-bold leading-tight mb-4">
                   Nihal Finserv -<br />
@@ -102,44 +104,38 @@ export default function MortgageLoans() {
               {/* Right Section */}
               <div className="space-y-6">
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> Trusted Industry Expertise</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Custom-Built Portfolios</h3>
                   <p className="text-gray-400">
-                    With deep market knowledge and financial acumen, we ensure you get the best-fit product aligned with your short and long-term financial goals.
+                    Tailored to your investment objective and market outlook.
                   </p>
                   
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Tailored Loan Solutions</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Capital Protection Options</h3>
                   <p className="text-gray-400">
-                    No one-size-fits-all approach. Every loan is carefully structured to meet your needs — personal or professional.
+                    Protect your principal while capturing upside
                   </p>
                   
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> Loan Against Fixed Deposits</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Diversified Exposure</h3>
                   <p className="text-gray-400">
-                    Need cash flow but don’t want to break your FD? This is the solution for you. Continue to earn interest while enjoying credit benefits.
+                    Blend of equity, debt, currency, or commodities
                   </p>
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> Transparent Processes</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Defined Outcomes</h3>
                   <p className="text-gray-400">
-                    No hidden fees. No misleading terms. We maintain full transparency from start to finish.
+                    Transparent payoff structures for better planning
                   </p>
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Fast & Hassle-Free Service</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Tax Efficiency</h3>
                   <p className="text-gray-400">
-                    From documentation to disbursal, our experts handle it all — so you can focus on what matters.
+                    Designed for better post-tax returns in select models
                   </p>
                 </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Network with Leading Lenders</h3>
-                  <p className="text-gray-400">
-                    We connect you to multiple lending institutions, ensuring the most competitive terms and rates.
-                  </p>
-                 
-                </div>
+                
               </div>
             </div>
           </section>
@@ -187,38 +183,37 @@ export default function MortgageLoans() {
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Secured Loans
+          Structured Products
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-          At Nihal Finserv, we’re more than loan facilitators—we’re your financial growth partners. Let us help you unlock the potential of your assets and achieve your ambitions with confidence.
+          Whether you're planning for legacy, diversification, or high-yield growth — Structured Products at Nihal Finserv give you the control and clarity you deserve.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Key Features and Benifits",
+              city: " Ideal For",
               points: [
-    "Loan Amount: Ranges from ₹5 Lakhs to ₹10 Crores+",
-"Flexible Tenure: Repayment periods up to 15 years",
-"Low Interest Rates: Thanks to asset-backed security",
-"Quick Approvals: Faster processing due to reduced risk",
-"Custom Loan Structuring: Based on your goals and asset value",
-"Minimal Documentation: We guide you through every step",
+    "High-Net-Worth Individuals (HNIs)",
+"Family offices and trusts",
+"Corporates seeking non-traditional investments",
+"Investors with moderate to high risk appetite",
+"Professionals looking to diversify beyond traditional avenues",
   ],
             },
             {
-              city: "Who Can Apply?",
+              city: " Examples of Structured Products:",
               points: [
-    "Salaried Individuals",
-"Self-Employed Professionals",
-"Entrepreneurs and SMEs",
-"Commercial Property Owners",
-"High Net Worth Individuals",
+    "Capital Protection with Equity Upside",
+"Range-Bound Return Notes",
+"Market-Linked Debentures (MLDs)",
+"Dual-Asset Linked Notes (Equity + Gold)",
+"Fixed Coupon Notes with Performance Bonus",
   ],
             },
             {
-              city: "Ready to apply?",
-              text:  "Get in touch today for a free consultation and explore the secured loan options that best suit your needs.",
+              city: "Did You Know?",
+              text:  "Structured Products are often used by savvy investors to generate alpha in sideways markets while managing downside risks.",
               
             },
             

@@ -50,6 +50,10 @@ export default function ContactSection() {
             <option>Unsecured Loans</option>
             <option>Term Loans</option>
             <option>Coorporate Loans</option>
+            <option>Sme</option>
+            <option>Structured Products</option>
+            <option>Equipment Refinancing</option>
+            <option>Ai Chat Bot</option>
           </select>
 
           <label style={styles.label}>Comment or Message</label>
