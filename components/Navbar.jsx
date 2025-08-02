@@ -47,7 +47,7 @@ export default function Header() {
                   {/* Secured Loans Column */}
                   <div className="flex flex-col space-y-2">
                     <div className="font-semibold">
-                      <Link href="/securedloans" className="hover:text-blue-600">Secured Loans</Link>
+                      <Link href="/services/securedloans/securedloans" className="hover:text-blue-600">Secured Loans</Link>
                     </div>
                     <Link href="/services/securedloans/mortgageloans" className="hover:text-blue-600">Mortgage Loans</Link>
                     <Link href="/services/securedloans/schoolandcollegefunding" className="hover:text-blue-600">School & College Funding</Link>
@@ -59,7 +59,7 @@ export default function Header() {
                   {/* Unsecured Loans Column */}
                   <div className="flex flex-col space-y-2">
                     <div className="font-semibold">
-                      <Link href="/unsecuredLoans" className="hover:text-blue-600">Unsecured Loans</Link>
+                      <Link href="/services/unsecuredloans/unsecuredLoans" className="hover:text-blue-600">Unsecured Loans</Link>
                     </div>
                     <Link href="/services/unsecuredloans/businessinstallmentloans" className="hover:text-blue-600">Business Installment Loans</Link>
                     <Link href="/services/unsecuredloans/medicalequipmentloans" className="hover:text-blue-600">Medical Equipment Loans</Link>
@@ -74,7 +74,7 @@ export default function Header() {
                   {/* Term Loans Column */}
                   <div className="flex flex-col space-y-2">
                     <div className="font-semibold">
-                      <Link href="/term" className="hover:text-blue-600">Term Loans</Link>
+                      <Link href="/services/termloans/term" className="hover:text-blue-600">Term Loans</Link>
                     </div>
                     <Link href="/services/termloans/shorttermloans" className="hover:text-blue-600">Short-Term Loans</Link>
                     <Link href="/services/termloans/longtermloans" className="hover:text-blue-600">Long-Term Loans</Link>
@@ -84,7 +84,7 @@ export default function Header() {
                   {/* Corporate Loans Column */}
                   <div className="flex flex-col space-y-2">
                     <div className="font-semibold">
-                      <Link href="/corporateloans" className="hover:text-blue-600">Corporate Loans</Link>
+                      <Link href="/services/coorporateloans/coorporateloans" className="hover:text-blue-600">Corporate Loans</Link>
                     </div>
                     <Link href="/services/corporateloans/workingcapital" className="hover:text-blue-600">Working Capital</Link>
                     <Link href="/services/corporateloans/assetfinance" className="hover:text-blue-600">Asset Finance</Link>
@@ -94,7 +94,7 @@ export default function Header() {
                   </div>
                    {/* Bottom Row (4 Columns) */}
       <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-white"><Link href="#sme" className="hover:text-blue-600">SME</Link></div>
+        <div className="font-semibold text-white"><Link href="/services/sme/sme" className="hover:text-blue-600">SME</Link></div>
         <div className="text-white text-sm space-y-1">
           <Link href="/services/sme/manufacturer" className="hover:text-blue-600">Manufacturer</Link><br />
           <Link href="/services/sme/distributor" className="hover:text-blue-600">Distributor</Link><br/>
@@ -105,7 +105,7 @@ export default function Header() {
       </div>
 
 <div className="flex flex-col space-y-2">
-  <div className="font-semibold text-white"><Link href="/structuredproducts" className="hover:text-blue-600">Structured Products</Link></div>
+  <div className="font-semibold text-white"><Link href="/services/structuredproducts/structuredproducts" className="hover:text-blue-600">Structured Products</Link></div>
   <div className="text-white text-sm space-y-1">
     <Link href="/services/structuredproducts/loanagainstsecurities" className="hover:text-blue-600">Loan Against Securities</Link><br />
     <Link href="/services/structuredproducts/structuredinvestments" className="hover:text-blue-600">Structured Investments</Link><br/>
@@ -117,7 +117,7 @@ export default function Header() {
 </div>
 
 <div className="flex flex-col space-y-2">
-  <div className="font-semibold text-white"><Link href="/equipmentfinancingandleasing" className="hover:text-blue-600">Equipment Financing & Leasing</Link></div>
+  <div className="font-semibold text-white"><Link href="/services/equipmentfinancingandleasing/equipmentfinancingandleasing" className="hover:text-blue-600">Equipment Financing & Leasing</Link></div>
   <div className="text-white text-sm space-y-1">
     <Link href="/services/equipmentfinancingandleasing/capitalgoods" className="hover:text-blue-600">Capital Goods</Link><br />
     <Link href="/services/equipmentfinancingandleasing/ithardware" className="hover:text-blue-600">IT Hardware</Link><br/>
@@ -132,7 +132,7 @@ export default function Header() {
 </div>
 
 <div className="flex flex-col space-y-2">
-  <div className="font-semibold text-white"><Link href="/aichatbots" className="hover:text-blue-600">AI Chatbots</Link></div>
+  <div className="font-semibold text-white"><Link href="/services/aichatbots/aichatbots" className="hover:text-blue-600">AI Chatbots</Link></div>
   <div className="text-white text-sm space-y-1">
     <Link href="/services/aichatbots/chatgptsolutions" className="hover:text-blue-600">ChatGPT Solutions</Link><br />
     <Link href="/services/aichatbots/aichatbotdev" className="hover:text-blue-600">AI Chatbot Dev</Link>
