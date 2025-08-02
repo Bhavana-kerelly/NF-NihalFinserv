@@ -8,7 +8,11 @@ import { CheckCircle } from "lucide-react";
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
-
+const industries = [
+    { name: "ChatGPT Solutions", link: "/services/structuredproducts/chatgptsolutions" },
+    { name: "AI ChatBot Dev", link: "/services/structuredproducts/aichatbotdev" },
+    
+  ];
 const steps = [
   "Partnerships with leading banks & NBFCs",
 "Expert financial & legal due diligence",
@@ -177,6 +181,26 @@ export default function MortgageLoans() {
     </section>
 
     
+     <section>
+        <div className="bg-black text-white px-6 py-16">
+      <h2 className="text-3xl font-bold mb-4">
+        AI CHAT BOT
+      </h2>
+      
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        {industries.map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            className="border border-gray-600 rounded-md py-6 px-4 flex items-center justify-center hover:bg-gray-800 transition text-sm font-medium text-center"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+      </section>
     
  
     

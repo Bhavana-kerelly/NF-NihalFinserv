@@ -8,7 +8,17 @@ import { CheckCircle } from "lucide-react";
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
-
+const industries = [
+    { name: "Capital Goods", link: "/services/structuredproducts/capitalgoods" },
+    { name: "IT Hardware", link: "/services/structuredproducts/ithardware" },
+    { name: "Office Infrastructure", link: "/services/structuredproducts/officeinfrastructure" },
+    { name: "Cars", link: "/services/structuredproducts/cars" },
+    
+    { name: "Energy Saving Equipment", link: "/services/structuredproducts/energysavingequipment" },
+    { name: "Healthcare Equipment", link: "/services/structuredproducts/healthcareequipment" },
+    { name: "Logistic Machinery", link: "/services/structuredproducts/logisticsmachinery" },
+    { name: "Solar Equipment", link: "/services/structuredproducts/solarequipment" },
+  ];
 const steps = [
   "Partnerships with leading banks & NBFCs",
 "Expert financial & legal due diligence",
@@ -177,6 +187,26 @@ export default function MortgageLoans() {
     </section>
 
     
+     <section>
+        <div className="bg-black text-white px-6 py-16">
+      <h2 className="text-3xl font-bold mb-4">
+        EQUIPMENT FINANCING AND LEASING
+      </h2>
+      
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        {industries.map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            className="border border-gray-600 rounded-md py-6 px-4 flex items-center justify-center hover:bg-gray-800 transition text-sm font-medium text-center"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+      </section>
     
  
     

@@ -8,7 +8,14 @@ import { CheckCircle } from "lucide-react";
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
-
+const industries = [
+    { name: "Working Capital", link: "/services/structuredproducts/workingcapital" },
+    { name: "Asset Finance", link: "/services/structuredproducts/assetfinance" },
+    { name: "Leasing", link: "/services/structuredproducts/leasing" },
+    { name: "Term Loans", link: "/services/structuredproducts/termloans" },
+    { name: "Structed Finance", link: "/services/structuredproducts/structuredfinance" },
+    
+  ];
 const steps = [
   "Partnerships with leading banks & NBFCs",
 "Expert financial & legal due diligence",
@@ -177,13 +184,33 @@ export default function MortgageLoans() {
     </section>
 
     
+     <section>
+        <div className="bg-black text-white px-6 py-16">
+      <h2 className="text-3xl font-bold mb-4">
+        CORPORATE LOANS
+      </h2>
+      
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        {industries.map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            className="border border-gray-600 rounded-md py-6 px-4 flex items-center justify-center hover:bg-gray-800 transition text-sm font-medium text-center"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+      </section>
     
  
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Secured Loans
+           Corporate Loans
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
           At Nihal Finserv, we’re more than loan facilitators—we’re your financial growth partners. Let us help you unlock the potential of your assets and achieve your ambitions with confidence.

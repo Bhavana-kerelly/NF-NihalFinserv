@@ -2,12 +2,22 @@
 
 import Image from 'next/image';
 import { CheckCircle } from "lucide-react";
+import React from "react";
+    
 
 
 
 import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
+ const industries = [
+    { name: "Loan Against Securities", link: "/services/structuredproducts/loanagainstsecurities" },
+    { name: "Structured Investment", link: "/services/structuredproducts/structuredinvestments" },
+    { name: "Letter of Credit", link: "/services/structuredproducts/letterofcredit" },
+    { name: "Lease Rental Discounting", link: "/services/structuredproducts/leaserentaldiscounting" },
+    { name: "Loan Against Securities", link: "/services/structuredproducts/loanagainstproperty" },
+    
+  ];
 
 const steps = [
   "KYC Documents (PAN, Aadhaar)",
@@ -177,7 +187,26 @@ export default function MortgageLoans() {
     </section>
 
     
-    
+    <section>
+        <div className="bg-black text-white px-6 py-16">
+      <h2 className="text-3xl font-bold mb-4">
+        STRUCTURED PRODUCTS
+      </h2>
+      
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        {industries.map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            className="border border-gray-600 rounded-md py-6 px-4 flex items-center justify-center hover:bg-gray-800 transition text-sm font-medium text-center"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+      </section>
  
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
