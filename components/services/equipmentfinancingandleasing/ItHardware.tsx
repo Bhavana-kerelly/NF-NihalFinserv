@@ -13,7 +13,7 @@ export default function ITHardwareFinancing() {
       <section className="py-20 px-6 bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/M1.jpg"
+            src="/equipmentfinancing/IH1.jpg"
             alt="IT Hardware Financing"
             width={800}
             height={500}
@@ -39,7 +39,7 @@ export default function ITHardwareFinancing() {
           <div>
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/Images/Mortgage.png"
+                src="/equipmentfinancing/IH2.jpg"
                 alt="IT Hardware Types"
                 width={700}
                 height={400}
@@ -128,7 +128,7 @@ export default function ITHardwareFinancing() {
           </div>
           <div className="w-full rounded-xl overflow-hidden shadow-md">
             <Image
-              src="/images/Document1.jpg"
+              src="/equipmentfinancing/IH3.jpg"
               alt="IT Users"
               width={800}
               height={500}

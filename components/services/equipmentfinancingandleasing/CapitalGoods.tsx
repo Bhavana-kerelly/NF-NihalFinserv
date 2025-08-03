@@ -13,7 +13,7 @@ export default function CapitalGoodsFinancing() {
       <section className="py-20 px-6 bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/M1.jpg"
+            src="/equipmentfinancing/CG1.jpg"
             alt="Capital Goods Financing"
             width={800}
             height={500}
@@ -39,7 +39,7 @@ export default function CapitalGoodsFinancing() {
           <div>
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/Images/Mortgage.png"
+                src="/equipmentfinancing/CG2.jpg"
                 alt="What We Finance"
                 width={700}
                 height={400}
@@ -126,7 +126,7 @@ export default function CapitalGoodsFinancing() {
           </div>
           <div className="w-full rounded-xl overflow-hidden shadow-md">
             <Image
-              src="/images/Document1.jpg"
+              src="/equipmentfinancing/CG3.jpg"
               alt="Capital Goods"
               width={800}
               height={500}

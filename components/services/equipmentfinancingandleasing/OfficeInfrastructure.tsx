@@ -13,7 +13,7 @@ export default function OfficeInfrastructureFinancing() {
       <section className="py-20 px-6 bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/M1.jpg"
+            src="/equipmentfinancing/OF1.jpg"
             alt="Office Infrastructure Financing"
             width={800}
             height={500}
@@ -39,7 +39,7 @@ export default function OfficeInfrastructureFinancing() {
           <div>
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/Images/Mortgage.png"
+                src="/equipmentfinancing/OF2.jpg"
                 alt="Office Financing Scope"
                 width={700}
                 height={400}
@@ -127,7 +127,7 @@ export default function OfficeInfrastructureFinancing() {
           </div>
           <div className="w-full rounded-xl overflow-hidden shadow-md">
             <Image
-              src="/images/Document1.jpg"
+              src="/equipmentfinancing/OF3.jpg"
               alt="Office Setup"
               width={800}
               height={500}

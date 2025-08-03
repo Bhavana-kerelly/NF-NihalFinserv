@@ -9,10 +9,12 @@ import ContactSection from '@/components/ContactSection';
 import ServiceSection from '@/components/ServiceSection';
 
 const steps = [
- "Property documents (Title deed, tax receipts, plan approvals)",
-"KYC – Aadhaar, PAN, Address Proof",
-"Income Proof (ITR, salary slips, bank statements)",
-"Existing loan documents (if any)",
+ "Commercial and Industrial Businesses",
+"Housing Societies and Residential Communities",
+"Educational Institutions",
+"Hospitals and Hotels",
+"Retail Chains",
+"NGOs and Religious Institutions",
 ];
 
 
@@ -22,7 +24,7 @@ export default function MortgageLoans() {
       <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/M1.jpg"
+            src="/equipmentfinancing/S1.jpg"
             alt="Office"
             width={800}
             height={500}
@@ -31,12 +33,12 @@ export default function MortgageLoans() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-5">
-            Unlock the Potential of Your Property Without Selling It
+            Empower Your Business with Clean, Cost-Effective Energy Solutions
           </h2>
           <p className="text-base mb-6">
-          Your property holds more than just space — it holds value. With Loan Against Property, you can tap into that value to fund business needs, education, emergencies, or expansion. At Nihal Finserv, we help you get the most out of your residential or commercial property through customized LAP solutions with competitive rates and flexible repayment terms.
+         Solar Equipment Financing & Leasing provides businesses and individuals with the financial flexibility to install solar power systems without bearing the entire upfront cost. From solar panels to inverters and energy storage systems, this solution enables you to adopt renewable energy with structured EMIs or lease options.
           </p>
-          
+          <p>Whether you're looking to reduce electricity bills, achieve energy independence, or meet green energy mandates—Nihal Finserv offers the right funding tools to power your transition to solar.</p>
          
         </div>
       </section>
@@ -48,7 +50,7 @@ export default function MortgageLoans() {
             
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/Images/Mortgage.png" // make sure to place the image in /public folder
+                src="/equipmentfinancing/S2.jpg" // make sure to place the image in /public folder
                 alt="Team"
                 width={700}
                 height={400}
@@ -61,9 +63,17 @@ export default function MortgageLoans() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-6">
-               What is Loan Against Property?
+               What Can Be Financed?
             </h2>
-            <p className="text-base mb-6" >Loan Against Property (LAP) is a secured loan offered by banks or NBFCs where your residential, commercial, or industrial property is pledged as collateral. The loan amount is based on the property’s market value and your repayment capability.</p>
+            <ol>
+              <li>Solar PV Panels (Monocrystalline & Polycrystalline)</li>
+<li>Solar Inverters (On-grid, Off-grid, Hybrid)</li>
+<li>Battery Storage Systems</li>
+<li>Solar Street Lights</li>
+<li>Solar Water Heaters</li>
+<li>Rooftop Solar Systems (Residential, Commercial & Industrial)</li>
+<li>Mounting Structures, Cables, and Accessories</li>
+            </ol>
             
           </div>
         </div>
@@ -94,27 +104,27 @@ export default function MortgageLoans() {
               {/* Right Section */}
               <div className="space-y-6">
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> Lower Interest Rates compared to personal loans</h3>
+                  <h3 className="text-2xl font-semibold mb-2"> No Upfront Capital – Switch to solar without heavy investment.</h3>
                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Longer Tenure (up to 15 years) for easy EMIs</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Fixed Monthly Payments – Plan your cash flow efficiently.</h3>
                   
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Strengthens negotiation position</h3>
+                  <h3 className="text-2xl font-semibold mb-2"> Government Subsidy Management – We help you leverage available subsidies and incentives.</h3>
                   
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2"> High Loan Amounts (Up to 70% of property value)</h3>
+                  <h3 className="text-2xl font-semibold mb-2"> Reduce Energy Costs – Save significantly on monthly electricity bills.</h3>
                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Use Funds Freely – business, education, medical, personal needs</h3>
+                  <h3 className="text-2xl font-semibold mb-2"> Tax & Depreciation Benefits – Enjoy tax advantages under various schemes.</h3>
                  
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-2xl font-semibold mb-2">Continue Using the Property – No need to vacate or sell</h3>
+                  <h3 className="text-2xl font-semibold mb-2"> Sustainable Business Growth – Build a greener brand image and reduce carbon footprint.</h3>
                   
                 </div>
                 
@@ -129,7 +139,7 @@ export default function MortgageLoans() {
         {/* Left: Text and Checklist */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-            Required Documents
+            Who Can Avail This?
           </h2>
           <p className="text-gray-600 text-lg mb-6 max-w-xl">
             Nihal Finserv ensures personalized guidance through every step, from documentation to loan disbursal.
@@ -149,7 +159,7 @@ export default function MortgageLoans() {
         {/* Right: Image */}
         <div className="w-full rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/images/Document1.jpg" // Place this in /public
+            src="/equipmentfinancing/S3.jpg" // Place this in /public
             alt="Developer at work"
             width={800}
             height={500}
@@ -166,62 +176,34 @@ export default function MortgageLoans() {
     <section className="bg-white text-black py-16 px-6 md:px-20">
       <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Loan Against Property
+          Solar Equipment
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-14">
-      Don’t let your property sit idle — leverage it for your life goals.
+      Talk to our experts today and get customized solar financing solutions.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              city: "Eligible Properties",
+              city: "Why Choose Nihal Finserv?",
               points: [
-    "Self-occupied Residential Property",
-"Rented-out Residential or Commercial Property",
-"Vacant Land with proper documentation",
-"Industrial/Factory Units",
-  ],
-            },
-            {
-              city: " Who Can Apply?",
-              points: [
-    "Salaried Individuals",
-"Self-employed Professionals (CA, Doctor, Architect)",
-"Business Owners",
-"SMEs & Corporates",
-"NRIs (case-specific)",
+    "Tailored finance solutions for solar projects of any size",
+"Quick approvals and minimal documentation",
+"Flexible tenure and repayment options",
+"Partnerships with leading solar equipment suppliers and EPC contractors",
+"End-to-end support—from planning to disbursement",
   ],
             },
             
-             {
-              city: "How Nihal Finserv Adds Value",
-              points: [
-    "Property evaluation & eligibility analysis",
-"Loan comparison from multiple banks/NBFCs",
-"Negotiation for the best interest rates & processing fees",
-"End-to-end paperwork assistance",
-"Quick turnaround time and disbursal",
-  ],
+            
+             
+            {
+              city: "Ready to Go Solar?",
+              
+              text: "Let us help you make a sustainable choice that saves money and supports the planet.",
+              
             },
            
-            {
-              city: "Example",
-              
-              text: "A business owner in Vijayawada pledges his commercial building (valued at ₹3 Cr) and secures a ₹1.8 Cr LAP to expand his manufacturing unit — all without disrupting his rental income or operations.",
-              
-            },
-            {
-              city: "Ideal For",
-              
-              points: [
-                "Business Expansion",
-"Consolidating Debts",
-"Wedding or Medical Expenses",
-"Higher Education Abroad",
-"Buying Another Property",
-              ]           
-            },
            
              
           ].map(({ city, text, points }) => (
