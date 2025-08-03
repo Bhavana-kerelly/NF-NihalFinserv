@@ -5,11 +5,11 @@ import Image from 'next/image';
 
 
 const Footer = () => {
-  // Define your styles as a JavaScript object
+ 
   const styles = {
     footerContainer: {
-      backgroundColor: '#0F2D54', /* A slightly darker shade for the footer background */
-      padding: '30px 20px', /* Vertical and horizontal padding */
+      backgroundColor: '#0F2D54',
+      padding: '5px 20px', /* Vertical and horizontal padding */
       color: '#ffffff', /* Light text color */
       fontFamily: 'Arial, sans-serif', /* Consistent font */
       display: 'flex',

@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="w-full shadow font-serif bg-[#0F2D54] text-white">
-      <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
+      <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 ">
         
         {/* Logo */}
         <div className="font-bold flex-shrink-0">
@@ -19,9 +19,10 @@ export default function Header() {
             <Image
               src="/Logo.png"
               alt="Nihal Finserv"
-              width={140}
-              height={60}
-              className="h-auto w-auto"
+             
+              width={120}
+              height={40}
+              className="h-auto w-auto shadow-lg"
             />
           </Link>
         </div>
@@ -169,7 +170,7 @@ export default function Header() {
                   
 
           <Link href="/blog" className="hover:text-blue-600">Blogs</Link>
-          <Link href="/careers" className="hover:text-blue-600">Careers</Link>
+          {/* <Link href="/careers" className="hover:text-blue-600">Careers</Link> */}
           <Link href="/contact" className="hover:text-blue-600">Contact Us</Link>
         </nav>
 
