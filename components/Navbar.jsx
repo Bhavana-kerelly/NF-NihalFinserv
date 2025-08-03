@@ -42,7 +42,7 @@ export default function Header() {
               Services ▾
             </span>
             {openMenu === "services" && (
-              <div className="fixed top-[64px] left-0 right-0 bg-black shadow-lg z-50 border-t border-gray-200">
+              <div className="fixed top-[64px] left-0 right-0 bg-[#0F2D54] shadow-lg z-50 border-t border-gray-200">
                 <div className="grid grid-cols-4 gap-6 max-w-[1280px] mx-auto px-8 py-8 text-white text-sm">
                   
                   {/* Secured Loans Column */}
@@ -52,7 +52,7 @@ export default function Header() {
                     </div>
                     <Link href="/services/securedloans/mortgageloans" className="hover:text-blue-600">Mortgage Loans</Link>
                     <Link href="/services/securedloans/schoolandcollegefunding" className="hover:text-blue-600">School & College Funding</Link>
-                    <Link href="/services/securedloans/carloansnerandfinancing" className="hover:text-blue-600">Car Loans Ner & Refinancing</Link>
+                    <Link href="/services/securedloans/carloansnerandfinancing" className="hover:text-blue-600">Car Loans New & Refinancing</Link>
                     <Link href="/services/securedloans/odcc" className="hover:text-blue-600">OD/CC</Link>
                     <Link href="/services/securedloans/homeloans" className="hover:text-blue-600">Home Loans</Link>
                   </div>
