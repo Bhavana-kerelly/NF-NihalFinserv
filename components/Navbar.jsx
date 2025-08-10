@@ -15,10 +15,10 @@ export default function Header() {
   return (
     
     <header className="w-full shadow font-serif bg-[#0F2D54] text-white">
-      <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 ">
+      <div className=" max-w-[1280px] mx-auto flex items-center justify-between px-6 ">
         
         {/* Logo */}
-        <div className="font-bold flex-shrink-0">
+        <div className=" hidden md:flex font-bold flex-shrink-0">
           <Link href="/">
             <Image
               src="/Logo.png"
@@ -32,7 +32,7 @@ export default function Header() {
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 flex justify-center gap-10 text-lg items-center relative">
+        <nav className="hidden md:flex flex-1 flex justify-center gap-10 text-lg items-center relative">
           <Link href="/" className="hover:text-blue-600">Home</Link>
           <Link href="/about" className="hover:text-blue-600">About Us</Link>
 
@@ -181,7 +181,7 @@ export default function Header() {
         </nav>
 
         {/* Hire Us Button */}
-        <div className="flex-shrink-0">
+        <div className="hidden md:flex flex-shrink-0">
           <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
             Hire Us →
           </button>
@@ -190,7 +190,7 @@ export default function Header() {
 
 
          {/* Mobile Hamburger Button */}
-        <div className="md:hidden">
+        <div className="md:hidden p-4 bg-[#0F2D54] text-white">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle mobile menu"
