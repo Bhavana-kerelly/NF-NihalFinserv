@@ -46,7 +46,7 @@ const styles = {
   },
   grid: {
     display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
     gridGap: "20px",
     gap: "30px",
   },
@@ -63,6 +63,7 @@ const styles = {
     width: "100%",
     height: "200px",
     objectFit: "cover",
+    flexShrink: "0",
   },
   cardTitle: {
     padding: "16px",

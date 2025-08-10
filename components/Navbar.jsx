@@ -226,8 +226,8 @@ export default function Header() {
   <div className="pl-4 mt-2 space-y-4 text-sm">
     {/* Secured Loans */}
     <div>
-      <div className="font-semibold">Secured Loans</div>
-      <Link href="/services/securedloans/securedloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Secured Loans</Link>
+      <div className="font-semibold">
+      <Link href="/services/securedloans/securedloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Secured Loans</Link></div>
       <Link href="/services/securedloans/mortgageloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Mortgage Loans</Link>
       <Link href="/services/securedloans/schoolandcollegefunding" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">School & College Funding</Link>
       <Link href="/services/securedloans/carloansnerandfinancing" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Car Loans New & Refinancing</Link>
@@ -237,8 +237,8 @@ export default function Header() {
 
     {/* Unsecured Loans */}
     <div>
-      <div className="font-semibold">Unsecured Loans</div>
-      <Link href="/services/unsecuredloans/unsecuredLoans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Unsecured Loans</Link>
+      <div className="font-semibold">
+      <Link href="/services/unsecuredloans/unsecuredLoans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Unsecured Loans</Link></div>
       <Link href="/services/unsecuredloans/businessinstallmentloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Business Installment Loans</Link>
       <Link href="/services/unsecuredloans/medicalequipmentloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Medical Equipment Loans</Link>
       <Link href="/services/unsecuredloans/industrialmachineryloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Industrial Machinery Loans</Link>
@@ -251,8 +251,8 @@ export default function Header() {
 
     {/* Term Loans */}
     <div>
-      <div className="font-semibold">Term Loans</div>
-      <Link href="/services/termloans/term" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Term Loans</Link>
+      <div className="font-semibold">
+      <Link href="/services/termloans/term" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Term Loans</Link></div>
       <Link href="/services/termloans/shorttermloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Short-Term Loans</Link>
       <Link href="/services/termloans/longtermloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Long-Term Loans</Link>
       <Link href="/services/termloans/creditcards" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Credit Cards</Link>
@@ -260,8 +260,8 @@ export default function Header() {
 
     {/* Corporate Loans */}
     <div>
-      <div className="font-semibold">Corporate Loans</div>
-      <Link href="/services/coorporateloans/coorporateloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Corporate Loans</Link>
+      <div className="font-semibold">
+      <Link href="/services/coorporateloans/coorporateloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Corporate Loans</Link></div>
       <Link href="/services/corporateloans/workingcapital" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Working Capital</Link>
       <Link href="/services/corporateloans/assetfinance" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Asset Finance</Link>
       <Link href="/services/corporateloans/leasing" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Leasing</Link>
@@ -271,8 +271,8 @@ export default function Header() {
 
     {/* SME */}
     <div>
-      <div className="font-semibold">SME</div>
-      <Link href="/services/sme/sme" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">SME</Link>
+      <div className="font-semibold">
+      <Link href="/services/sme/sme" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">SME</Link></div>
       <Link href="/services/sme/manufacturer" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Manufacturer</Link>
       <Link href="/services/sme/distributor" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Distributor</Link>
       <Link href="/services/sme/retailer" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Retailer</Link>
@@ -282,8 +282,8 @@ export default function Header() {
 
     {/* Structured Products */}
     <div>
-      <div className="font-semibold">Structured Products</div>
-      <Link href="/services/structuredproducts/structuredproducts" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Structured Products</Link>
+      <div className="font-semibold">
+      <Link href="/services/structuredproducts/structuredproducts" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Structured Products</Link></div>
       <Link href="/services/structuredproducts/loanagainstsecurities" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Loan Against Securities</Link>
       <Link href="/services/structuredproducts/structuredinvestments" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Structured Investments</Link>
       <Link href="/services/structuredproducts/letterofcredit" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Letter Of Credit</Link>
@@ -293,8 +293,8 @@ export default function Header() {
 
     {/* Equipment Financing & Leasing */}
     <div>
-      <div className="font-semibold">Equipment Financing & Leasing</div>
-      <Link href="/services/equipmentfinancingandleasing/equipmentfinancingandleasing" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Equipment Financing & Leasing</Link>
+      <div className="font-semibold">
+      <Link href="/services/equipmentfinancingandleasing/equipmentfinancingandleasing" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Equipment Financing & Leasing</Link></div>
       <Link href="/services/equipmentfinancingandleasing/capitalgoods" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Capital Goods</Link>
       <Link href="/services/equipmentfinancingandleasing/ithardware" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">IT Hardware</Link>
       <Link href="/services/equipmentfinancingandleasing/officeinfrastructure" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Office Infrastructure</Link>
@@ -308,8 +308,8 @@ export default function Header() {
 
     {/* AI Chatbots */}
     <div>
-      <div className="font-semibold">AI Chatbots</div>
-      <Link href="/services/aichatbots/aichatbots" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">AI Chatbots</Link>
+      <div className="font-semibold">
+      <Link href="/services/aichatbots/aichatbots" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">AI Chatbots</Link></div>
       <Link href="/services/aichatbots/chatgptsolutions" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">ChatGPT Solutions</Link>
       <Link href="/services/aichatbots/aichatbotdev" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">AI Chatbot Dev</Link>
     </div>
