@@ -5,11 +5,15 @@ import Image from "next/image";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false); 
+
   const toggleMenu = (menu) => {
     setOpenMenu(openMenu === menu ? null : menu);
   };
 
   return (
+    
     <header className="w-full shadow font-serif bg-[#0F2D54] text-white">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 ">
         
@@ -141,8 +145,9 @@ export default function Header() {
 </div>
     </div>
   </div>
+  
 )}
-</div>
+        </div>
         {/* Industries Dropdown
         <div
           className="relative"
@@ -169,9 +174,10 @@ export default function Header() {
                   {/* SME, Structured Products, Equipment Financing, AI Chatbots... */}
                   
 
-          <Link href="/blog" className="hover:text-blue-600">Blogs</Link>
-          {/* <Link href="/careers" className="hover:text-blue-600">Careers</Link> */}
-          <Link href="/contact" className="hover:text-blue-600">Contact Us</Link>
+            <Link href="/blog" className="hover:text-blue-600">Blogs</Link>
+            {/* <Link href="/careers" className="hover:text-blue-600">Careers</Link> */}
+            <Link href="/contact" className="hover:text-blue-600">Contact Us</Link>
+          
         </nav>
 
         {/* Hire Us Button */}
@@ -180,7 +186,149 @@ export default function Header() {
             Hire Us →
           </button>
         </div>
+        
+
+
+         {/* Mobile Hamburger Button */}
+        <div className="md:hidden">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle mobile menu"
+            className="text-white text-3xl focus:outline-none"
+          >
+            {/* Simple hamburger icon */}
+            {mobileMenuOpen ? "✕" : "☰"}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <nav className="md:hidden bg-[#0F2D54] text-white px-6 py-4 space-y-4">
+          <Link href="/" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">
+            Home
+          </Link>
+          <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">
+            About Us
+          </Link>
+
+          {/* Mobile Services collapsible */}
+          <div>
+            <button
+              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+              className="w-full text-left hover:text-blue-600 flex justify-between items-center"
+              aria-expanded={mobileServicesOpen}
+            >
+              Services ▾
+              <span className="ml-2">{mobileServicesOpen ? "▲" : "▼"}</span>
+            </button>
+            {mobileServicesOpen && (
+  <div className="pl-4 mt-2 space-y-4 text-sm">
+    {/* Secured Loans */}
+    <div>
+      <div className="font-semibold">Secured Loans</div>
+      <Link href="/services/securedloans/securedloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Secured Loans</Link>
+      <Link href="/services/securedloans/mortgageloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Mortgage Loans</Link>
+      <Link href="/services/securedloans/schoolandcollegefunding" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">School & College Funding</Link>
+      <Link href="/services/securedloans/carloansnerandfinancing" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Car Loans New & Refinancing</Link>
+      <Link href="/services/securedloans/odcc" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">OD/CC</Link>
+      <Link href="/services/securedloans/homeloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Home Loans</Link>
+    </div>
+
+    {/* Unsecured Loans */}
+    <div>
+      <div className="font-semibold">Unsecured Loans</div>
+      <Link href="/services/unsecuredloans/unsecuredLoans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Unsecured Loans</Link>
+      <Link href="/services/unsecuredloans/businessinstallmentloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Business Installment Loans</Link>
+      <Link href="/services/unsecuredloans/medicalequipmentloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Medical Equipment Loans</Link>
+      <Link href="/services/unsecuredloans/industrialmachineryloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Industrial Machinery Loans</Link>
+      <Link href="/services/unsecuredloans/constructionequipmentloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Construction Equipment Loans</Link>
+      <Link href="/services/unsecuredloans/equipmentrefinancingloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Equipment Refinancing Loans</Link>
+      <Link href="/services/unsecuredloans/professionalloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Professional Loans</Link>
+      <Link href="/services/unsecuredloans/personalloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Personal Loans</Link>
+      <Link href="/services/unsecuredloans/educationalloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Educational Loans</Link>
+    </div>
+
+    {/* Term Loans */}
+    <div>
+      <div className="font-semibold">Term Loans</div>
+      <Link href="/services/termloans/term" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Term Loans</Link>
+      <Link href="/services/termloans/shorttermloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Short-Term Loans</Link>
+      <Link href="/services/termloans/longtermloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Long-Term Loans</Link>
+      <Link href="/services/termloans/creditcards" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Credit Cards</Link>
+    </div>
+
+    {/* Corporate Loans */}
+    <div>
+      <div className="font-semibold">Corporate Loans</div>
+      <Link href="/services/coorporateloans/coorporateloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Corporate Loans</Link>
+      <Link href="/services/corporateloans/workingcapital" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Working Capital</Link>
+      <Link href="/services/corporateloans/assetfinance" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Asset Finance</Link>
+      <Link href="/services/corporateloans/leasing" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Leasing</Link>
+      <Link href="/services/corporateloans/termloans" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Term Loans</Link>
+      <Link href="/services/corporateloans/structuredfinance" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Structured Finance</Link>
+    </div>
+
+    {/* SME */}
+    <div>
+      <div className="font-semibold">SME</div>
+      <Link href="/services/sme/sme" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">SME</Link>
+      <Link href="/services/sme/manufacturer" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Manufacturer</Link>
+      <Link href="/services/sme/distributor" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Distributor</Link>
+      <Link href="/services/sme/retailer" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Retailer</Link>
+      <Link href="/services/sme/serviceprovider" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Service Provider</Link>
+      <Link href="/services/sme/vendor" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Vendor</Link>
+    </div>
+
+    {/* Structured Products */}
+    <div>
+      <div className="font-semibold">Structured Products</div>
+      <Link href="/services/structuredproducts/structuredproducts" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Structured Products</Link>
+      <Link href="/services/structuredproducts/loanagainstsecurities" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Loan Against Securities</Link>
+      <Link href="/services/structuredproducts/structuredinvestments" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Structured Investments</Link>
+      <Link href="/services/structuredproducts/letterofcredit" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Letter Of Credit</Link>
+      <Link href="/services/structuredproducts/leaserentaldiscounting" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Lease Rental Discounting</Link>
+      <Link href="/services/structuredproducts/loanagainstproperty" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Loan Against Property</Link>
+    </div>
+
+    {/* Equipment Financing & Leasing */}
+    <div>
+      <div className="font-semibold">Equipment Financing & Leasing</div>
+      <Link href="/services/equipmentfinancingandleasing/equipmentfinancingandleasing" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Equipment Financing & Leasing</Link>
+      <Link href="/services/equipmentfinancingandleasing/capitalgoods" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Capital Goods</Link>
+      <Link href="/services/equipmentfinancingandleasing/ithardware" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">IT Hardware</Link>
+      <Link href="/services/equipmentfinancingandleasing/officeinfrastructure" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Office Infrastructure</Link>
+      <Link href="/services/equipmentfinancingandleasing/cars" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Cars</Link>
+      <Link href="/services/equipmentfinancingandleasing/constructionequipment" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Construction Equipment</Link>
+      <Link href="/services/equipmentfinancingandleasing/energysavingequipment" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Energy Saving Equipment</Link>
+      <Link href="/services/equipmentfinancingandleasing/healthcareequipment" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Healthcare Equipment</Link>
+      <Link href="/services/equipmentfinancingandleasing/logisticsmachinery" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Logistics Machinery</Link>
+      <Link href="/services/equipmentfinancingandleasing/solarequipment" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Solar Equipment</Link>
+    </div>
+
+    {/* AI Chatbots */}
+    <div>
+      <div className="font-semibold">AI Chatbots</div>
+      <Link href="/services/aichatbots/aichatbots" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">AI Chatbots</Link>
+      <Link href="/services/aichatbots/chatgptsolutions" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">ChatGPT Solutions</Link>
+      <Link href="/services/aichatbots/aichatbotdev" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">AI Chatbot Dev</Link>
+    </div>
+  </div>
+            )}
+  </div>
+          <Link href="/blog" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Blogs</Link>
+          <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="block hover:text-blue-600">Contact Us</Link>
+
+          {/* Hire Us Button (Mobile) */}
+          <button
+            onClick={() => setMobileMenuOpen(false)}
+            className="bg-black w-full text-white py-2 rounded hover:bg-gray-800 transition"
+          >
+            Hire Us →
+          </button>
+        </nav>
+      )}
+      
     </header>
   );
 }
