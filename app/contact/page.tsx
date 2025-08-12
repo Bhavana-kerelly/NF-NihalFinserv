@@ -90,7 +90,7 @@ export default function ContactPage() {
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="bg-black bg-opacity-70 p-8 rounded-xl shadow-lg backdrop-blur-sm"
+          className="bg-[#132b4a] bg-opacity-70 p-8 rounded-xl shadow-lg backdrop-blur-sm"
         >
           <h2 className="text-2xl font-semibold text-white mb-4">Send an Inquiry</h2>
           <form className="space-y-4">
