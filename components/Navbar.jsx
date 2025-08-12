@@ -21,7 +21,7 @@ export default function Header() {
         <div className=" hidden md:flex font-bold flex-shrink-0">
           <Link href="/">
             <Image
-              src="/Logo.png"
+              src="Logo.jpg"
               alt="Nihal Finserv"
              
               width={120}
