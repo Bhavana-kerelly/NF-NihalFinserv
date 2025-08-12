@@ -61,7 +61,7 @@ const Footer = () => {
       <div style={styles.footerLeft}>
         <div className="font-bold">
                 <Image
-          src="/Logo.png"
+          src="/Logo.jpg"
           alt="Nihal Finserv"
           width={150}
           height={32}
