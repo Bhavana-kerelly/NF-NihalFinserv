@@ -25,7 +25,7 @@ export default function Header() {
               alt="Nihal Finserv"
              
               width={120}
-              height={40}
+              height={30}
               className="h-auto w-auto shadow-lg"
             />
           </Link>
