@@ -21,7 +21,7 @@ const steps = [
 export default function MortgageLoans() {
   return (
     <>
-      <section className="py-20 px-6  bg-black text-white flex flex-col md:flex-row items-center gap-10">
+      <section className="py-20 px-6  bg-[#132b4a] text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
             src="/equipmentfinancing/S1.jpg"
@@ -80,7 +80,7 @@ export default function MortgageLoans() {
       </section>
       
      
-          <section className="bg-[#1C1C1C] text-white px-8 py-16">
+          <section className="bg-[#132b4a] text-white px-8 py-16">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
               {/* Left Section */}
               <div>
@@ -174,7 +174,7 @@ export default function MortgageLoans() {
    
     
     <section className="bg-white text-black py-16 px-6 md:px-20">
-      <div className="bg-gray-900 text-white mt-20 py-16 px-6 md:px-20">
+      <div className="bg-[#132b4a] text-white mt-20 py-16 px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center mb-6">
           Solar Equipment
         </h2>
