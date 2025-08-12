@@ -91,14 +91,14 @@ const styles = {
   container: {
     display: "flex",
     flexWrap: "wrap",
-    backgroundColor: "#111",
+    backgroundColor: "#132b4a",
     color: "#fff",
     padding: "50px 20px",
     fontFamily: "'Segoe UI', sans-serif",
   },
   left: {
     flex: "1 1 500px",
-    backgroundColor: "#000",
+    backgroundColor: "#132b4a",
     padding: "30px",
     borderRadius: "10px",
     margin: "10px",
@@ -134,7 +134,7 @@ const styles = {
     marginBottom: "10px",
     borderRadius: "4px",
     border: "1px solid #ccc",
-    backgroundColor: "black",
+    backgroundColor: "#132b4a",
     color: "white",
   },
   textarea: {
@@ -144,7 +144,7 @@ const styles = {
     borderRadius: "4px",
     border: "1px solid #ccc",
     marginBottom: "15px",
-    backgroundColor: "black",
+    backgroundColor: "#132b4a",
     color: "white",
   },
   button: {

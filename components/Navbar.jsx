@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     
-    <header className="w-full shadow font-serif bg-[#0F2D54] text-white">
+    <header className="w-full shadow font-serif bg-[#132b4a] text-white">
       <div className=" max-w-[1280px] mx-auto flex items-center justify-between px-6 ">
         
         {/* Logo */}

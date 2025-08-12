@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SoftwareOutsourcing() {
   return (
-    <div className="bg-black text-white flex items-center justify-center pt-15 pb-15 pl-10 pr-5">
+    <div className="bg-[#132b4a] text-white flex items-center justify-center pt-15 pb-15 pl-10 pr-5">
       <div className="max-w-7xl w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Main content */}

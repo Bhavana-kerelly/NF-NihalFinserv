@@ -25,7 +25,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="bg-black text-white py-20 px-6 flex flex-col md:flex-row items-center justify-between min-h-[400px]">
+    <section className="bg-[#132b4a] text-white py-20 px-6 flex flex-col md:flex-row items-center justify-between min-h-[400px]">
       {/* Text Block */}
       <div className="max-w-xl text-center md:text-left md:ml-10">
         <h1 className="text-4xl font-bold leading-tight mb-6 text-balance">
@@ -42,7 +42,7 @@ export default function HeroSection() {
         </p>
 
         {/* Features Block */}
-        <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-10 bg-black py-10 px-4 rounded-lg">
+        <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-10 bg-[#132b4a] py-10 px-4 rounded-lg">
           {features.map((feature, index) => (
             <Fragment key={index}>
               <div className="flex items-center text-white max-w-sm gap-4">

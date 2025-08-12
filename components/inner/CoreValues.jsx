@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CoreValuesSection() {
   return (
-    <section className="bg-[#1C1C1C] text-white px-8 py-16">
+    <section className="bg-[#132b4a] text-white px-8 py-16">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         {/* Left Section */}
         <div>

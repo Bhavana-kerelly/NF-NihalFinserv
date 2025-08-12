@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const styles = {
   marqueeWrapper: {
     overflow: "hidden",
-    backgroundColor: "#000000",
+    backgroundColor: "#132b4a",
     padding: "24px 0",
   },
   marqueeContent: {

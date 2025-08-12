@@ -8,7 +8,7 @@ const Footer = () => {
  
   const styles = {
     footerContainer: {
-      backgroundColor: '#0F2D54',
+      backgroundColor: '#132b4a',
       padding: '5px 20px', /* Vertical and horizontal padding */
       color: '#ffffff', /* Light text color */
       fontFamily: 'Arial, sans-serif', /* Consistent font */
