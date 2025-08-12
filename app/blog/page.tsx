@@ -67,7 +67,7 @@ export default function BlogPage() {
             key={index}
             whileHover={{ scale: 1.03 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="bg-black/90 backdrop-blur-xl shadow-xl rounded-3xl p-6 hover:shadow-2xl transition duration-300"
+            className="bg-[#132b4a]/90 backdrop-blur-xl shadow-xl rounded-3xl p-6 hover:shadow-2xl transition duration-300"
           >
             <h2 className="text-xl font-bold text-white mb-2">{post.title}</h2>
             <p className="text-sm text-gray-300 mb-4">{post.summary}</p>
