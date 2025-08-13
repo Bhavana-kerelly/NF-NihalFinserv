@@ -26,7 +26,7 @@ export default function Header() {
              
               width={120}
               height={30}
-              className="h-auto w-auto shadow-lg"
+              className="w-auto shadow-lg"
             />
           </Link>
         </div>
