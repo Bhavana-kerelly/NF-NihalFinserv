@@ -187,7 +187,7 @@ export default function MortgageLoans() {
 
     
      <section>
-        <div className="bg-black text-white px-6 py-16">
+        <div className="bg-[#132b4a] text-white px-6 py-16">
       <h2 className="text-3xl font-bold mb-4">
         SME LOANS
       </h2>
