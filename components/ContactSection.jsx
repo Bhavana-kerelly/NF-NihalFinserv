@@ -18,17 +18,53 @@ const offices = [
   },
 ];
 
+// Animation Variants
+const fadeInLeft = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+};
+
+const fadeInRight = {
+  hidden: { opacity: 0, x: 50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.2 } },
+};
+
+const loopPulse = {
+  animate: {
+    scale: [1, 1.02, 1],
+    boxShadow: [
+      "0 0 0px rgba(0,0,0,0)",
+      "0 0 20px rgba(0,123,255,0.4)",
+      "0 0 0px rgba(0,0,0,0)",
+    ],
+    transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+  },
+};
+
+const floatAnimation = {
+  animate: {
+    y: [0, -8, 0],
+    transition: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+  },
+};
+
 export default function ContactSection() {
   return (
     <div style={styles.container}>
+      {/* Left Side Form */}
       <motion.div
         style={styles.left}
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
+        variants={fadeInLeft}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
       >
         <h2 style={styles.title}>Collaborate with Nihal Finserv</h2>
-        <form style={styles.form}>
+        <motion.form
+          style={styles.form}
+          variants={loopPulse}
+          animate="animate"
+        >
           <label style={styles.label}>Name *</label>
           <input type="text" style={styles.input} />
 
@@ -59,15 +95,26 @@ export default function ContactSection() {
           <label style={styles.label}>Comment or Message</label>
           <textarea rows={4} style={styles.textarea} />
 
-          <button style={styles.button}>Submit</button>
-        </form>
+          <motion.button
+            style={styles.button}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 0px 15px rgba(0,123,255,0.6)",
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Submit
+          </motion.button>
+        </motion.form>
       </motion.div>
 
+      {/* Right Side Offices */}
       <motion.div
         style={styles.right}
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
+        variants={fadeInRight}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
       >
         <h2 style={styles.titleRight}>
           <span style={{ color: "#fff" }}>Our </span>
@@ -75,11 +122,17 @@ export default function ContactSection() {
         </h2>
         <div style={styles.officeList}>
           {offices.map((office, index) => (
-            <div key={index} style={styles.office}>
+            <motion.div
+              key={index}
+              style={styles.office}
+              variants={floatAnimation}
+              animate="animate"
+              transition={{ delay: index * 0.3 }}
+            >
               <h3 style={styles.officeCity}>{office.city}</h3>
               <p style={styles.officeText}>{office.address}</p>
               <p style={styles.officeText}>{office.phone}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </motion.div>
@@ -148,13 +201,15 @@ const styles = {
     color: "white",
   },
   button: {
-    padding: "10px 20px",
+    padding: "12px 25px",
     backgroundColor: "#007bff",
     color: "#fff",
     border: "none",
     fontSize: "16px",
     cursor: "pointer",
-    borderRadius: "4px",
+    borderRadius: "6px",
+    fontWeight: "600",
+    transition: "all 0.3s ease",
   },
   flexRow: {
     display: "flex",
@@ -170,6 +225,9 @@ const styles = {
   },
   office: {
     flex: "1 1 45%",
+    padding: "15px",
+    borderRadius: "8px",
+    backgroundColor: "rgba(255,255,255,0.05)",
   },
   officeCity: {
     fontSize: "18px",
