@@ -78,7 +78,7 @@ export default function OdCc() {
       <Section animation="fadeUp">
         <section className="py-20 px-6 bg-[#132b4a] text-white flex flex-col md:flex-row items-center gap-10">
           <Section animation="slideLeft">
-            <div className="w-full md:w-1/2">
+            <div className="rounded-xl overflow-hidden shadow-md w-[800px] h-[500px]">
               <Image
                 src="/images/H1.jpg"
                 alt="Office"

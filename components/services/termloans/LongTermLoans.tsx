@@ -24,9 +24,15 @@ export default function SchoolAndCollegeFunding() {
       <AnimatedWrapper animation="fadeUp">
         <section className="py-20 px-6  bg-[#132b4a] text-white flex flex-col md:flex-row items-center gap-10">
           <AnimatedWrapper animation="slideLeft">
-            <div className="w-full md:w-1/2"> 
-            <Image src="/termloans/L1.jpg" alt="Office" width={800} height={500} className="rounded shadow w-full object-cover" />
-             </div>
+            <div className="w-full md:w-1/2">
+              <Image
+                src="/termloans/L1.jpg"
+                alt="Office"
+                width={800}
+                height={500}
+                className="rounded shadow w-full object-cover"
+              />
+            </div>
           </AnimatedWrapper>
 
           <AnimatedWrapper animation="slideRight">
@@ -122,11 +128,7 @@ export default function SchoolAndCollegeFunding() {
                 },
                 { title: "Processing Time", desc: "3–10 working days" },
               ].map((item, idx) => (
-                <AnimatedWrapper
-                  key={idx}
-                  animation="fadeUp"
-                  delay={idx * 0.15}
-                >
+                <AnimatedWrapper key={idx} animation="fadeUp" delay={idx * 0.15}>
                   <div className="border border-gray-700 p-6">
                     <h3 className="text-2xl font-semibold mb-2">
                       {item.title}

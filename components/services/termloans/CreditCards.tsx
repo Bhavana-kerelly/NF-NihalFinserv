@@ -26,6 +26,7 @@ function useInViewAnimation(threshold = 0.25) {
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
+        // Reset animation before replay
         setInView(false);
         setTimeout(() => setInView(true), 50);
       }
@@ -43,10 +44,12 @@ function Section({
   children,
   animation = "fadeUp",
   delay = 0,
+  duration = 0.9,
 }: {
   children: React.ReactNode;
   animation?: "fadeUp" | "slideLeft" | "slideRight" | "scaleIn" | "fadeIn";
   delay?: number;
+  duration?: number;
 }) {
   const { ref, inView } = useInViewAnimation();
   const variants: Record<string, any> = {
@@ -63,7 +66,7 @@ function Section({
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={variants[animation]}
-      transition={{ duration: 0.9, ease: "easeOut", delay }}
+      transition={{ duration, ease: "easeOut", delay }}
     >
       {children}
     </motion.div>
@@ -73,10 +76,10 @@ function Section({
 export default function CreditCards() {
   return (
     <>
-      {/* Hero Section */}
-      <Section animation="fadeUp">
+      {/* ✅ Intro Hero Section with entry animation */}
+      <Section animation="fadeUp" duration={1.2}>
         <section className="py-20 px-6 bg-[#132b4a] text-white flex flex-col md:flex-row items-center gap-10">
-          <Section animation="slideLeft">
+          <Section animation="slideLeft" delay={0.1}>
             <div className="w-full md:w-1/2">
               <Image
                 src="/termloans/C1.jpg"
@@ -87,7 +90,7 @@ export default function CreditCards() {
               />
             </div>
           </Section>
-          <Section animation="slideRight" delay={0.2}>
+          <Section animation="slideRight" delay={0.3}>
             <div className="w-full md:w-1/2">
               <h2 className="text-2xl font-bold mb-5">
                 Swipe Smart. Earn More. Enjoy Financial Freedom.
@@ -100,7 +103,7 @@ export default function CreditCards() {
         </section>
       </Section>
 
-      {/* What is a Credit Card */}
+      {/* ✅ What is a Credit Card */}
       <Section animation="fadeIn">
         <section className="w-full px-6 py-12 md:py-20 bg-white">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -129,7 +132,7 @@ export default function CreditCards() {
         </section>
       </Section>
 
-      {/* Key Features */}
+      {/* ✅ Key Features */}
       <Section animation="fadeUp">
         <section className="bg-[#132b4a] text-white px-8 py-16">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
@@ -154,7 +157,7 @@ export default function CreditCards() {
             </Section>
 
             <div className="space-y-6">
-              {[
+              {[ 
                 { title: "Credit Limit", text: "25000 to 10 Lakhs+" },
                 { title: "Grace Period", text: "Up to 50 days interest-free" },
                 { title: "Rewards & Offers", text: "Cashback, miles, discounts" },
@@ -162,23 +165,19 @@ export default function CreditCards() {
                 { title: "Convert to EMIs", text: "On large purchases" },
                 { title: "Smart App Tracking", text: "View spends & manage card anytime" },
               ].map((item, idx) => (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, x: 60 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.7, delay: idx * 0.15 }}
-                  className="border border-gray-700 p-6"
-                >
-                  <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-gray-400">{item.text}</p>
-                </motion.div>
+                <Section key={idx} animation="slideRight" delay={idx * 0.2}>
+                  <div className="border border-gray-700 p-6">
+                    <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
+                    <p className="text-gray-400">{item.text}</p>
+                  </div>
+                </Section>
               ))}
             </div>
           </div>
         </section>
       </Section>
 
-      {/* Types of Cards */}
+      {/* ✅ Types of Cards */}
       <Section animation="fadeIn">
         <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
@@ -192,16 +191,12 @@ export default function CreditCards() {
                 </p>
                 <ul className="space-y-4">
                   {steps.map((step, idx) => (
-                    <motion.li
-                      key={idx}
-                      initial={{ opacity: 0, x: -40 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: idx * 0.1 }}
-                      className="flex items-start gap-3 text-gray-800 text-base md:text-lg"
-                    >
-                      <CheckCircle className="text-red-500 mt-1" size={20} />
-                      {step}
-                    </motion.li>
+                    <Section key={idx} animation="fadeUp" delay={idx * 0.15}>
+                      <li className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
+                        <CheckCircle className="text-red-500 mt-1" size={20} />
+                        {step}
+                      </li>
+                    </Section>
                   ))}
                 </ul>
               </div>
@@ -222,7 +217,7 @@ export default function CreditCards() {
         </section>
       </Section>
 
-      {/* Final Section */}
+      {/* ✅ Final Section */}
       <Section animation="fadeUp">
         <section className="bg-white text-black py-16 px-6 md:px-20">
           <div className="bg-[#132b4a] text-white mt-20 py-16 px-6 md:px-20">
@@ -287,24 +282,20 @@ export default function CreditCards() {
                   text: "“Nihal Finserv helped me choose a credit card with 5X points on travel and ₹5000 worth of joining benefits. Their team made the entire process seamless!”",
                 },
               ].map(({ city, text, points }, idx) => (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: idx * 0.15 }}
-                  className="border border-gray-700 p-6 rounded-lg"
-                >
-                  <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
-                  {points ? (
-                    <ul className="text-gray-300 list-disc list-inside space-y-2">
-                      {points.map((point, i) => (
-                        <li key={i}>{point}</li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="text-gray-300 leading-relaxed">{text}</p>
-                  )}
-                </motion.div>
+                <Section key={idx} animation="fadeUp" delay={idx * 0.2}>
+                  <div className="border border-gray-700 p-6 rounded-lg">
+                    <h3 className="text-2xl font-semibold mb-4 text-white">{city}</h3>
+                    {points ? (
+                      <ul className="text-gray-300 list-disc list-inside space-y-2">
+                        {points.map((point, i) => (
+                          <li key={i}>{point}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-gray-300 leading-relaxed">{text}</p>
+                    )}
+                  </div>
+                </Section>
               ))}
             </div>
           </div>

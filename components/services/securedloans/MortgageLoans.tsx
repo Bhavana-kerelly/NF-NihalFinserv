@@ -74,17 +74,19 @@ export default function MortgageLoans() {
     <>
       {/* Hero Section */}
       <Section animation="fadeUp">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center"></div>
         <section className="py-20 px-6 bg-[#132b4a] text-white flex flex-col md:flex-row items-center gap-10">
           <Section animation="slideLeft">
-            <div className="w-full md:w-1/2">
-              <Image
+            <div className="rounded-xl overflow-hidden shadow-md w-[700px] h-[400px]">
+                <Image
                 src="/images/M1.jpg"
                 alt="Office"
-                width={800}
-                height={500}
-                className="rounded shadow w-full object-cover"
-              />
+                width={1400}
+                height={800}
+                className="rounded shadow w-full h-full object-cover"
+                  />
             </div>
+
           </Section>
 
           <Section animation="slideRight" delay={0.2}>
